@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///home/vsaiadian/Hotsprings/workflow/work/scratch/vsaiadian/pegasus/noble-gas-reduction/run0004/./air_stds_tab.csv", "recursive": "False" } }
+  ,
+  {
+    "id": 2,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///home/vsaiadian/Hotsprings/workflow/work/scratch/vsaiadian/pegasus/noble-gas-reduction/run0004/./samples_tab.csv", "recursive": "False" } }
+  ,
+  {
+    "id": 3,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///home/vsaiadian/Hotsprings/workflow/work/scratch/vsaiadian/pegasus/noble-gas-reduction/run0004/./blanks_tab.csv", "recursive": "False" } }
+  ,
+  {
+    "id": 4,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///home/vsaiadian/Hotsprings/workflow/work/scratch/vsaiadian/pegasus/noble-gas-reduction/run0004/./semi_raw.csv", "recursive": "False" } }
+  ,
+  {
+    "id": 5,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///home/vsaiadian/Hotsprings/workflow/work/scratch/vsaiadian/pegasus/noble-gas-reduction/run0004/./assemble_workbook", "recursive": "False" } }
+  ,
+  {
+    "id": 6,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///home/vsaiadian/Hotsprings/workflow/work/scratch/vsaiadian/pegasus/noble-gas-reduction/run0004/./noble-gas.sif", "recursive": "False" } }
+  ,
+  {
+    "id": 7,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///home/vsaiadian/Hotsprings/workflow/work/scratch/vsaiadian/pegasus/noble-gas-reduction/run0004/./gaslib.py", "recursive": "False" } }
+  ,
+  {
+    "id": 8,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///home/vsaiadian/Hotsprings/workflow/work/scratch/vsaiadian/pegasus/noble-gas-reduction/run0004/./GAS_PROCESS.xlsx", "recursive": "False" } }
+]

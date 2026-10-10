@@ -1,0 +1,8 @@
+semi_raw.csv=semi_raw.csv
+air_stds_tab.csv=air_stds_tab.csv
+samples_tab.csv=samples_tab.csv
+noble-gas.sif=noble-gas.sif
+blanks_tab.csv=blanks_tab.csv
+gaslib.py=gaslib.py
+assemble_workbook=assemble_workbook
+GAS_PROCESS.xlsx=GAS_PROCESS.xlsx

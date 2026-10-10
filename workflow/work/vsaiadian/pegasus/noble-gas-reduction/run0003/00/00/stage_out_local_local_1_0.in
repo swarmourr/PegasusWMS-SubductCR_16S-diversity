@@ -1,0 +1,23 @@
+[
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "airstd_ref.json",
+   "id": 1,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///home/vsaiadian/Hotsprings/workflow/work/scratch/vsaiadian/pegasus/noble-gas-reduction/run0003/./airstd_ref.json" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///home/vsaiadian/Hotsprings/workflow/output/airstd_ref.json" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "blank_ref.json",
+   "id": 2,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///home/vsaiadian/Hotsprings/workflow/work/scratch/vsaiadian/pegasus/noble-gas-reduction/run0003/./blank_ref.json" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///home/vsaiadian/Hotsprings/workflow/output/blank_ref.json" }
+   ] }
+]

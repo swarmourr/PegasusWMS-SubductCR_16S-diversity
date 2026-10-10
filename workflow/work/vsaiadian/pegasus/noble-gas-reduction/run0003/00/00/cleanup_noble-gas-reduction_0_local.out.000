@@ -1,0 +1,179 @@
+- invocation: True
+  version: 3.0
+  start: 2026-10-09T21:59:02.581+00:00
+  duration: 2.159
+  transformation: "pegasus::cleanup"
+  derivation: "null"
+  resource: "local"
+  wf-label: "noble-gas-reduction"
+  wf-stamp: "2026-10-09T21:53:57+00:00"
+  interface: eth0
+  hostaddr: 10.1.214.25
+  hostname: pegasus.access-ci.org
+  pid: 3727018
+  uid: 2064
+  user: vsaiadian
+  gid: 2065
+  group: vsaiadian
+  umask: 0o0022
+  mainjob:
+    start: 2026-10-09T21:59:02.614+00:00
+    duration: 2.126
+    pid: 3727021
+    usage:
+      utime: 0.083
+      stime: 0.044
+      maxrss: 17368
+      minflt: 9063
+      majflt: 0
+      nswap: 0
+      inblock: 0
+      outblock: 16
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 60
+      nivcsw: 4
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /usr/bin/pegasus-transfer
+      mode: 0o100755
+      size: 2909
+      inode: 12671144
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-09-13T22:24:35+00:00
+      atime: 2026-09-13T22:24:35+00:00
+      ctime: 2026-09-21T19:37:39+00:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    argument_vector:
+    procs:
+  jobids:
+    condor: 4355819.0
+  cwd: /var/lib/condor/spool/local_univ_execute/dir_3727014/scratch
+  usage:
+    utime: 0.005
+    stime: 0.030
+    maxrss: 2600
+    minflt: 137
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 1
+    nivcsw: 2
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: pegasus.access-ci.org
+    uname_release: 4.18.0-553.168.1.el8_10.x86_64
+    uname_machine: x86_64
+    ram_total: 30589060
+    ram_free: 5524952
+    ram_shared: 93176
+    ram_buffer: 1208
+    swap_total: 0
+    swap_free: 0
+    cpu_count: 8
+    cpu_speed: 1996
+    cpu_vendor: AuthenticAMD
+    cpu_model: AMD EPYC-Milan Processor
+    load_min1: 1.42
+    load_min5: 1.31
+    load_min15: 0.76
+    procs_total: 425
+    procs_running: 1
+    procs_sleeping: 161
+    procs_other: 263
+    procs_vmsize: 54885088
+    procs_rss: 3063180
+    task_total: 1110
+    task_running: 1
+    task_sleeping: 846
+    task_other: 263
+  files:
+    stdin:
+      descriptor_number: 0
+      mode: 0o10600
+      size: 0
+      inode: 74645657
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-10-09T21:59:02+00:00
+      atime: 2026-10-09T21:59:02+00:00
+      ctime: 2026-10-09T21:59:02+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+    stdout:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_3727014/scratch/ks.out.WBq4b2
+      descriptor: 3
+      mode: 0o100600
+      size: 0
+      inode: 947931192
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-10-09T21:59:02+00:00
+      atime: 2026-10-09T21:59:02+00:00
+      ctime: 2026-10-09T21:59:02+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+    stderr:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_3727014/scratch/ks.err.gVy6k3
+      descriptor: 4
+      mode: 0o100600
+      size: 864
+      inode: 947931193
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-10-09T21:59:04+00:00
+      atime: 2026-10-09T21:59:02+00:00
+      ctime: 2026-10-09T21:59:04+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+      data_truncated: false
+      data: |
+        2026-10-09 21:59:02,683    INFO:  Reading URL pairs from stdin
+        2026-10-09 21:59:02,684    INFO:  1 transfers loaded
+        2026-10-09 21:59:02,684    INFO:  PATH=/usr/bin:/bin:/bin:/usr/bin:/usr/local/bin:/opt/local/bin:/usr/sbin
+        2026-10-09 21:59:02,684    INFO:  LD_LIBRARY_PATH=
+        2026-10-09 21:59:02,719    INFO:  --------------------------------------------------------------------------------
+        2026-10-09 21:59:02,719    INFO:  Starting transfers - attempt 1
+        2026-10-09 21:59:04,722    INFO:  /bin/rm -f -r  '/home/vsaiadian/Hotsprings/workflow/work/scratch/vsaiadian/pegasus/noble-gas-reduction/run0003' 
+        2026-10-09 21:59:04,729    INFO:  --------------------------------------------------------------------------------
+        2026-10-09 21:59:04,730    INFO:  Stats: no local files in the transfer set
+        2026-10-09 21:59:04,730    INFO:  All transfers completed successfully.
+        
+    metadata:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_3727014/scratch/ks.meta.OHJG21
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 947931194
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-10-09T21:59:02+00:00
+      atime: 2026-10-09T21:59:02+00:00
+      ctime: 2026-10-09T21:59:02+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian

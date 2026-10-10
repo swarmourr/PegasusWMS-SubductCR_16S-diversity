@@ -1,0 +1,12 @@
+[
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "compute_references",
+   "id": 1,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///home/vsaiadian/Hotsprings/workflow/bin/compute_references.py", "priority": 100 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///home/vsaiadian/Hotsprings/workflow/work/scratch/vsaiadian/pegasus/noble-gas-reduction/run0003/./compute_references" }
+   ] }
+]

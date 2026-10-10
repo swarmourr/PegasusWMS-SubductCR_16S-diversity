@@ -1,0 +1,232 @@
+######################################################################
+# PEGASUS WMS GENERATED DAG FILE
+# DAG noble-gas-reduction
+# Index = 0, Count = null
+######################################################################
+MAXJOBS registration 1
+MAXJOBS stagein 10
+MAXJOBS cleanup 4
+MAXJOBS stageout 10
+
+JOB create_dir_noble-gas-reduction_0_local 00/00/create_dir_noble-gas-reduction_0_local.sub
+SCRIPT POST create_dir_noble-gas-reduction_0_local /usr/bin/pegasus-exitcode  -r $RETURN -R $RETRY -l noble-gas-reduction-0.exitcode.log -M noble-gas-reduction-0.cache.meta -N    .//00/00/create_dir_noble-gas-reduction_0_local.out
+PRIORITY create_dir_noble-gas-reduction_0_local 800
+RETRY create_dir_noble-gas-reduction_0_local 0
+VARS create_dir_noble-gas-reduction_0_local My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_remote_local_2_0 00/00/stage_in_remote_local_2_0.sub
+SCRIPT POST stage_in_remote_local_2_0 /usr/bin/pegasus-exitcode  -r $RETURN -R $RETRY -l noble-gas-reduction-0.exitcode.log -M noble-gas-reduction-0.cache.meta -N    .//00/00/stage_in_remote_local_2_0.out
+PRIORITY stage_in_remote_local_2_0 700
+RETRY stage_in_remote_local_2_0 0
+CATEGORY stage_in_remote_local_2_0 stagein
+VARS stage_in_remote_local_2_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_remote_local_1_0 00/00/stage_in_remote_local_1_0.sub
+SCRIPT POST stage_in_remote_local_1_0 /usr/bin/pegasus-exitcode  -r $RETURN -R $RETRY -l noble-gas-reduction-0.exitcode.log -M noble-gas-reduction-0.cache.meta -N    .//00/00/stage_in_remote_local_1_0.out
+PRIORITY stage_in_remote_local_1_0 700
+RETRY stage_in_remote_local_1_0 0
+CATEGORY stage_in_remote_local_1_0 stagein
+VARS stage_in_remote_local_1_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_remote_local_0_0 00/00/stage_in_remote_local_0_0.sub
+SCRIPT POST stage_in_remote_local_0_0 /usr/bin/pegasus-exitcode  -r $RETURN -R $RETRY -l noble-gas-reduction-0.exitcode.log -M noble-gas-reduction-0.cache.meta -N    .//00/00/stage_in_remote_local_0_0.out
+PRIORITY stage_in_remote_local_0_0 700
+RETRY stage_in_remote_local_0_0 0
+CATEGORY stage_in_remote_local_0_0 stagein
+VARS stage_in_remote_local_0_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_remote_local_3_0 00/00/stage_in_remote_local_3_0.sub
+SCRIPT POST stage_in_remote_local_3_0 /usr/bin/pegasus-exitcode  -r $RETURN -R $RETRY -l noble-gas-reduction-0.exitcode.log -M noble-gas-reduction-0.cache.meta -N    .//00/00/stage_in_remote_local_3_0.out
+PRIORITY stage_in_remote_local_3_0 700
+RETRY stage_in_remote_local_3_0 0
+CATEGORY stage_in_remote_local_3_0 stagein
+VARS stage_in_remote_local_3_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB build_semiraw_ID0000001 00/00/build_semiraw_ID0000001.sub
+SCRIPT POST build_semiraw_ID0000001 /usr/bin/pegasus-exitcode  -r $RETURN -R $RETRY -s PegasusLite:+exitcode+0 -l noble-gas-reduction-0.exitcode.log -M noble-gas-reduction-0.cache.meta -N    .//00/00/build_semiraw_ID0000001.out
+PRIORITY build_semiraw_ID0000001 20
+RETRY build_semiraw_ID0000001 0
+VARS build_semiraw_ID0000001 My.DAGNodeRetry="$(RETRY)"
+
+JOB compute_references_ID0000002 00/00/compute_references_ID0000002.sub
+SCRIPT POST compute_references_ID0000002 /usr/bin/pegasus-exitcode  -r $RETURN -R $RETRY -s PegasusLite:+exitcode+0 -l noble-gas-reduction-0.exitcode.log -M noble-gas-reduction-0.cache.meta -N    .//00/00/compute_references_ID0000002.out
+PRIORITY compute_references_ID0000002 30
+RETRY compute_references_ID0000002 0
+VARS compute_references_ID0000002 My.DAGNodeRetry="$(RETRY)"
+
+JOB clean_up_local_level_3_0 00/00/clean_up_local_level_3_0.sub
+SCRIPT POST clean_up_local_level_3_0 /usr/bin/pegasus-exitcode  -r $RETURN -R $RETRY -l noble-gas-reduction-0.exitcode.log -M noble-gas-reduction-0.cache.meta -N    .//00/00/clean_up_local_level_3_0.out
+PRIORITY clean_up_local_level_3_0 1000
+RETRY clean_up_local_level_3_0 0
+CATEGORY clean_up_local_level_3_0 cleanup
+VARS clean_up_local_level_3_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_out_local_local_0_0 00/00/stage_out_local_local_0_0.sub
+SCRIPT POST stage_out_local_local_0_0 /usr/bin/pegasus-exitcode  -r $RETURN -R $RETRY -l noble-gas-reduction-0.exitcode.log -M noble-gas-reduction-0.cache.meta -N    .//00/00/stage_out_local_local_0_0.out
+PRIORITY stage_out_local_local_0_0 900
+RETRY stage_out_local_local_0_0 0
+CATEGORY stage_out_local_local_0_0 stageout
+VARS stage_out_local_local_0_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB samples_tab_ID0000005 00/00/samples_tab_ID0000005.sub
+SCRIPT POST samples_tab_ID0000005 /usr/bin/pegasus-exitcode  -r $RETURN -R $RETRY -s PegasusLite:+exitcode+0 -l noble-gas-reduction-0.exitcode.log -M noble-gas-reduction-0.cache.meta -N    .//00/00/samples_tab_ID0000005.out
+PRIORITY samples_tab_ID0000005 40
+RETRY samples_tab_ID0000005 0
+VARS samples_tab_ID0000005 My.DAGNodeRetry="$(RETRY)"
+
+JOB blanks_tab_ID0000003 00/00/blanks_tab_ID0000003.sub
+SCRIPT POST blanks_tab_ID0000003 /usr/bin/pegasus-exitcode  -r $RETURN -R $RETRY -s PegasusLite:+exitcode+0 -l noble-gas-reduction-0.exitcode.log -M noble-gas-reduction-0.cache.meta -N    .//00/00/blanks_tab_ID0000003.out
+PRIORITY blanks_tab_ID0000003 40
+RETRY blanks_tab_ID0000003 0
+VARS blanks_tab_ID0000003 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_out_local_local_1_0 00/00/stage_out_local_local_1_0.sub
+SCRIPT POST stage_out_local_local_1_0 /usr/bin/pegasus-exitcode  -r $RETURN -R $RETRY -l noble-gas-reduction-0.exitcode.log -M noble-gas-reduction-0.cache.meta -N    .//00/00/stage_out_local_local_1_0.out
+PRIORITY stage_out_local_local_1_0 900
+RETRY stage_out_local_local_1_0 0
+CATEGORY stage_out_local_local_1_0 stageout
+VARS stage_out_local_local_1_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB clean_up_local_level_4_0 00/00/clean_up_local_level_4_0.sub
+SCRIPT POST clean_up_local_level_4_0 /usr/bin/pegasus-exitcode  -r $RETURN -R $RETRY -l noble-gas-reduction-0.exitcode.log -M noble-gas-reduction-0.cache.meta -N    .//00/00/clean_up_local_level_4_0.out
+PRIORITY clean_up_local_level_4_0 1000
+RETRY clean_up_local_level_4_0 0
+CATEGORY clean_up_local_level_4_0 cleanup
+VARS clean_up_local_level_4_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB air_stds_tab_ID0000004 00/00/air_stds_tab_ID0000004.sub
+SCRIPT POST air_stds_tab_ID0000004 /usr/bin/pegasus-exitcode  -r $RETURN -R $RETRY -s PegasusLite:+exitcode+0 -l noble-gas-reduction-0.exitcode.log -M noble-gas-reduction-0.cache.meta -N    .//00/00/air_stds_tab_ID0000004.out
+PRIORITY air_stds_tab_ID0000004 40
+RETRY air_stds_tab_ID0000004 0
+VARS air_stds_tab_ID0000004 My.DAGNodeRetry="$(RETRY)"
+
+JOB register_local_0_0 00/00/register_local_0_0.sub
+SCRIPT POST register_local_0_0 /usr/bin/pegasus-exitcode  -r $RETURN -R $RETRY -l noble-gas-reduction-0.exitcode.log -M noble-gas-reduction-0.cache.meta -N    .//00/00/register_local_0_0.out
+PRIORITY register_local_0_0 40
+RETRY register_local_0_0 0
+CATEGORY register_local_0_0 registration
+VARS register_local_0_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB register_local_1_0 00/00/register_local_1_0.sub
+SCRIPT POST register_local_1_0 /usr/bin/pegasus-exitcode  -r $RETURN -R $RETRY -l noble-gas-reduction-0.exitcode.log -M noble-gas-reduction-0.cache.meta -N    .//00/00/register_local_1_0.out
+PRIORITY register_local_1_0 50
+RETRY register_local_1_0 0
+CATEGORY register_local_1_0 registration
+VARS register_local_1_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_out_local_local_2_0 00/00/stage_out_local_local_2_0.sub
+SCRIPT POST stage_out_local_local_2_0 /usr/bin/pegasus-exitcode  -r $RETURN -R $RETRY -l noble-gas-reduction-0.exitcode.log -M noble-gas-reduction-0.cache.meta -N    .//00/00/stage_out_local_local_2_0.out
+PRIORITY stage_out_local_local_2_0 900
+RETRY stage_out_local_local_2_0 0
+CATEGORY stage_out_local_local_2_0 stageout
+VARS stage_out_local_local_2_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB assemble_workbook_ID0000006 00/00/assemble_workbook_ID0000006.sub
+SCRIPT POST assemble_workbook_ID0000006 /usr/bin/pegasus-exitcode  -r $RETURN -R $RETRY -s PegasusLite:+exitcode+0 -l noble-gas-reduction-0.exitcode.log -M noble-gas-reduction-0.cache.meta -N    .//00/00/assemble_workbook_ID0000006.out
+PRIORITY assemble_workbook_ID0000006 50
+RETRY assemble_workbook_ID0000006 0
+VARS assemble_workbook_ID0000006 My.DAGNodeRetry="$(RETRY)"
+
+JOB clean_up_local_level_5_0 00/00/clean_up_local_level_5_0.sub
+SCRIPT POST clean_up_local_level_5_0 /usr/bin/pegasus-exitcode  -r $RETURN -R $RETRY -l noble-gas-reduction-0.exitcode.log -M noble-gas-reduction-0.cache.meta -N    .//00/00/clean_up_local_level_5_0.out
+PRIORITY clean_up_local_level_5_0 1000
+RETRY clean_up_local_level_5_0 0
+CATEGORY clean_up_local_level_5_0 cleanup
+VARS clean_up_local_level_5_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB register_local_2_0 00/00/register_local_2_0.sub
+SCRIPT POST register_local_2_0 /usr/bin/pegasus-exitcode  -r $RETURN -R $RETRY -l noble-gas-reduction-0.exitcode.log -M noble-gas-reduction-0.cache.meta -N    .//00/00/register_local_2_0.out
+PRIORITY register_local_2_0 60
+RETRY register_local_2_0 0
+CATEGORY register_local_2_0 registration
+VARS register_local_2_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_out_local_local_3_0 00/00/stage_out_local_local_3_0.sub
+SCRIPT POST stage_out_local_local_3_0 /usr/bin/pegasus-exitcode  -r $RETURN -R $RETRY -l noble-gas-reduction-0.exitcode.log -M noble-gas-reduction-0.cache.meta -N    .//00/00/stage_out_local_local_3_0.out
+PRIORITY stage_out_local_local_3_0 900
+RETRY stage_out_local_local_3_0 0
+CATEGORY stage_out_local_local_3_0 stageout
+VARS stage_out_local_local_3_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB clean_up_local_level_6_0 00/00/clean_up_local_level_6_0.sub
+SCRIPT POST clean_up_local_level_6_0 /usr/bin/pegasus-exitcode  -r $RETURN -R $RETRY -l noble-gas-reduction-0.exitcode.log -M noble-gas-reduction-0.cache.meta -N    .//00/00/clean_up_local_level_6_0.out
+PRIORITY clean_up_local_level_6_0 1000
+RETRY clean_up_local_level_6_0 0
+CATEGORY clean_up_local_level_6_0 cleanup
+VARS clean_up_local_level_6_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB register_local_3_0 00/00/register_local_3_0.sub
+SCRIPT POST register_local_3_0 /usr/bin/pegasus-exitcode  -r $RETURN -R $RETRY -l noble-gas-reduction-0.exitcode.log -M noble-gas-reduction-0.cache.meta -N    .//00/00/register_local_3_0.out
+PRIORITY register_local_3_0 70
+RETRY register_local_3_0 0
+CATEGORY register_local_3_0 registration
+VARS register_local_3_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB clean_up_local_level_7_0 00/00/clean_up_local_level_7_0.sub
+SCRIPT POST clean_up_local_level_7_0 /usr/bin/pegasus-exitcode  -r $RETURN -R $RETRY -l noble-gas-reduction-0.exitcode.log -M noble-gas-reduction-0.cache.meta -N    .//00/00/clean_up_local_level_7_0.out
+PRIORITY clean_up_local_level_7_0 1000
+RETRY clean_up_local_level_7_0 0
+CATEGORY clean_up_local_level_7_0 cleanup
+VARS clean_up_local_level_7_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB cleanup_noble-gas-reduction_0_local 00/00/cleanup_noble-gas-reduction_0_local.sub
+SCRIPT POST cleanup_noble-gas-reduction_0_local /usr/bin/pegasus-exitcode  -r $RETURN -R $RETRY -l noble-gas-reduction-0.exitcode.log -M noble-gas-reduction-0.cache.meta -N    .//00/00/cleanup_noble-gas-reduction_0_local.out
+PRIORITY cleanup_noble-gas-reduction_0_local 1000
+RETRY cleanup_noble-gas-reduction_0_local 0
+VARS cleanup_noble-gas-reduction_0_local My.DAGNodeRetry="$(RETRY)"
+
+PARENT  samples_tab_ID0000005 CHILD stage_out_local_local_2_0
+PARENT  samples_tab_ID0000005 CHILD assemble_workbook_ID0000006
+PARENT  samples_tab_ID0000005 CHILD clean_up_local_level_5_0
+PARENT  stage_in_remote_local_2_0 CHILD samples_tab_ID0000005
+PARENT  stage_in_remote_local_2_0 CHILD blanks_tab_ID0000003
+PARENT  stage_in_remote_local_2_0 CHILD air_stds_tab_ID0000004
+PARENT  stage_in_remote_local_1_0 CHILD compute_references_ID0000002
+PARENT  stage_in_remote_local_0_0 CHILD samples_tab_ID0000005
+PARENT  stage_in_remote_local_0_0 CHILD blanks_tab_ID0000003
+PARENT  stage_in_remote_local_0_0 CHILD compute_references_ID0000002
+PARENT  stage_in_remote_local_0_0 CHILD assemble_workbook_ID0000006
+PARENT  stage_in_remote_local_0_0 CHILD build_semiraw_ID0000001
+PARENT  stage_in_remote_local_0_0 CHILD air_stds_tab_ID0000004
+PARENT  clean_up_local_level_3_0 CHILD cleanup_noble-gas-reduction_0_local
+PARENT  clean_up_local_level_4_0 CHILD cleanup_noble-gas-reduction_0_local
+PARENT  build_semiraw_ID0000001 CHILD samples_tab_ID0000005
+PARENT  build_semiraw_ID0000001 CHILD blanks_tab_ID0000003
+PARENT  build_semiraw_ID0000001 CHILD compute_references_ID0000002
+PARENT  build_semiraw_ID0000001 CHILD clean_up_local_level_3_0
+PARENT  build_semiraw_ID0000001 CHILD assemble_workbook_ID0000006
+PARENT  build_semiraw_ID0000001 CHILD stage_out_local_local_0_0
+PARENT  build_semiraw_ID0000001 CHILD air_stds_tab_ID0000004
+PARENT  clean_up_local_level_5_0 CHILD cleanup_noble-gas-reduction_0_local
+PARENT  create_dir_noble-gas-reduction_0_local CHILD stage_in_remote_local_2_0
+PARENT  create_dir_noble-gas-reduction_0_local CHILD stage_in_remote_local_1_0
+PARENT  create_dir_noble-gas-reduction_0_local CHILD stage_in_remote_local_0_0
+PARENT  create_dir_noble-gas-reduction_0_local CHILD stage_in_remote_local_3_0
+PARENT  clean_up_local_level_6_0 CHILD cleanup_noble-gas-reduction_0_local
+PARENT  clean_up_local_level_7_0 CHILD cleanup_noble-gas-reduction_0_local
+PARENT  stage_in_remote_local_3_0 CHILD assemble_workbook_ID0000006
+PARENT  blanks_tab_ID0000003 CHILD stage_out_local_local_2_0
+PARENT  blanks_tab_ID0000003 CHILD assemble_workbook_ID0000006
+PARENT  blanks_tab_ID0000003 CHILD clean_up_local_level_5_0
+PARENT  stage_out_local_local_3_0 CHILD register_local_3_0
+PARENT  stage_out_local_local_3_0 CHILD clean_up_local_level_7_0
+PARENT  stage_out_local_local_2_0 CHILD register_local_2_0
+PARENT  stage_out_local_local_2_0 CHILD clean_up_local_level_6_0
+PARENT  stage_out_local_local_1_0 CHILD register_local_1_0
+PARENT  stage_out_local_local_1_0 CHILD clean_up_local_level_5_0
+PARENT  assemble_workbook_ID0000006 CHILD stage_out_local_local_3_0
+PARENT  assemble_workbook_ID0000006 CHILD clean_up_local_level_6_0
+PARENT  stage_out_local_local_0_0 CHILD register_local_0_0
+PARENT  stage_out_local_local_0_0 CHILD clean_up_local_level_5_0
+PARENT  stage_out_local_local_0_0 CHILD clean_up_local_level_6_0
+PARENT  compute_references_ID0000002 CHILD samples_tab_ID0000005
+PARENT  compute_references_ID0000002 CHILD blanks_tab_ID0000003
+PARENT  compute_references_ID0000002 CHILD stage_out_local_local_1_0
+PARENT  compute_references_ID0000002 CHILD clean_up_local_level_4_0
+PARENT  compute_references_ID0000002 CHILD air_stds_tab_ID0000004
+PARENT  air_stds_tab_ID0000004 CHILD stage_out_local_local_2_0
+PARENT  air_stds_tab_ID0000004 CHILD assemble_workbook_ID0000006
+PARENT  air_stds_tab_ID0000004 CHILD clean_up_local_level_5_0
+######################################################################
+# End of DAG
+######################################################################

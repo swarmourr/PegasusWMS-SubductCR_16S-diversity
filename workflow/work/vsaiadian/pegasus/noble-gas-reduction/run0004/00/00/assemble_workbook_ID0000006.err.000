@@ -1,0 +1,29 @@
+DEBUG: Adding default values to PATH - /bin:/usr/bin:/usr/local/bin:/opt/local/bin
+2026-10-09 21:57:29: Job launched in directory /var/lib/condor/spool/local_univ_execute/dir_3725682/scratch
+2026-10-09 21:57:29: PegasusLite: version 5.1.3
+2026-10-09 21:57:29: Executing on host pegasus.access-ci.org IP=149.165.153.107
+
+########################[Pegasus Lite] Setting up workdir ########################
+2026-10-09 21:57:29: Not creating a new work directory as it is already set to /var/lib/condor/spool/local_univ_execute/dir_3725682/scratch
+
+##############[Pegasus Lite] Figuring out the worker package to use ##############
+2026-10-09 21:57:30: The job contained a Pegasus worker package
+
+##################### Setting the xbit for executables staged #####################
+
+########[Pegasus Lite] Writing out script to launch user task in container ########
+2026-10-09 21:57:30: Using /usr/bin/apptainer to run the container
+2026-10-09 21:57:31: Job launched in directory /srv
+
+##############[Container] Figuring out Pegasus worker package to use ##############
+2026-10-09 21:57:31: The job contained a Pegasus worker package
+2026-10-09 21:57:31: Warning: worker package pegasus-worker-5.1.3-x86_64_rhel_8.tar.gz does not seem to match the system x86_64_deb_13
+2026-10-09 21:57:31: Checking for untar worker package in /srv
+2026-10-09 21:57:31: The job contained a Pegasus worker package that was already untarred in /srv/pegasus-5.1.3-x86_64_rhel_8
+2026-10-09 21:57:31: Warning: worker package /srv/pegasus-5.1.3-x86_64_rhel_8 does not seem to match the system x86_64_deb_13
+2026-10-09 21:57:31: Downloading Pegasus worker package from http://download.pegasus.isi.edu/pegasus/5.1.3/pegasus-worker-5.1.3-x86_64_deb_13.tar.gz
+PATH in container is set to is set to /srv/pegasus-5.1.3-x86_64_deb_13/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+#########################[Container] Launching user task #########################
+PegasusLite: runtime 54
+PegasusLite: exitcode 0

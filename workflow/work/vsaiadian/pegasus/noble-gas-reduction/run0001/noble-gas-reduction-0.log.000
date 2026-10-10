@@ -1,0 +1,102 @@
+000 (4355735.000.000) 2026-10-09 18:53:19 Job submitted from host: <149.165.153.107:9618?addrs=149.165.153.107-9618&alias=pegasus.access-ci.org&noUDP&sock=schedd_1233_505d>
+    [ DAGNodeName = "create_dir_noble-gas-reduction_0_local"; JobBatchName = "noble-gas-reduction-0.dag+4355734" ]
+    pool:local
+...
+001 (4355735.000.000) 2026-10-09 18:53:23 Job executing on host: <149.165.153.107:9618?addrs=149.165.153.107-9618&alias=pegasus.access-ci.org&noUDP&sock=starter_1369_5591_30700>
+...
+005 (4355735.000.000) 2026-10-09 18:53:25 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+000 (4355736.000.000) 2026-10-09 18:53:40 Job submitted from host: <149.165.153.107:9618?addrs=149.165.153.107-9618&alias=pegasus.access-ci.org&noUDP&sock=schedd_1233_505d>
+    [ DAGNodeName = "stage_in_remote_local_2_0"; JobBatchName = "noble-gas-reduction-0.dag+4355734" ]
+    pool:local
+...
+000 (4355737.000.000) 2026-10-09 18:53:40 Job submitted from host: <149.165.153.107:9618?addrs=149.165.153.107-9618&alias=pegasus.access-ci.org&noUDP&sock=schedd_1233_505d>
+    [ DAGNodeName = "stage_in_remote_local_1_0"; JobBatchName = "noble-gas-reduction-0.dag+4355734" ]
+    pool:local
+...
+001 (4355736.000.000) 2026-10-09 18:53:40 Job executing on host: <149.165.153.107:9618?addrs=149.165.153.107-9618&alias=pegasus.access-ci.org&noUDP&sock=starter_1369_5591_30701>
+...
+000 (4355738.000.000) 2026-10-09 18:53:40 Job submitted from host: <149.165.153.107:9618?addrs=149.165.153.107-9618&alias=pegasus.access-ci.org&noUDP&sock=schedd_1233_505d>
+    [ DAGNodeName = "stage_in_remote_local_0_0"; JobBatchName = "noble-gas-reduction-0.dag+4355734" ]
+    pool:local
+...
+000 (4355739.000.000) 2026-10-09 18:53:40 Job submitted from host: <149.165.153.107:9618?addrs=149.165.153.107-9618&alias=pegasus.access-ci.org&noUDP&sock=schedd_1233_505d>
+    [ DAGNodeName = "stage_in_remote_local_3_0"; JobBatchName = "noble-gas-reduction-0.dag+4355734" ]
+    pool:local
+...
+005 (4355736.000.000) 2026-10-09 18:53:44 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+001 (4355737.000.000) 2026-10-09 18:53:45 Job executing on host: <149.165.153.107:9618?addrs=149.165.153.107-9618&alias=pegasus.access-ci.org&noUDP&sock=starter_1369_5591_30702>
+...
+001 (4355738.000.000) 2026-10-09 18:53:45 Job executing on host: <149.165.153.107:9618?addrs=149.165.153.107-9618&alias=pegasus.access-ci.org&noUDP&sock=starter_1369_5591_30703>
+...
+001 (4355739.000.000) 2026-10-09 18:53:45 Job executing on host: <149.165.153.107:9618?addrs=149.165.153.107-9618&alias=pegasus.access-ci.org&noUDP&sock=starter_1369_5591_30704>
+...
+005 (4355737.000.000) 2026-10-09 18:53:47 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+005 (4355739.000.000) 2026-10-09 18:53:47 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+005 (4355738.000.000) 2026-10-09 18:53:49 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+000 (4355740.000.000) 2026-10-09 18:54:00 Job submitted from host: <149.165.153.107:9618?addrs=149.165.153.107-9618&alias=pegasus.access-ci.org&noUDP&sock=schedd_1233_505d>
+    [ DAGNodeName = "build_semiraw_ID0000001"; JobBatchName = "noble-gas-reduction-0.dag+4355734" ]
+    pool:local
+...
+001 (4355740.000.000) 2026-10-09 18:54:00 Job executing on host: <149.165.153.107:9618?addrs=149.165.153.107-9618&alias=pegasus.access-ci.org&noUDP&sock=starter_1369_5591_30705>
+...
+005 (4355740.000.000) 2026-10-09 18:54:02 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...

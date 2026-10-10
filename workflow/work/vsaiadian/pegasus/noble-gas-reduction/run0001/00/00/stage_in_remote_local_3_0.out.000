@@ -1,0 +1,226 @@
+- invocation: True
+  version: 3.0
+  start: 2026-10-09T18:53:45.794+00:00
+  duration: 2.150
+  transformation: "pegasus::transfer"
+  derivation: "null"
+  resource: "local"
+  wf-label: "noble-gas-reduction"
+  wf-stamp: "2026-10-09T18:53:12+00:00"
+  interface: eth0
+  hostaddr: 10.1.214.25
+  hostname: pegasus.access-ci.org
+  pid: 3661061
+  uid: 2064
+  user: vsaiadian
+  gid: 2065
+  group: vsaiadian
+  umask: 0o0022
+  mainjob:
+    start: 2026-10-09T18:53:45.820+00:00
+    duration: 2.122
+    pid: 3661078
+    usage:
+      utime: 0.081
+      stime: 0.043
+      maxrss: 17320
+      minflt: 9141
+      majflt: 0
+      nswap: 0
+      inblock: 0
+      outblock: 24
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 60
+      nivcsw: 5
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /usr/bin/pegasus-transfer
+      mode: 0o100755
+      size: 2909
+      inode: 12671144
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-09-13T22:24:35+00:00
+      atime: 2026-09-13T22:24:35+00:00
+      ctime: 2026-09-21T19:37:39+00:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    argument_vector:
+      - "--threads"
+      - "2"
+    procs:
+  cleanup:
+    start: 2026-10-09T18:53:47.942+00:00
+    duration: 0.003
+    pid: 3661155
+    usage:
+      utime: 0.001
+      stime: 0.001
+      maxrss: 1988
+      minflt: 73
+      majflt: 0
+      nswap: 0
+      inblock: 0
+      outblock: 0
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 1
+      nivcsw: 0
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /usr/bin/rm
+      mode: 0o100755
+      size: 71824
+      inode: 12756686
+      nlink: 1
+      blksize: 4096
+      blocks: 144
+      mtime: 2026-09-22T17:24:12+00:00
+      atime: 2026-09-22T17:24:12+00:00
+      ctime: 2026-09-25T06:52:06+00:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    argument_vector:
+      - "-rf"
+      - "stage_in_remote_local_3_0.out.lof"
+    procs:
+  jobids:
+    condor: 4355739.0
+  cwd: /var/lib/condor/spool/local_univ_execute/dir_3661049/scratch
+  usage:
+    utime: 0.007
+    stime: 0.021
+    maxrss: 2204
+    minflt: 153
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 2
+    nivcsw: 2
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: pegasus.access-ci.org
+    uname_release: 4.18.0-553.168.1.el8_10.x86_64
+    uname_machine: x86_64
+    ram_total: 30589060
+    ram_free: 6097112
+    ram_shared: 93192
+    ram_buffer: 1208
+    swap_total: 0
+    swap_free: 0
+    cpu_count: 8
+    cpu_speed: 1996
+    cpu_vendor: AuthenticAMD
+    cpu_model: AMD EPYC-Milan Processor
+    load_min1: 0.12
+    load_min5: 0.17
+    load_min15: 0.23
+    procs_total: 252
+    procs_running: 3
+    procs_sleeping: 164
+    procs_other: 85
+    procs_vmsize: 57089168
+    procs_rss: 3014408
+    task_total: 963
+    task_running: 3
+    task_sleeping: 875
+    task_other: 85
+  files:
+    assemble_workbook:
+      error: 2
+      lfn: "assemble_workbook"
+      file_name: assemble_workbook
+    stdin:
+      descriptor_number: 0
+      mode: 0o10600
+      size: 0
+      inode: 73996557
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-10-09T18:53:45+00:00
+      atime: 2026-10-09T18:53:45+00:00
+      ctime: 2026-10-09T18:53:45+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+    stdout:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_3661049/scratch/ks.out.l9H1CC
+      descriptor: 3
+      mode: 0o100600
+      size: 0
+      inode: 1300243435
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-10-09T18:53:45+00:00
+      atime: 2026-10-09T18:53:45+00:00
+      ctime: 2026-10-09T18:53:45+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+    stderr:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_3661049/scratch/ks.err.qwH1Uv
+      descriptor: 4
+      mode: 0o100600
+      size: 1137
+      inode: 1300243436
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-10-09T18:53:47+00:00
+      atime: 2026-10-09T18:53:45+00:00
+      ctime: 2026-10-09T18:53:47+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+      data_truncated: false
+      data: |
+        2026-10-09 18:53:45,888    INFO:  Reading URL pairs from stdin
+        2026-10-09 18:53:45,888    INFO:  1 transfers loaded
+        2026-10-09 18:53:45,888    INFO:  PATH=/usr/bin:/bin:/bin:/usr/bin:/usr/local/bin:/opt/local/bin:/usr/sbin
+        2026-10-09 18:53:45,888    INFO:  LD_LIBRARY_PATH=
+        2026-10-09 18:53:45,922    INFO:  --------------------------------------------------------------------------------
+        2026-10-09 18:53:45,922    INFO:  Starting transfers - attempt 1
+        2026-10-09 18:53:47,924    INFO:  /bin/cp -f -R -L '/home/vsaiadian/Hotsprings/workflow/bin/assemble_workbook.py' '/home/vsaiadian/Hotsprings/workflow/work/scratch/vsaiadian/pegasus/noble-gas-reduction/run0001/./assemble_workbook'
+        2026-10-09 18:53:47,932    INFO:  --------------------------------------------------------------------------------
+        2026-10-09 18:53:47,932    INFO:  Stats: Total 1 transfers, 924.0 B transferred in 2 seconds. Rate: 451.9 B/s (3.5 Kb/s)
+        2026-10-09 18:53:47,932    INFO:         Between sites local->local : 1 transfers, 924.0 B transferred in 2 seconds. Rate: 451.9 B/s (3.5 Kb/s)
+        2026-10-09 18:53:47,932    INFO:  All transfers completed successfully.
+        
+    metadata:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_3661049/scratch/ks.meta.bxiX1g
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 1300243437
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-10-09T18:53:45+00:00
+      atime: 2026-10-09T18:53:45+00:00
+      ctime: 2026-10-09T18:53:45+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian

@@ -1,0 +1,26 @@
+{"name": ".//00/00/create_dir_noble-gas-reduction_0_local.out", "timestamp": "2026-10-09T18:53:30.382819", "exitcode": 0, "app_exitcode": 0, "retry": 0, "job_retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_in_remote_local_2_0.out", "timestamp": "2026-10-09T18:53:45.620987", "exitcode": 0, "app_exitcode": 0, "retry": 0, "job_retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_in_remote_local_1_0.out", "timestamp": "2026-10-09T18:53:50.744921", "exitcode": 0, "app_exitcode": 0, "retry": 0, "job_retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_in_remote_local_3_0.out", "timestamp": "2026-10-09T18:53:50.746744", "exitcode": 0, "app_exitcode": 0, "retry": 0, "job_retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_in_remote_local_0_0.out", "timestamp": "2026-10-09T18:53:50.748913", "exitcode": 0, "app_exitcode": 0, "retry": 0, "job_retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/build_semiraw_ID0000001.out", "timestamp": "2026-10-09T18:54:05.904772", "exitcode": 1, "app_exitcode": 1, "retry": 0, "job_retry": 0, "std_out": "", "std_err": "dagman reported non-zero exitcode: 1\n "}
+{"name": ".//00/00/build_semiraw_ID0000001.out", "timestamp": "2026-10-09T18:59:09.777137", "exitcode": 0, "app_exitcode": 0, "retry": 1, "job_retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/clean_up_local_level_3_0.out", "timestamp": "2026-10-09T18:59:25.002523", "exitcode": 0, "app_exitcode": 0, "retry": 0, "job_retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_out_local_local_0_0.out", "timestamp": "2026-10-09T18:59:34.127751", "exitcode": 0, "app_exitcode": 0, "retry": 0, "job_retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/register_local_0_0.out", "timestamp": "2026-10-09T18:59:49.300646", "exitcode": 0, "app_exitcode": 0, "retry": 0, "job_retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/compute_references_ID0000002.out", "timestamp": "2026-10-09T18:59:54.419139", "exitcode": 0, "app_exitcode": 0, "retry": 0, "job_retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/clean_up_local_level_4_0.out", "timestamp": "2026-10-09T19:00:09.684498", "exitcode": 0, "app_exitcode": 0, "retry": 0, "job_retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_out_local_local_1_0.out", "timestamp": "2026-10-09T19:00:14.809337", "exitcode": 0, "app_exitcode": 0, "retry": 0, "job_retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/register_local_1_0.out", "timestamp": "2026-10-09T19:00:29.971859", "exitcode": 0, "app_exitcode": 0, "retry": 0, "job_retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/samples_tab_ID0000005.out", "timestamp": "2026-10-09T19:00:40.099443", "exitcode": 0, "app_exitcode": 0, "retry": 0, "job_retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/air_stds_tab_ID0000004.out", "timestamp": "2026-10-09T19:00:44.222385", "exitcode": 0, "app_exitcode": 0, "retry": 0, "job_retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/blanks_tab_ID0000003.out", "timestamp": "2026-10-09T19:00:44.225035", "exitcode": 0, "app_exitcode": 0, "retry": 0, "job_retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_out_local_local_2_0.out", "timestamp": "2026-10-09T19:01:04.449021", "exitcode": 0, "app_exitcode": 0, "retry": 0, "job_retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/clean_up_local_level_5_0.out", "timestamp": "2026-10-09T19:01:14.590933", "exitcode": 0, "app_exitcode": 0, "retry": 0, "job_retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/register_local_2_0.out", "timestamp": "2026-10-09T19:01:19.711153", "exitcode": 0, "app_exitcode": 0, "retry": 0, "job_retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/assemble_workbook_ID0000006.out", "timestamp": "2026-10-09T19:02:04.870749", "exitcode": 0, "app_exitcode": 0, "retry": 0, "job_retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_out_local_local_3_0.out", "timestamp": "2026-10-09T19:02:25.098259", "exitcode": 0, "app_exitcode": 0, "retry": 0, "job_retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/clean_up_local_level_6_0.out", "timestamp": "2026-10-09T19:02:34.294720", "exitcode": 0, "app_exitcode": 0, "retry": 0, "job_retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/clean_up_local_level_7_0.out", "timestamp": "2026-10-09T19:02:39.418086", "exitcode": 0, "app_exitcode": 0, "retry": 0, "job_retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/register_local_3_0.out", "timestamp": "2026-10-09T19:02:44.542386", "exitcode": 0, "app_exitcode": 0, "retry": 0, "job_retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/cleanup_noble-gas-reduction_0_local.out", "timestamp": "2026-10-09T19:02:54.689038", "exitcode": 0, "app_exitcode": 0, "retry": 0, "job_retry": 0, "std_out": "", "std_err": ""}

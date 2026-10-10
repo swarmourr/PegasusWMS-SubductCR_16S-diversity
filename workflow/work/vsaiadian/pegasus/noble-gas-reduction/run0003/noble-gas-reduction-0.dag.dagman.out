@@ -1,0 +1,1009 @@
+10/09/26 21:54:03 ******************************************************
+10/09/26 21:54:03 ** condor_scheduniv_exec.4355769.0 (CONDOR_DAGMAN) STARTING UP
+10/09/26 21:54:03 ** /usr/bin/condor_dagman
+10/09/26 21:54:03 ** SubsystemInfo: name=DAGMAN type=DAGMAN(9) class=CLIENT(2)
+10/09/26 21:54:03 ** Configuration: subsystem:DAGMAN local:<NONE> class:CLIENT
+10/09/26 21:54:03 ** $CondorVersion: 25.14.1 2026-09-23 BuildID: 958323 PackageID: 25.14.1-1 GitSHA: 6ee23ffa $
+10/09/26 21:54:03 ** $CondorPlatform: x86_64_AlmaLinux8 $
+10/09/26 21:54:03 ** PID = 3718198 RealUID = 2064
+10/09/26 21:54:03 ** Log last touched time unavailable (No such file or directory)
+10/09/26 21:54:03 ******************************************************
+10/09/26 21:54:03 Using config source: /etc/condor/condor_config
+10/09/26 21:54:03 Using local config sources: 
+10/09/26 21:54:03    /usr/share/condor/config.d/50-gratia-gwms.conf
+10/09/26 21:54:03    /etc/condor/config.d/00-security
+10/09/26 21:54:03    /etc/condor/config.d/10-main.conf
+10/09/26 21:54:03    /etc/condor/config.d/10-stash-plugin.conf
+10/09/26 21:54:03    /etc/condor/config.d/80-osg-flocking.conf
+10/09/26 21:54:03    /etc/condor/config.d/81-osg-flock-version.conf
+10/09/26 21:54:03    /etc/condor/config.d/99-rynge.conf
+10/09/26 21:54:03    /etc/condor/config.d/99-vahi.conf
+10/09/26 21:54:03    /etc/condor/condor_config.local
+10/09/26 21:54:03 config Macros = 136, Sorted = 136, StringBytes = 6613, TablesBytes = 5000
+10/09/26 21:54:03 CLASSAD_CACHING is ENABLED
+10/09/26 21:54:03 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+10/09/26 21:54:03 Daemoncore: Listening at <0.0.0.0:13649> on TCP (ReliSock) and UDP (SafeSock).
+10/09/26 21:54:03 DaemonCore: command socket at <149.165.153.107:13649?addrs=149.165.153.107-13649&alias=pegasus.access-ci.org&noUDP>
+10/09/26 21:54:03 DaemonCore: private command socket at <149.165.153.107:13649?addrs=10.1.214.25-13649&alias=pegasus.access-ci.org>
+10/09/26 21:54:03 Administrator set throttle limits enabled
+10/09/26 21:54:03 DAGMAN_USE_OLD_FILE_PARSER setting: False
+10/09/26 21:54:03 DAGMAN_USE_STRICT setting: 1
+10/09/26 21:54:03 DAGMAN_VERBOSITY setting: 3
+10/09/26 21:54:03 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+10/09/26 21:54:03 DAGMAN_DEBUG_CACHE_ENABLE setting: False
+10/09/26 21:54:03 DAGMAN_SUBMIT_DELAY setting: 0
+10/09/26 21:54:03 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+10/09/26 21:54:03 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+10/09/26 21:54:03 DAGMAN_USE_JOIN_NODES setting: True
+10/09/26 21:54:03 DAGMAN_REPORT_GRAPH_METRICS setting: False
+10/09/26 21:54:03 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 100
+10/09/26 21:54:03 DAGMAN_AGGRESSIVE_SUBMIT setting: False
+10/09/26 21:54:03 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+10/09/26 21:54:03 DAGMAN_QUEUE_UPDATE_INTERVAL setting: 300.000000
+10/09/26 21:54:03 DAGMAN_DEFAULT_PRIORITY setting: 0
+10/09/26 21:54:03 DAGMAN_SUPPRESS_NOTIFICATION setting: False
+10/09/26 21:54:03 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+10/09/26 21:54:03 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+10/09/26 21:54:03 DAGMAN_RETRY_NODE_FIRST setting: False
+10/09/26 21:54:03 DAGMAN_MAX_JOBS_IDLE setting: 1000
+10/09/26 21:54:03 DAGMAN_MAX_JOBS_SUBMITTED setting: 0
+10/09/26 21:54:03 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+10/09/26 21:54:03 DAGMAN_MAX_POST_SCRIPTS setting: 20
+10/09/26 21:54:03 DAGMAN_MAX_HOLD_SCRIPTS setting: 20
+10/09/26 21:54:03 DAGMAN_MUNGE_NODE_NAMES setting: True
+10/09/26 21:54:03 DAGMAN_ALLOW_ANY_NODE_NAME_CHARACTERS setting: False
+10/09/26 21:54:03 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+10/09/26 21:54:03 DAGMAN_SUBMIT_DEPTH_FIRST setting: False
+10/09/26 21:54:03 DAGMAN_ALWAYS_RUN_POST setting: False
+10/09/26 21:54:03 DAGMAN_CONDOR_SUBMIT_EXE setting: /usr/bin/condor_submit
+10/09/26 21:54:03 DAGMAN_CONDOR_RM_EXE setting: /usr/bin/condor_rm
+10/09/26 21:54:03 DAGMAN_USE_DIRECT_SUBMIT setting: True
+10/09/26 21:54:03 DAGMAN_PRODUCE_JOB_CREDENTIALS setting: True
+10/09/26 21:54:03 DAGMAN_DEFAULT_APPEND_VARS setting: False
+10/09/26 21:54:03 DAGMAN_INHERIT_ATTRS_PREFIX setting: 
+10/09/26 21:54:03 DAGMAN_INHERIT_ATTRS setting: 
+10/09/26 21:54:03 DAGMAN_ABORT_DUPLICATES setting: True
+10/09/26 21:54:03 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+10/09/26 21:54:03 DAGMAN_REMOVE_JOB_LIST_ON_FAILURE setting: True
+10/09/26 21:54:03 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+10/09/26 21:54:03 DAGMAN_CHECK_QUEUE_INTERVAL setting: 28800
+10/09/26 21:54:03 DAGMAN_PRINT_JOB_TABLE_INTERVAL setting: 900
+10/09/26 21:54:03 DAGMAN_AUTO_RESCUE setting: True
+10/09/26 21:54:03 DAGMAN_MAX_RESCUE_NUM setting: 100
+10/09/26 21:54:03 DAGMAN_RESET_RETRIES_UPON_RESCUE setting: True
+10/09/26 21:54:03 DAGMAN_METRICS_FILE_VERSION setting: 2
+10/09/26 21:54:03 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+10/09/26 21:54:03 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+10/09/26 21:54:03 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+10/09/26 21:54:03 DAGMAN_MAX_JOB_HOLDS setting: 100
+10/09/26 21:54:03 DAGMAN_NODE_JOB_FAILURE_TOLERANCE setting: 0
+10/09/26 21:54:03 DAGMAN_HOLD_CLAIM_TIME setting: 20
+10/09/26 21:54:03 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+10/09/26 21:54:03 DAGMAN_REMOVE_NODE_JOBS setting: True
+10/09/26 21:54:03 DAGMAN_PUT_FAILED_JOBS_ON_HOLD setting: False
+10/09/26 21:54:03 DAGMAN_REMOVE_JOBS_AFTER_LIMIT_CHANGE setting: False
+10/09/26 21:54:03 DAGMAN will adjust edges after parsing
+10/09/26 21:54:03 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+10/09/26 21:54:03 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+10/09/26 21:54:03 argv[0] == "condor_scheduniv_exec.4355769.0"
+10/09/26 21:54:03 argv[1] == "-Lockfile"
+10/09/26 21:54:03 argv[2] == "noble-gas-reduction-0.dag.lock"
+10/09/26 21:54:03 argv[3] == "-Dag"
+10/09/26 21:54:03 argv[4] == "noble-gas-reduction-0.dag"
+10/09/26 21:54:03 argv[5] == "-MaxPost"
+10/09/26 21:54:03 argv[6] == "20"
+10/09/26 21:54:03 argv[7] == "-CsdVersion"
+10/09/26 21:54:03 argv[8] == "$CondorVersion: 25.14.1 2026-09-23 BuildID: 958323 PackageID: 25.14.1-1 GitSHA: 6ee23ffa $"
+10/09/26 21:54:03 argv[9] == "-dagman"
+10/09/26 21:54:03 argv[10] == "/usr/bin/condor_dagman"
+10/09/26 21:54:03 argv[11] == "-AutoRescue"
+10/09/26 21:54:03 argv[12] == "1"
+10/09/26 21:54:03 Workflow batch-id: <4355769.0>
+10/09/26 21:54:03 Workflow batch-name: <noble-gas-reduction-0.dag+4355769>
+10/09/26 21:54:03 Workflow accounting_group: <>
+10/09/26 21:54:03 Workflow accounting_group_user: <>
+10/09/26 21:54:03 Warning: failed to get attribute DAGNodeName
+10/09/26 21:54:03 Default node log file is: </home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003/./noble-gas-reduction-0.dag.nodes.log>
+10/09/26 21:54:03 Setting DAGMan throttles:
+10/09/26 21:54:03 	Maximum Idle Jobs-------------: 1000
+10/09/26 21:54:03 	Maximum Pre Scripts-----------: 20
+10/09/26 21:54:03 	Maximum Hold Scripts----------: 20
+10/09/26 21:54:03 	Maximum Post Scripts----------: 20
+10/09/26 21:54:03 	Maximum Submitted Nodes-------: 0
+10/09/26 21:54:03 	Maximum Submits Per Interval--: 100
+10/09/26 21:54:03 DAG Lockfile will be written to noble-gas-reduction-0.dag.lock
+10/09/26 21:54:03 DAG Input file is noble-gas-reduction-0.dag
+10/09/26 21:54:03 Parsing 1 dagfiles
+10/09/26 21:54:03 Parsing noble-gas-reduction-0.dag ...
+10/09/26 21:54:03 Adjusting edges
+10/09/26 21:54:03 Dag contains 25 total nodes
+10/09/26 21:54:03 Bootstrapping...
+10/09/26 21:54:03 Number of pre-completed nodes: 0
+10/09/26 21:54:03 MultiLogFiles: truncating log file /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003/./noble-gas-reduction-0.dag.nodes.log
+10/09/26 21:54:03 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:54:03 Of 25 nodes total:
+10/09/26 21:54:03  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:54:03   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:54:03     0       0        0       0       1         24        0        0
+10/09/26 21:54:03 0 job proc(s) currently held
+10/09/26 21:54:03 DAGMan Runtime Statistics: [EventCycleTimeSum=0.000; SleepCycleTimeSum=0.000; SubmitCycleTimeSum=0.000; EventCycleTimeCount=0.000; SleepCycleTimeCount=0.000; SubmitCycleTimeCount=0.000; LogProcessCycleTimeSum=0.000; LogProcessCycleTimeCount=0.000; ]
+10/09/26 21:54:03 Registering condor_event_timer...
+10/09/26 21:54:04 Submitting HTCondor Node create_dir_noble-gas-reduction_0_local job(s)...
+10/09/26 21:54:04 Submitting node create_dir_noble-gas-reduction_0_local from file 00/00/create_dir_noble-gas-reduction_0_local.sub using direct job submission
+10/09/26 21:54:04 Submit warning: Submit:0:the line 'wf_submit_dir = /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_job_runtime = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_gpus = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_cores = 1' was unused by DAGMAN. Is it a typo?
+10/09/26 21:54:04 	assigned HTCondor ID (4355770.0.0)
+10/09/26 21:54:04 Just submitted 1 job this cycle...
+10/09/26 21:54:04 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:54:04 Of 25 nodes total:
+10/09/26 21:54:04  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:54:04   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:54:04     0       0        1       0       0         24        0        0
+10/09/26 21:54:04 0 job proc(s) currently held
+10/09/26 21:54:04 DAGMan Runtime Statistics: [EventCycleTimeSum=0.000; SleepCycleTimeSum=0.000; SubmitCycleTimeAvg=0.020; SubmitCycleTimeMax=0.020; SubmitCycleTimeMin=0.020; SubmitCycleTimeStd=0.020; SubmitCycleTimeSum=0.020; EventCycleTimeCount=0.000; SleepCycleTimeCount=0.000; SubmitCycleTimeCount=1.000; LogProcessCycleTimeSum=0.000; LogProcessCycleTimeCount=0.000; ]
+10/09/26 21:54:09 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:54:09 Reassigning the id of job create_dir_noble-gas-reduction_0_local from (4355770.0.0) to (4355770.0.0)
+10/09/26 21:54:09 Event: ULOG_SUBMIT for HTCondor Node create_dir_noble-gas-reduction_0_local (4355770.0.0) {10/09/26 21:54:04}
+10/09/26 21:54:09 Number of idle job procs: 1
+10/09/26 21:54:09 Event: ULOG_EXECUTE for HTCondor Node create_dir_noble-gas-reduction_0_local (4355770.0.0) {10/09/26 21:54:08}
+10/09/26 21:54:09 Number of idle job procs: 0
+10/09/26 21:54:14 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:54:14 Event: ULOG_JOB_TERMINATED for HTCondor Node create_dir_noble-gas-reduction_0_local (4355770.0.0) {10/09/26 21:54:10}
+10/09/26 21:54:14 Number of idle job procs: 0
+10/09/26 21:54:14 Node create_dir_noble-gas-reduction_0_local job proc (4355770.0.0) completed successfully.
+10/09/26 21:54:14 Node create_dir_noble-gas-reduction_0_local job(s) have exited the queue
+10/09/26 21:54:14 Running POST script of Node create_dir_noble-gas-reduction_0_local...
+10/09/26 21:54:14 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:54:14 Of 25 nodes total:
+10/09/26 21:54:14  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:54:14   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:54:14     0       0        0       1       0         24        0        0
+10/09/26 21:54:14 0 job proc(s) currently held
+10/09/26 21:54:14 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.016; EventCycleTimeMax=0.020; EventCycleTimeMin=0.013; EventCycleTimeStd=0.005; EventCycleTimeSum=0.032; SleepCycleTimeAvg=5.005; SleepCycleTimeMax=5.005; SleepCycleTimeMin=5.005; SleepCycleTimeStd=0.000; SleepCycleTimeSum=10.010; SubmitCycleTimeAvg=0.007; SubmitCycleTimeMax=0.020; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.011; SubmitCycleTimeSum=0.020; EventCycleTimeCount=2.000; SleepCycleTimeCount=2.000; SubmitCycleTimeCount=3.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.002; LogProcessCycleTimeSum=0.003; LogProcessCycleTimeCount=2.000; ]
+10/09/26 21:54:14 Initializing user log writer for /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003/./noble-gas-reduction-0.dag.nodes.log, (4355770.0.0)
+10/09/26 21:54:19 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:54:19 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node create_dir_noble-gas-reduction_0_local (4355770.0.0) {10/09/26 21:54:14}
+10/09/26 21:54:19 POST Script of node create_dir_noble-gas-reduction_0_local completed successfully.
+10/09/26 21:54:19 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:54:19 Of 25 nodes total:
+10/09/26 21:54:19  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:54:19   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:54:19     1       0        0       0       4         20        0        0
+10/09/26 21:54:19 0 job proc(s) currently held
+10/09/26 21:54:19 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.012; EventCycleTimeMax=0.020; EventCycleTimeMin=0.003; EventCycleTimeStd=0.009; EventCycleTimeSum=0.035; SleepCycleTimeAvg=5.048; SleepCycleTimeMax=5.132; SleepCycleTimeMin=5.005; SleepCycleTimeStd=0.073; SleepCycleTimeSum=15.143; SubmitCycleTimeAvg=0.005; SubmitCycleTimeMax=0.020; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.010; SubmitCycleTimeSum=0.020; EventCycleTimeCount=3.000; SleepCycleTimeCount=3.000; SubmitCycleTimeCount=4.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.003; LogProcessCycleTimeCount=3.000; ]
+10/09/26 21:54:24 Submitting HTCondor Node stage_in_remote_local_2_0 job(s)...
+10/09/26 21:54:24 Submitting node stage_in_remote_local_2_0 from file 00/00/stage_in_remote_local_2_0.sub using direct job submission
+10/09/26 21:54:24 Submit warning: Submit:0:the line 'pegasus_job_runtime = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_gpus = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_cores = 1' was unused by DAGMAN. Is it a typo?
+10/09/26 21:54:24 	assigned HTCondor ID (4355771.0.0)
+10/09/26 21:54:24 Submitting HTCondor Node stage_in_remote_local_1_0 job(s)...
+10/09/26 21:54:24 Submitting node stage_in_remote_local_1_0 from file 00/00/stage_in_remote_local_1_0.sub using direct job submission
+10/09/26 21:54:24 Submit warning: Submit:0:the line 'pegasus_job_runtime = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_gpus = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_cores = 1' was unused by DAGMAN. Is it a typo?
+10/09/26 21:54:24 	assigned HTCondor ID (4355772.0.0)
+10/09/26 21:54:24 Submitting HTCondor Node stage_in_remote_local_0_0 job(s)...
+10/09/26 21:54:24 Submitting node stage_in_remote_local_0_0 from file 00/00/stage_in_remote_local_0_0.sub using direct job submission
+10/09/26 21:54:24 Submit warning: Submit:0:the line 'pegasus_job_runtime = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_gpus = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_cores = 1' was unused by DAGMAN. Is it a typo?
+10/09/26 21:54:24 	assigned HTCondor ID (4355773.0.0)
+10/09/26 21:54:24 Submitting HTCondor Node stage_in_remote_local_3_0 job(s)...
+10/09/26 21:54:24 Submitting node stage_in_remote_local_3_0 from file 00/00/stage_in_remote_local_3_0.sub using direct job submission
+10/09/26 21:54:24 Submit warning: Submit:0:the line 'pegasus_job_runtime = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_gpus = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_cores = 1' was unused by DAGMAN. Is it a typo?
+10/09/26 21:54:24 	assigned HTCondor ID (4355774.0.0)
+10/09/26 21:54:24 Just submitted 4 jobs this cycle...
+10/09/26 21:54:24 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:54:24 Of 25 nodes total:
+10/09/26 21:54:24  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:54:24   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:54:24     1       0        4       0       0         20        0        0
+10/09/26 21:54:24 0 job proc(s) currently held
+10/09/26 21:54:24 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.009; EventCycleTimeMax=0.020; EventCycleTimeMin=0.000; EventCycleTimeStd=0.009; EventCycleTimeSum=0.036; SleepCycleTimeAvg=5.037; SleepCycleTimeMax=5.132; SleepCycleTimeMin=5.005; SleepCycleTimeStd=0.064; SleepCycleTimeSum=20.148; SubmitCycleTimeAvg=0.023; SubmitCycleTimeMax=0.095; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.041; SubmitCycleTimeSum=0.115; EventCycleTimeCount=4.000; SleepCycleTimeCount=4.000; SubmitCycleTimeCount=5.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.003; LogProcessCycleTimeCount=3.000; ]
+10/09/26 21:54:29 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:54:29 Reassigning the id of job stage_in_remote_local_2_0 from (4355771.0.0) to (4355771.0.0)
+10/09/26 21:54:29 Event: ULOG_SUBMIT for HTCondor Node stage_in_remote_local_2_0 (4355771.0.0) {10/09/26 21:54:24}
+10/09/26 21:54:29 Number of idle job procs: 1
+10/09/26 21:54:29 Reassigning the id of job stage_in_remote_local_1_0 from (4355772.0.0) to (4355772.0.0)
+10/09/26 21:54:29 Event: ULOG_SUBMIT for HTCondor Node stage_in_remote_local_1_0 (4355772.0.0) {10/09/26 21:54:24}
+10/09/26 21:54:29 Number of idle job procs: 2
+10/09/26 21:54:29 Event: ULOG_EXECUTE for HTCondor Node stage_in_remote_local_2_0 (4355771.0.0) {10/09/26 21:54:24}
+10/09/26 21:54:29 Number of idle job procs: 1
+10/09/26 21:54:29 Reassigning the id of job stage_in_remote_local_0_0 from (4355773.0.0) to (4355773.0.0)
+10/09/26 21:54:29 Event: ULOG_SUBMIT for HTCondor Node stage_in_remote_local_0_0 (4355773.0.0) {10/09/26 21:54:24}
+10/09/26 21:54:29 Number of idle job procs: 2
+10/09/26 21:54:29 Reassigning the id of job stage_in_remote_local_3_0 from (4355774.0.0) to (4355774.0.0)
+10/09/26 21:54:29 Event: ULOG_SUBMIT for HTCondor Node stage_in_remote_local_3_0 (4355774.0.0) {10/09/26 21:54:24}
+10/09/26 21:54:29 Number of idle job procs: 3
+10/09/26 21:54:29 Event: ULOG_JOB_TERMINATED for HTCondor Node stage_in_remote_local_2_0 (4355771.0.0) {10/09/26 21:54:28}
+10/09/26 21:54:29 Number of idle job procs: 3
+10/09/26 21:54:29 Node stage_in_remote_local_2_0 job proc (4355771.0.0) completed successfully.
+10/09/26 21:54:29 Node stage_in_remote_local_2_0 job(s) have exited the queue
+10/09/26 21:54:29 Running POST script of Node stage_in_remote_local_2_0...
+10/09/26 21:54:29 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:54:29 Of 25 nodes total:
+10/09/26 21:54:29  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:54:29   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:54:29     1       0        3       1       0         20        0        0
+10/09/26 21:54:29 0 job proc(s) currently held
+10/09/26 21:54:29 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.026; EventCycleTimeMax=0.095; EventCycleTimeMin=0.000; EventCycleTimeStd=0.039; EventCycleTimeSum=0.131; SleepCycleTimeAvg=5.030; SleepCycleTimeMax=5.132; SleepCycleTimeMin=5.004; SleepCycleTimeStd=0.057; SleepCycleTimeSum=25.152; SubmitCycleTimeAvg=0.019; SubmitCycleTimeMax=0.095; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.038; SubmitCycleTimeSum=0.115; EventCycleTimeCount=5.000; SleepCycleTimeCount=5.000; SubmitCycleTimeCount=6.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.005; LogProcessCycleTimeCount=4.000; ]
+10/09/26 21:54:29 Initializing user log writer for /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003/./noble-gas-reduction-0.dag.nodes.log, (4355771.0.0)
+10/09/26 21:54:34 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:54:34 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node stage_in_remote_local_2_0 (4355771.0.0) {10/09/26 21:54:29}
+10/09/26 21:54:34 POST Script of node stage_in_remote_local_2_0 completed successfully.
+10/09/26 21:54:34 Event: ULOG_EXECUTE for HTCondor Node stage_in_remote_local_1_0 (4355772.0.0) {10/09/26 21:54:29}
+10/09/26 21:54:34 Number of idle job procs: 2
+10/09/26 21:54:34 Event: ULOG_EXECUTE for HTCondor Node stage_in_remote_local_0_0 (4355773.0.0) {10/09/26 21:54:29}
+10/09/26 21:54:34 Number of idle job procs: 1
+10/09/26 21:54:34 Event: ULOG_EXECUTE for HTCondor Node stage_in_remote_local_3_0 (4355774.0.0) {10/09/26 21:54:29}
+10/09/26 21:54:34 Number of idle job procs: 0
+10/09/26 21:54:34 Event: ULOG_JOB_TERMINATED for HTCondor Node stage_in_remote_local_1_0 (4355772.0.0) {10/09/26 21:54:31}
+10/09/26 21:54:34 Number of idle job procs: 0
+10/09/26 21:54:34 Node stage_in_remote_local_1_0 job proc (4355772.0.0) completed successfully.
+10/09/26 21:54:34 Node stage_in_remote_local_1_0 job(s) have exited the queue
+10/09/26 21:54:34 Running POST script of Node stage_in_remote_local_1_0...
+10/09/26 21:54:34 Event: ULOG_JOB_TERMINATED for HTCondor Node stage_in_remote_local_3_0 (4355774.0.0) {10/09/26 21:54:31}
+10/09/26 21:54:34 Number of idle job procs: 0
+10/09/26 21:54:34 Node stage_in_remote_local_3_0 job proc (4355774.0.0) completed successfully.
+10/09/26 21:54:34 Node stage_in_remote_local_3_0 job(s) have exited the queue
+10/09/26 21:54:34 Running POST script of Node stage_in_remote_local_3_0...
+10/09/26 21:54:34 Event: ULOG_JOB_TERMINATED for HTCondor Node stage_in_remote_local_0_0 (4355773.0.0) {10/09/26 21:54:33}
+10/09/26 21:54:34 Number of idle job procs: 0
+10/09/26 21:54:34 Node stage_in_remote_local_0_0 job proc (4355773.0.0) completed successfully.
+10/09/26 21:54:34 Node stage_in_remote_local_0_0 job(s) have exited the queue
+10/09/26 21:54:34 Running POST script of Node stage_in_remote_local_0_0...
+10/09/26 21:54:34 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:54:34 Of 25 nodes total:
+10/09/26 21:54:34  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:54:34   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:54:34     2       0        0       3       0         20        0        0
+10/09/26 21:54:34 0 job proc(s) currently held
+10/09/26 21:54:34 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.022; EventCycleTimeMax=0.095; EventCycleTimeMin=0.000; EventCycleTimeStd=0.037; EventCycleTimeSum=0.133; SleepCycleTimeAvg=5.045; SleepCycleTimeMax=5.132; SleepCycleTimeMin=5.004; SleepCycleTimeStd=0.063; SleepCycleTimeSum=30.272; SubmitCycleTimeAvg=0.016; SubmitCycleTimeMax=0.095; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.035; SubmitCycleTimeSum=0.115; EventCycleTimeCount=6.000; SleepCycleTimeCount=6.000; SubmitCycleTimeCount=7.000; LogProcessCycleTimeAvg=0.003; LogProcessCycleTimeMax=0.009; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.003; LogProcessCycleTimeSum=0.014; LogProcessCycleTimeCount=5.000; ]
+10/09/26 21:54:34 Initializing user log writer for /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003/./noble-gas-reduction-0.dag.nodes.log, (4355774.0.0)
+10/09/26 21:54:34 Initializing user log writer for /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003/./noble-gas-reduction-0.dag.nodes.log, (4355773.0.0)
+10/09/26 21:54:34 Initializing user log writer for /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003/./noble-gas-reduction-0.dag.nodes.log, (4355772.0.0)
+10/09/26 21:54:39 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:54:39 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node stage_in_remote_local_3_0 (4355774.0.0) {10/09/26 21:54:34}
+10/09/26 21:54:39 POST Script of node stage_in_remote_local_3_0 completed successfully.
+10/09/26 21:54:39 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node stage_in_remote_local_0_0 (4355773.0.0) {10/09/26 21:54:34}
+10/09/26 21:54:39 POST Script of node stage_in_remote_local_0_0 completed successfully.
+10/09/26 21:54:39 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node stage_in_remote_local_1_0 (4355772.0.0) {10/09/26 21:54:34}
+10/09/26 21:54:39 POST Script of node stage_in_remote_local_1_0 completed successfully.
+10/09/26 21:54:39 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:54:39 Of 25 nodes total:
+10/09/26 21:54:39  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:54:39   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:54:39     5       0        0       0       1         19        0        0
+10/09/26 21:54:39 0 job proc(s) currently held
+10/09/26 21:54:39 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.020; EventCycleTimeMax=0.095; EventCycleTimeMin=0.000; EventCycleTimeStd=0.034; EventCycleTimeSum=0.142; SleepCycleTimeAvg=5.057; SleepCycleTimeMax=5.132; SleepCycleTimeMin=5.004; SleepCycleTimeStd=0.065; SleepCycleTimeSum=35.398; SubmitCycleTimeAvg=0.014; SubmitCycleTimeMax=0.095; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.033; SubmitCycleTimeSum=0.115; EventCycleTimeCount=7.000; SleepCycleTimeCount=7.000; SubmitCycleTimeCount=8.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.009; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.003; LogProcessCycleTimeSum=0.014; LogProcessCycleTimeCount=6.000; ]
+10/09/26 21:54:44 Submitting HTCondor Node build_semiraw_ID0000001 job(s)...
+10/09/26 21:54:44 Submitting node build_semiraw_ID0000001 from file 00/00/build_semiraw_ID0000001.sub using direct job submission
+10/09/26 21:54:44 Submit warning: Submit:0:the line 'pegasus_job_runtime = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_gpus = 0' was unused by DAGMAN. Is it a typo?
+10/09/26 21:54:44 	assigned HTCondor ID (4355777.0.0)
+10/09/26 21:54:44 Just submitted 1 job this cycle...
+10/09/26 21:54:44 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:54:44 Of 25 nodes total:
+10/09/26 21:54:44  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:54:44   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:54:44     5       0        1       0       0         19        0        0
+10/09/26 21:54:44 0 job proc(s) currently held
+10/09/26 21:54:44 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.018; EventCycleTimeMax=0.095; EventCycleTimeMin=0.000; EventCycleTimeStd=0.032; EventCycleTimeSum=0.143; SleepCycleTimeAvg=5.050; SleepCycleTimeMax=5.132; SleepCycleTimeMin=5.004; SleepCycleTimeStd=0.063; SleepCycleTimeSum=40.403; SubmitCycleTimeAvg=0.015; SubmitCycleTimeMax=0.095; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.031; SubmitCycleTimeSum=0.131; EventCycleTimeCount=8.000; SleepCycleTimeCount=8.000; SubmitCycleTimeCount=9.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.009; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.003; LogProcessCycleTimeSum=0.014; LogProcessCycleTimeCount=6.000; ]
+10/09/26 21:54:49 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:54:49 Reassigning the id of job build_semiraw_ID0000001 from (4355777.0.0) to (4355777.0.0)
+10/09/26 21:54:49 Event: ULOG_SUBMIT for HTCondor Node build_semiraw_ID0000001 (4355777.0.0) {10/09/26 21:54:44}
+10/09/26 21:54:49 Number of idle job procs: 1
+10/09/26 21:54:49 Event: ULOG_EXECUTE for HTCondor Node build_semiraw_ID0000001 (4355777.0.0) {10/09/26 21:54:45}
+10/09/26 21:54:49 Number of idle job procs: 0
+10/09/26 21:55:19 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:55:19 Event: ULOG_JOB_TERMINATED for HTCondor Node build_semiraw_ID0000001 (4355777.0.0) {10/09/26 21:55:16}
+10/09/26 21:55:19 Number of idle job procs: 0
+10/09/26 21:55:19 Node build_semiraw_ID0000001 job proc (4355777.0.0) completed successfully.
+10/09/26 21:55:19 Node build_semiraw_ID0000001 job(s) have exited the queue
+10/09/26 21:55:19 Running POST script of Node build_semiraw_ID0000001...
+10/09/26 21:55:19 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:55:19 Of 25 nodes total:
+10/09/26 21:55:19  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:55:19   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:55:19     5       0        0       1       0         19        0        0
+10/09/26 21:55:19 0 job proc(s) currently held
+10/09/26 21:55:19 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.011; EventCycleTimeMax=0.095; EventCycleTimeMin=0.000; EventCycleTimeStd=0.024; EventCycleTimeSum=0.160; SleepCycleTimeAvg=5.029; SleepCycleTimeMax=5.132; SleepCycleTimeMin=5.002; SleepCycleTimeStd=0.050; SleepCycleTimeSum=75.434; SubmitCycleTimeAvg=0.008; SubmitCycleTimeMax=0.095; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.024; SubmitCycleTimeSum=0.131; EventCycleTimeCount=15.000; SleepCycleTimeCount=15.000; SubmitCycleTimeCount=16.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.009; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.003; LogProcessCycleTimeSum=0.018; LogProcessCycleTimeCount=8.000; ]
+10/09/26 21:55:19 Initializing user log writer for /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003/./noble-gas-reduction-0.dag.nodes.log, (4355777.0.0)
+10/09/26 21:55:24 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:55:24 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node build_semiraw_ID0000001 (4355777.0.0) {10/09/26 21:55:19}
+10/09/26 21:55:24 POST Script of node build_semiraw_ID0000001 completed successfully.
+10/09/26 21:55:24 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:55:24 Of 25 nodes total:
+10/09/26 21:55:24  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:55:24   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:55:24     6       0        0       0       3         16        0        0
+10/09/26 21:55:24 0 job proc(s) currently held
+10/09/26 21:55:24 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.010; EventCycleTimeMax=0.095; EventCycleTimeMin=0.000; EventCycleTimeStd=0.024; EventCycleTimeSum=0.163; SleepCycleTimeAvg=5.035; SleepCycleTimeMax=5.132; SleepCycleTimeMin=5.002; SleepCycleTimeStd=0.054; SleepCycleTimeSum=80.555; SubmitCycleTimeAvg=0.008; SubmitCycleTimeMax=0.095; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.023; SubmitCycleTimeSum=0.131; EventCycleTimeCount=16.000; SleepCycleTimeCount=16.000; SubmitCycleTimeCount=17.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.009; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.003; LogProcessCycleTimeSum=0.018; LogProcessCycleTimeCount=9.000; ]
+10/09/26 21:55:29 Submitting HTCondor Node clean_up_local_level_3_0 job(s)...
+10/09/26 21:55:29 Submitting node clean_up_local_level_3_0 from file 00/00/clean_up_local_level_3_0.sub using direct job submission
+10/09/26 21:55:29 Submit warning: Submit:0:the line 'pegasus_job_runtime = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_gpus = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_cores = 1' was unused by DAGMAN. Is it a typo?
+10/09/26 21:55:29 	assigned HTCondor ID (4355783.0.0)
+10/09/26 21:55:29 Submitting HTCondor Node stage_out_local_local_0_0 job(s)...
+10/09/26 21:55:29 Submitting node stage_out_local_local_0_0 from file 00/00/stage_out_local_local_0_0.sub using direct job submission
+10/09/26 21:55:29 Submit warning: Submit:0:the line 'wf_submit_dir = /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_job_runtime = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_gpus = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_cores = 1' was unused by DAGMAN. Is it a typo?
+10/09/26 21:55:29 	assigned HTCondor ID (4355784.0.0)
+10/09/26 21:55:29 Submitting HTCondor Node compute_references_ID0000002 job(s)...
+10/09/26 21:55:29 Submitting node compute_references_ID0000002 from file 00/00/compute_references_ID0000002.sub using direct job submission
+10/09/26 21:55:29 Submit warning: Submit:0:the line 'pegasus_job_runtime = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_gpus = 0' was unused by DAGMAN. Is it a typo?
+10/09/26 21:55:29 	assigned HTCondor ID (4355785.0.0)
+10/09/26 21:55:29 Just submitted 3 jobs this cycle...
+10/09/26 21:55:29 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:55:29 Of 25 nodes total:
+10/09/26 21:55:29  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:55:29   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:55:29     6       0        3       0       0         16        0        0
+10/09/26 21:55:29 0 job proc(s) currently held
+10/09/26 21:55:29 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.010; EventCycleTimeMax=0.095; EventCycleTimeMin=0.000; EventCycleTimeStd=0.023; EventCycleTimeSum=0.164; SleepCycleTimeAvg=5.033; SleepCycleTimeMax=5.132; SleepCycleTimeMin=5.002; SleepCycleTimeStd=0.053; SleepCycleTimeSum=85.560; SubmitCycleTimeAvg=0.012; SubmitCycleTimeMax=0.095; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.029; SubmitCycleTimeSum=0.215; EventCycleTimeCount=17.000; SleepCycleTimeCount=17.000; SubmitCycleTimeCount=18.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.009; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.003; LogProcessCycleTimeSum=0.018; LogProcessCycleTimeCount=9.000; ]
+10/09/26 21:55:34 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:55:34 Reassigning the id of job clean_up_local_level_3_0 from (4355783.0.0) to (4355783.0.0)
+10/09/26 21:55:34 Event: ULOG_SUBMIT for HTCondor Node clean_up_local_level_3_0 (4355783.0.0) {10/09/26 21:55:29}
+10/09/26 21:55:34 Number of idle job procs: 1
+10/09/26 21:55:34 Reassigning the id of job stage_out_local_local_0_0 from (4355784.0.0) to (4355784.0.0)
+10/09/26 21:55:34 Event: ULOG_SUBMIT for HTCondor Node stage_out_local_local_0_0 (4355784.0.0) {10/09/26 21:55:29}
+10/09/26 21:55:34 Number of idle job procs: 2
+10/09/26 21:55:34 Event: ULOG_EXECUTE for HTCondor Node clean_up_local_level_3_0 (4355783.0.0) {10/09/26 21:55:29}
+10/09/26 21:55:34 Number of idle job procs: 1
+10/09/26 21:55:34 Reassigning the id of job compute_references_ID0000002 from (4355785.0.0) to (4355785.0.0)
+10/09/26 21:55:34 Event: ULOG_SUBMIT for HTCondor Node compute_references_ID0000002 (4355785.0.0) {10/09/26 21:55:29}
+10/09/26 21:55:34 Number of idle job procs: 2
+10/09/26 21:55:34 Event: ULOG_JOB_TERMINATED for HTCondor Node clean_up_local_level_3_0 (4355783.0.0) {10/09/26 21:55:32}
+10/09/26 21:55:34 Number of idle job procs: 2
+10/09/26 21:55:34 Node clean_up_local_level_3_0 job proc (4355783.0.0) completed successfully.
+10/09/26 21:55:34 Node clean_up_local_level_3_0 job(s) have exited the queue
+10/09/26 21:55:34 Running POST script of Node clean_up_local_level_3_0...
+10/09/26 21:55:34 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:55:34 Of 25 nodes total:
+10/09/26 21:55:34  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:55:34   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:55:34     6       0        2       1       0         16        0        0
+10/09/26 21:55:34 0 job proc(s) currently held
+10/09/26 21:55:34 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.014; EventCycleTimeMax=0.095; EventCycleTimeMin=0.000; EventCycleTimeStd=0.028; EventCycleTimeSum=0.248; SleepCycleTimeAvg=5.031; SleepCycleTimeMax=5.132; SleepCycleTimeMin=5.002; SleepCycleTimeStd=0.051; SleepCycleTimeSum=90.565; SubmitCycleTimeAvg=0.011; SubmitCycleTimeMax=0.095; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.028; SubmitCycleTimeSum=0.215; EventCycleTimeCount=18.000; SleepCycleTimeCount=18.000; SubmitCycleTimeCount=19.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.009; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.003; LogProcessCycleTimeSum=0.020; LogProcessCycleTimeCount=10.000; ]
+10/09/26 21:55:35 Initializing user log writer for /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003/./noble-gas-reduction-0.dag.nodes.log, (4355783.0.0)
+10/09/26 21:55:39 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:55:39 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node clean_up_local_level_3_0 (4355783.0.0) {10/09/26 21:55:35}
+10/09/26 21:55:39 POST Script of node clean_up_local_level_3_0 completed successfully.
+10/09/26 21:55:39 Event: ULOG_EXECUTE for HTCondor Node stage_out_local_local_0_0 (4355784.0.0) {10/09/26 21:55:35}
+10/09/26 21:55:39 Number of idle job procs: 1
+10/09/26 21:55:39 Event: ULOG_EXECUTE for HTCondor Node compute_references_ID0000002 (4355785.0.0) {10/09/26 21:55:35}
+10/09/26 21:55:39 Number of idle job procs: 0
+10/09/26 21:55:39 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:55:39 Of 25 nodes total:
+10/09/26 21:55:39  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:55:39   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:55:39     7       0        2       0       0         16        0        0
+10/09/26 21:55:39 0 job proc(s) currently held
+10/09/26 21:55:39 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.013; EventCycleTimeMax=0.095; EventCycleTimeMin=0.000; EventCycleTimeStd=0.028; EventCycleTimeSum=0.250; SleepCycleTimeAvg=4.983; SleepCycleTimeMax=5.132; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.216; SleepCycleTimeSum=94.682; SubmitCycleTimeAvg=0.011; SubmitCycleTimeMax=0.095; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.027; SubmitCycleTimeSum=0.215; EventCycleTimeCount=19.000; SleepCycleTimeCount=19.000; SubmitCycleTimeCount=20.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.009; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.003; LogProcessCycleTimeSum=0.020; LogProcessCycleTimeCount=11.000; ]
+10/09/26 21:55:44 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:55:44 Event: ULOG_JOB_TERMINATED for HTCondor Node stage_out_local_local_0_0 (4355784.0.0) {10/09/26 21:55:39}
+10/09/26 21:55:44 Number of idle job procs: 0
+10/09/26 21:55:44 Node stage_out_local_local_0_0 job proc (4355784.0.0) completed successfully.
+10/09/26 21:55:44 Node stage_out_local_local_0_0 job(s) have exited the queue
+10/09/26 21:55:44 Running POST script of Node stage_out_local_local_0_0...
+10/09/26 21:55:44 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:55:44 Of 25 nodes total:
+10/09/26 21:55:44  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:55:44   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:55:44     7       0        1       1       0         16        0        0
+10/09/26 21:55:44 0 job proc(s) currently held
+10/09/26 21:55:44 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.013; EventCycleTimeMax=0.095; EventCycleTimeMin=0.000; EventCycleTimeStd=0.027; EventCycleTimeSum=0.250; SleepCycleTimeAvg=4.984; SleepCycleTimeMax=5.132; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.210; SleepCycleTimeSum=99.686; SubmitCycleTimeAvg=0.010; SubmitCycleTimeMax=0.095; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.027; SubmitCycleTimeSum=0.215; EventCycleTimeCount=20.000; SleepCycleTimeCount=20.000; SubmitCycleTimeCount=21.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.009; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.002; LogProcessCycleTimeSum=0.022; LogProcessCycleTimeCount=12.000; ]
+10/09/26 21:55:44 Initializing user log writer for /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003/./noble-gas-reduction-0.dag.nodes.log, (4355784.0.0)
+10/09/26 21:55:49 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:55:49 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node stage_out_local_local_0_0 (4355784.0.0) {10/09/26 21:55:44}
+10/09/26 21:55:49 POST Script of node stage_out_local_local_0_0 completed successfully.
+10/09/26 21:55:49 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:55:49 Of 25 nodes total:
+10/09/26 21:55:49  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:55:49   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:55:49     8       0        1       0       1         15        0        0
+10/09/26 21:55:49 0 job proc(s) currently held
+10/09/26 21:55:49 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.012; EventCycleTimeMax=0.095; EventCycleTimeMin=0.000; EventCycleTimeStd=0.026; EventCycleTimeSum=0.253; SleepCycleTimeAvg=4.991; SleepCycleTimeMax=5.132; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.207; SleepCycleTimeSum=104.807; SubmitCycleTimeAvg=0.010; SubmitCycleTimeMax=0.095; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.026; SubmitCycleTimeSum=0.215; EventCycleTimeCount=21.000; SleepCycleTimeCount=21.000; SubmitCycleTimeCount=22.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.009; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.002; LogProcessCycleTimeSum=0.023; LogProcessCycleTimeCount=13.000; ]
+10/09/26 21:55:54 Submitting HTCondor Node register_local_0_0 job(s)...
+10/09/26 21:55:54 Submitting node register_local_0_0 from file 00/00/register_local_0_0.sub using direct job submission
+10/09/26 21:55:54 Submit warning: Submit:0:the line 'wf_submit_dir = /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_job_runtime = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_gpus = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_cores = 1' was unused by DAGMAN. Is it a typo?
+10/09/26 21:55:54 	assigned HTCondor ID (4355786.0.0)
+10/09/26 21:55:54 Just submitted 1 job this cycle...
+10/09/26 21:55:54 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:55:54 Of 25 nodes total:
+10/09/26 21:55:54  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:55:54   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:55:54     8       0        2       0       0         15        0        0
+10/09/26 21:55:54 0 job proc(s) currently held
+10/09/26 21:55:54 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.012; EventCycleTimeMax=0.095; EventCycleTimeMin=0.000; EventCycleTimeStd=0.026; EventCycleTimeSum=0.254; SleepCycleTimeAvg=4.991; SleepCycleTimeMax=5.132; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.202; SleepCycleTimeSum=109.811; SubmitCycleTimeAvg=0.010; SubmitCycleTimeMax=0.095; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.026; SubmitCycleTimeSum=0.234; EventCycleTimeCount=22.000; SleepCycleTimeCount=22.000; SubmitCycleTimeCount=23.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.009; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.002; LogProcessCycleTimeSum=0.023; LogProcessCycleTimeCount=13.000; ]
+10/09/26 21:55:59 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:55:59 Reassigning the id of job register_local_0_0 from (4355786.0.0) to (4355786.0.0)
+10/09/26 21:55:59 Event: ULOG_SUBMIT for HTCondor Node register_local_0_0 (4355786.0.0) {10/09/26 21:55:54}
+10/09/26 21:55:59 Number of idle job procs: 1
+10/09/26 21:55:59 Event: ULOG_EXECUTE for HTCondor Node register_local_0_0 (4355786.0.0) {10/09/26 21:55:54}
+10/09/26 21:55:59 Number of idle job procs: 0
+10/09/26 21:55:59 Event: ULOG_JOB_TERMINATED for HTCondor Node register_local_0_0 (4355786.0.0) {10/09/26 21:55:55}
+10/09/26 21:55:59 Number of idle job procs: 0
+10/09/26 21:55:59 Node register_local_0_0 job proc (4355786.0.0) completed successfully.
+10/09/26 21:55:59 Node register_local_0_0 job(s) have exited the queue
+10/09/26 21:55:59 Running POST script of Node register_local_0_0...
+10/09/26 21:55:59 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:55:59 Of 25 nodes total:
+10/09/26 21:55:59  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:55:59   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:55:59     8       0        1       1       0         15        0        0
+10/09/26 21:55:59 0 job proc(s) currently held
+10/09/26 21:55:59 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.012; EventCycleTimeMax=0.095; EventCycleTimeMin=0.000; EventCycleTimeStd=0.025; EventCycleTimeSum=0.273; SleepCycleTimeAvg=4.992; SleepCycleTimeMax=5.132; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.197; SleepCycleTimeSum=114.813; SubmitCycleTimeAvg=0.010; SubmitCycleTimeMax=0.095; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.025; SubmitCycleTimeSum=0.234; EventCycleTimeCount=23.000; SleepCycleTimeCount=23.000; SubmitCycleTimeCount=24.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.009; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.002; LogProcessCycleTimeSum=0.025; LogProcessCycleTimeCount=14.000; ]
+10/09/26 21:55:59 Initializing user log writer for /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003/./noble-gas-reduction-0.dag.nodes.log, (4355786.0.0)
+10/09/26 21:56:04 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:56:04 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node register_local_0_0 (4355786.0.0) {10/09/26 21:55:59}
+10/09/26 21:56:04 POST Script of node register_local_0_0 completed successfully.
+10/09/26 21:56:04 Event: ULOG_JOB_TERMINATED for HTCondor Node compute_references_ID0000002 (4355785.0.0) {10/09/26 21:56:01}
+10/09/26 21:56:04 Number of idle job procs: 0
+10/09/26 21:56:04 Node compute_references_ID0000002 job proc (4355785.0.0) completed successfully.
+10/09/26 21:56:04 Node compute_references_ID0000002 job(s) have exited the queue
+10/09/26 21:56:04 Running POST script of Node compute_references_ID0000002...
+10/09/26 21:56:04 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:56:04 Of 25 nodes total:
+10/09/26 21:56:04  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:56:04   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:56:04     9       0        0       1       0         15        0        0
+10/09/26 21:56:04 0 job proc(s) currently held
+10/09/26 21:56:04 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.011; EventCycleTimeMax=0.095; EventCycleTimeMin=0.000; EventCycleTimeStd=0.025; EventCycleTimeSum=0.276; SleepCycleTimeAvg=4.997; SleepCycleTimeMax=5.132; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.195; SleepCycleTimeSum=119.940; SubmitCycleTimeAvg=0.009; SubmitCycleTimeMax=0.095; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.025; SubmitCycleTimeSum=0.234; EventCycleTimeCount=24.000; SleepCycleTimeCount=24.000; SubmitCycleTimeCount=25.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.009; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.002; LogProcessCycleTimeSum=0.031; LogProcessCycleTimeCount=15.000; ]
+10/09/26 21:56:04 Initializing user log writer for /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003/./noble-gas-reduction-0.dag.nodes.log, (4355785.0.0)
+10/09/26 21:56:09 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:56:09 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node compute_references_ID0000002 (4355785.0.0) {10/09/26 21:56:04}
+10/09/26 21:56:09 POST Script of node compute_references_ID0000002 completed successfully.
+10/09/26 21:56:09 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:56:09 Of 25 nodes total:
+10/09/26 21:56:09  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:56:09   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:56:09    10       0        0       0       5         10        0        0
+10/09/26 21:56:09 0 job proc(s) currently held
+10/09/26 21:56:09 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.011; EventCycleTimeMax=0.095; EventCycleTimeMin=0.000; EventCycleTimeStd=0.024; EventCycleTimeSum=0.282; SleepCycleTimeAvg=5.002; SleepCycleTimeMax=5.132; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.192; SleepCycleTimeSum=125.057; SubmitCycleTimeAvg=0.009; SubmitCycleTimeMax=0.095; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.024; SubmitCycleTimeSum=0.234; EventCycleTimeCount=25.000; SleepCycleTimeCount=25.000; SubmitCycleTimeCount=26.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.009; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.002; LogProcessCycleTimeSum=0.032; LogProcessCycleTimeCount=16.000; ]
+10/09/26 21:56:14 Submitting HTCondor Node clean_up_local_level_4_0 job(s)...
+10/09/26 21:56:14 Submitting node clean_up_local_level_4_0 from file 00/00/clean_up_local_level_4_0.sub using direct job submission
+10/09/26 21:56:14 Submit warning: Submit:0:the line 'pegasus_job_runtime = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_gpus = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_cores = 1' was unused by DAGMAN. Is it a typo?
+10/09/26 21:56:14 	assigned HTCondor ID (4355790.0.0)
+10/09/26 21:56:14 Submitting HTCondor Node stage_out_local_local_1_0 job(s)...
+10/09/26 21:56:14 Submitting node stage_out_local_local_1_0 from file 00/00/stage_out_local_local_1_0.sub using direct job submission
+10/09/26 21:56:14 Submit warning: Submit:0:the line 'wf_submit_dir = /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_job_runtime = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_gpus = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_cores = 1' was unused by DAGMAN. Is it a typo?
+10/09/26 21:56:14 	assigned HTCondor ID (4355791.0.0)
+10/09/26 21:56:14 Submitting HTCondor Node samples_tab_ID0000005 job(s)...
+10/09/26 21:56:14 Submitting node samples_tab_ID0000005 from file 00/00/samples_tab_ID0000005.sub using direct job submission
+10/09/26 21:56:14 Submit warning: Submit:0:the line 'pegasus_job_runtime = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_gpus = 0' was unused by DAGMAN. Is it a typo?
+10/09/26 21:56:14 	assigned HTCondor ID (4355792.0.0)
+10/09/26 21:56:14 Submitting HTCondor Node blanks_tab_ID0000003 job(s)...
+10/09/26 21:56:14 Submitting node blanks_tab_ID0000003 from file 00/00/blanks_tab_ID0000003.sub using direct job submission
+10/09/26 21:56:14 Submit warning: Submit:0:the line 'pegasus_job_runtime = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_gpus = 0' was unused by DAGMAN. Is it a typo?
+10/09/26 21:56:14 	assigned HTCondor ID (4355793.0.0)
+10/09/26 21:56:14 Submitting HTCondor Node air_stds_tab_ID0000004 job(s)...
+10/09/26 21:56:14 Submitting node air_stds_tab_ID0000004 from file 00/00/air_stds_tab_ID0000004.sub using direct job submission
+10/09/26 21:56:14 Submit warning: Submit:0:the line 'pegasus_job_runtime = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_gpus = 0' was unused by DAGMAN. Is it a typo?
+10/09/26 21:56:14 	assigned HTCondor ID (4355794.0.0)
+10/09/26 21:56:14 Just submitted 5 jobs this cycle...
+10/09/26 21:56:14 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:56:14 Of 25 nodes total:
+10/09/26 21:56:14  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:56:14   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:56:14    10       0        5       0       0         10        0        0
+10/09/26 21:56:14 0 job proc(s) currently held
+10/09/26 21:56:14 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.011; EventCycleTimeMax=0.095; EventCycleTimeMin=0.000; EventCycleTimeStd=0.024; EventCycleTimeSum=0.282; SleepCycleTimeAvg=5.002; SleepCycleTimeMax=5.132; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.188; SleepCycleTimeSum=130.062; SubmitCycleTimeAvg=0.013; SubmitCycleTimeMax=0.124; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.033; SubmitCycleTimeSum=0.359; EventCycleTimeCount=26.000; SleepCycleTimeCount=26.000; SubmitCycleTimeCount=27.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.009; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.002; LogProcessCycleTimeSum=0.032; LogProcessCycleTimeCount=16.000; ]
+10/09/26 21:56:19 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:56:19 Reassigning the id of job clean_up_local_level_4_0 from (4355790.0.0) to (4355790.0.0)
+10/09/26 21:56:19 Event: ULOG_SUBMIT for HTCondor Node clean_up_local_level_4_0 (4355790.0.0) {10/09/26 21:56:14}
+10/09/26 21:56:19 Number of idle job procs: 1
+10/09/26 21:56:19 Reassigning the id of job stage_out_local_local_1_0 from (4355791.0.0) to (4355791.0.0)
+10/09/26 21:56:19 Event: ULOG_SUBMIT for HTCondor Node stage_out_local_local_1_0 (4355791.0.0) {10/09/26 21:56:14}
+10/09/26 21:56:19 Number of idle job procs: 2
+10/09/26 21:56:19 Event: ULOG_EXECUTE for HTCondor Node clean_up_local_level_4_0 (4355790.0.0) {10/09/26 21:56:14}
+10/09/26 21:56:19 Number of idle job procs: 1
+10/09/26 21:56:19 Reassigning the id of job samples_tab_ID0000005 from (4355792.0.0) to (4355792.0.0)
+10/09/26 21:56:19 Event: ULOG_SUBMIT for HTCondor Node samples_tab_ID0000005 (4355792.0.0) {10/09/26 21:56:14}
+10/09/26 21:56:19 Number of idle job procs: 2
+10/09/26 21:56:19 Reassigning the id of job blanks_tab_ID0000003 from (4355793.0.0) to (4355793.0.0)
+10/09/26 21:56:19 Event: ULOG_SUBMIT for HTCondor Node blanks_tab_ID0000003 (4355793.0.0) {10/09/26 21:56:14}
+10/09/26 21:56:19 Number of idle job procs: 3
+10/09/26 21:56:19 Reassigning the id of job air_stds_tab_ID0000004 from (4355794.0.0) to (4355794.0.0)
+10/09/26 21:56:19 Event: ULOG_SUBMIT for HTCondor Node air_stds_tab_ID0000004 (4355794.0.0) {10/09/26 21:56:14}
+10/09/26 21:56:19 Number of idle job procs: 4
+10/09/26 21:56:19 Event: ULOG_JOB_TERMINATED for HTCondor Node clean_up_local_level_4_0 (4355790.0.0) {10/09/26 21:56:16}
+10/09/26 21:56:19 Number of idle job procs: 4
+10/09/26 21:56:19 Node clean_up_local_level_4_0 job proc (4355790.0.0) completed successfully.
+10/09/26 21:56:19 Node clean_up_local_level_4_0 job(s) have exited the queue
+10/09/26 21:56:19 Running POST script of Node clean_up_local_level_4_0...
+10/09/26 21:56:19 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:56:19 Of 25 nodes total:
+10/09/26 21:56:19  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:56:19   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:56:19    10       0        4       1       0         10        0        0
+10/09/26 21:56:19 0 job proc(s) currently held
+10/09/26 21:56:19 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.015; EventCycleTimeMax=0.124; EventCycleTimeMin=0.000; EventCycleTimeStd=0.032; EventCycleTimeSum=0.407; SleepCycleTimeAvg=5.003; SleepCycleTimeMax=5.132; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.185; SleepCycleTimeSum=135.068; SubmitCycleTimeAvg=0.013; SubmitCycleTimeMax=0.124; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.032; SubmitCycleTimeSum=0.359; EventCycleTimeCount=27.000; SleepCycleTimeCount=27.000; SubmitCycleTimeCount=28.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.009; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.002; LogProcessCycleTimeSum=0.035; LogProcessCycleTimeCount=17.000; ]
+10/09/26 21:56:19 Initializing user log writer for /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003/./noble-gas-reduction-0.dag.nodes.log, (4355790.0.0)
+10/09/26 21:56:24 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:56:24 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node clean_up_local_level_4_0 (4355790.0.0) {10/09/26 21:56:19}
+10/09/26 21:56:24 POST Script of node clean_up_local_level_4_0 completed successfully.
+10/09/26 21:56:24 Event: ULOG_EXECUTE for HTCondor Node stage_out_local_local_1_0 (4355791.0.0) {10/09/26 21:56:21}
+10/09/26 21:56:24 Number of idle job procs: 3
+10/09/26 21:56:24 Event: ULOG_EXECUTE for HTCondor Node samples_tab_ID0000005 (4355792.0.0) {10/09/26 21:56:21}
+10/09/26 21:56:24 Number of idle job procs: 2
+10/09/26 21:56:24 Event: ULOG_EXECUTE for HTCondor Node blanks_tab_ID0000003 (4355793.0.0) {10/09/26 21:56:21}
+10/09/26 21:56:24 Number of idle job procs: 1
+10/09/26 21:56:24 Event: ULOG_EXECUTE for HTCondor Node air_stds_tab_ID0000004 (4355794.0.0) {10/09/26 21:56:21}
+10/09/26 21:56:24 Number of idle job procs: 0
+10/09/26 21:56:24 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:56:24 Of 25 nodes total:
+10/09/26 21:56:24  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:56:24   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:56:24    11       0        4       0       0         10        0        0
+10/09/26 21:56:24 0 job proc(s) currently held
+10/09/26 21:56:24 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.015; EventCycleTimeMax=0.124; EventCycleTimeMin=0.000; EventCycleTimeStd=0.032; EventCycleTimeSum=0.410; SleepCycleTimeAvg=5.007; SleepCycleTimeMax=5.132; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.183; SleepCycleTimeSum=140.188; SubmitCycleTimeAvg=0.012; SubmitCycleTimeMax=0.124; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.032; SubmitCycleTimeSum=0.359; EventCycleTimeCount=28.000; SleepCycleTimeCount=28.000; SubmitCycleTimeCount=29.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.009; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.002; LogProcessCycleTimeSum=0.035; LogProcessCycleTimeCount=18.000; ]
+10/09/26 21:56:29 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:56:29 Event: ULOG_JOB_TERMINATED for HTCondor Node stage_out_local_local_1_0 (4355791.0.0) {10/09/26 21:56:25}
+10/09/26 21:56:29 Number of idle job procs: 0
+10/09/26 21:56:29 Node stage_out_local_local_1_0 job proc (4355791.0.0) completed successfully.
+10/09/26 21:56:29 Node stage_out_local_local_1_0 job(s) have exited the queue
+10/09/26 21:56:29 Running POST script of Node stage_out_local_local_1_0...
+10/09/26 21:56:29 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:56:29 Of 25 nodes total:
+10/09/26 21:56:29  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:56:29   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:56:29    11       0        3       1       0         10        0        0
+10/09/26 21:56:29 0 job proc(s) currently held
+10/09/26 21:56:29 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.014; EventCycleTimeMax=0.124; EventCycleTimeMin=0.000; EventCycleTimeStd=0.031; EventCycleTimeSum=0.411; SleepCycleTimeAvg=5.007; SleepCycleTimeMax=5.132; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.179; SleepCycleTimeSum=145.193; SubmitCycleTimeAvg=0.012; SubmitCycleTimeMax=0.124; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.031; SubmitCycleTimeSum=0.359; EventCycleTimeCount=29.000; SleepCycleTimeCount=29.000; SubmitCycleTimeCount=30.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.009; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.002; LogProcessCycleTimeSum=0.038; LogProcessCycleTimeCount=19.000; ]
+10/09/26 21:56:29 Initializing user log writer for /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003/./noble-gas-reduction-0.dag.nodes.log, (4355791.0.0)
+10/09/26 21:56:34 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:56:34 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node stage_out_local_local_1_0 (4355791.0.0) {10/09/26 21:56:29}
+10/09/26 21:56:34 POST Script of node stage_out_local_local_1_0 completed successfully.
+10/09/26 21:56:34 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:56:34 Of 25 nodes total:
+10/09/26 21:56:34  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:56:34   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:56:34    12       0        3       0       1          9        0        0
+10/09/26 21:56:34 0 job proc(s) currently held
+10/09/26 21:56:34 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.014; EventCycleTimeMax=0.124; EventCycleTimeMin=0.000; EventCycleTimeStd=0.031; EventCycleTimeSum=0.414; SleepCycleTimeAvg=5.011; SleepCycleTimeMax=5.132; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.177; SleepCycleTimeSum=150.317; SubmitCycleTimeAvg=0.012; SubmitCycleTimeMax=0.124; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.031; SubmitCycleTimeSum=0.359; EventCycleTimeCount=30.000; SleepCycleTimeCount=30.000; SubmitCycleTimeCount=31.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.009; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.002; LogProcessCycleTimeSum=0.038; LogProcessCycleTimeCount=20.000; ]
+10/09/26 21:56:39 Submitting HTCondor Node register_local_1_0 job(s)...
+10/09/26 21:56:39 Submitting node register_local_1_0 from file 00/00/register_local_1_0.sub using direct job submission
+10/09/26 21:56:39 Submit warning: Submit:0:the line 'wf_submit_dir = /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_job_runtime = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_gpus = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_cores = 1' was unused by DAGMAN. Is it a typo?
+10/09/26 21:56:39 	assigned HTCondor ID (4355801.0.0)
+10/09/26 21:56:39 Just submitted 1 job this cycle...
+10/09/26 21:56:39 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:56:39 Of 25 nodes total:
+10/09/26 21:56:39  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:56:39   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:56:39    12       0        4       0       0          9        0        0
+10/09/26 21:56:39 0 job proc(s) currently held
+10/09/26 21:56:39 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.013; EventCycleTimeMax=0.124; EventCycleTimeMin=0.000; EventCycleTimeStd=0.030; EventCycleTimeSum=0.414; SleepCycleTimeAvg=5.010; SleepCycleTimeMax=5.132; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.175; SleepCycleTimeSum=155.322; SubmitCycleTimeAvg=0.012; SubmitCycleTimeMax=0.124; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.030; SubmitCycleTimeSum=0.375; EventCycleTimeCount=31.000; SleepCycleTimeCount=31.000; SubmitCycleTimeCount=32.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.009; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.002; LogProcessCycleTimeSum=0.038; LogProcessCycleTimeCount=20.000; ]
+10/09/26 21:56:44 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:56:44 Reassigning the id of job register_local_1_0 from (4355801.0.0) to (4355801.0.0)
+10/09/26 21:56:44 Event: ULOG_SUBMIT for HTCondor Node register_local_1_0 (4355801.0.0) {10/09/26 21:56:39}
+10/09/26 21:56:44 Number of idle job procs: 1
+10/09/26 21:56:44 Event: ULOG_EXECUTE for HTCondor Node register_local_1_0 (4355801.0.0) {10/09/26 21:56:41}
+10/09/26 21:56:44 Number of idle job procs: 0
+10/09/26 21:56:44 Event: ULOG_JOB_TERMINATED for HTCondor Node register_local_1_0 (4355801.0.0) {10/09/26 21:56:44}
+10/09/26 21:56:44 Number of idle job procs: 0
+10/09/26 21:56:44 Node register_local_1_0 job proc (4355801.0.0) completed successfully.
+10/09/26 21:56:44 Node register_local_1_0 job(s) have exited the queue
+10/09/26 21:56:44 Running POST script of Node register_local_1_0...
+10/09/26 21:56:44 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:56:44 Of 25 nodes total:
+10/09/26 21:56:44  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:56:44   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:56:44    12       0        3       1       0          9        0        0
+10/09/26 21:56:44 0 job proc(s) currently held
+10/09/26 21:56:44 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.013; EventCycleTimeMax=0.124; EventCycleTimeMin=0.000; EventCycleTimeStd=0.030; EventCycleTimeSum=0.431; SleepCycleTimeAvg=5.010; SleepCycleTimeMax=5.132; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.172; SleepCycleTimeSum=160.327; SubmitCycleTimeAvg=0.011; SubmitCycleTimeMax=0.124; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.030; SubmitCycleTimeSum=0.375; EventCycleTimeCount=32.000; SleepCycleTimeCount=32.000; SubmitCycleTimeCount=33.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.009; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.002; LogProcessCycleTimeSum=0.043; LogProcessCycleTimeCount=21.000; ]
+10/09/26 21:56:45 Initializing user log writer for /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003/./noble-gas-reduction-0.dag.nodes.log, (4355801.0.0)
+10/09/26 21:56:49 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:56:49 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node register_local_1_0 (4355801.0.0) {10/09/26 21:56:45}
+10/09/26 21:56:49 POST Script of node register_local_1_0 completed successfully.
+10/09/26 21:56:49 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:56:49 Of 25 nodes total:
+10/09/26 21:56:49  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:56:49   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:56:49    13       0        3       0       0          9        0        0
+10/09/26 21:56:49 0 job proc(s) currently held
+10/09/26 21:56:49 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.013; EventCycleTimeMax=0.124; EventCycleTimeMin=0.000; EventCycleTimeStd=0.029; EventCycleTimeSum=0.436; SleepCycleTimeAvg=4.984; SleepCycleTimeMax=5.132; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.228; SleepCycleTimeSum=164.457; SubmitCycleTimeAvg=0.011; SubmitCycleTimeMax=0.124; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.029; SubmitCycleTimeSum=0.375; EventCycleTimeCount=33.000; SleepCycleTimeCount=33.000; SubmitCycleTimeCount=34.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.009; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.002; LogProcessCycleTimeSum=0.044; LogProcessCycleTimeCount=22.000; ]
+10/09/26 21:56:54 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:56:54 Event: ULOG_JOB_TERMINATED for HTCondor Node air_stds_tab_ID0000004 (4355794.0.0) {10/09/26 21:56:50}
+10/09/26 21:56:54 Number of idle job procs: 0
+10/09/26 21:56:54 Node air_stds_tab_ID0000004 job proc (4355794.0.0) completed successfully.
+10/09/26 21:56:54 Node air_stds_tab_ID0000004 job(s) have exited the queue
+10/09/26 21:56:54 Running POST script of Node air_stds_tab_ID0000004...
+10/09/26 21:56:54 Event: ULOG_JOB_TERMINATED for HTCondor Node blanks_tab_ID0000003 (4355793.0.0) {10/09/26 21:56:52}
+10/09/26 21:56:54 Number of idle job procs: 0
+10/09/26 21:56:54 Node blanks_tab_ID0000003 job proc (4355793.0.0) completed successfully.
+10/09/26 21:56:54 Node blanks_tab_ID0000003 job(s) have exited the queue
+10/09/26 21:56:54 Running POST script of Node blanks_tab_ID0000003...
+10/09/26 21:56:54 Event: ULOG_JOB_TERMINATED for HTCondor Node samples_tab_ID0000005 (4355792.0.0) {10/09/26 21:56:53}
+10/09/26 21:56:54 Number of idle job procs: 0
+10/09/26 21:56:54 Node samples_tab_ID0000005 job proc (4355792.0.0) completed successfully.
+10/09/26 21:56:54 Node samples_tab_ID0000005 job(s) have exited the queue
+10/09/26 21:56:54 Running POST script of Node samples_tab_ID0000005...
+10/09/26 21:56:54 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:56:54 Of 25 nodes total:
+10/09/26 21:56:54  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:56:54   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:56:54    13       0        0       3       0          9        0        0
+10/09/26 21:56:54 0 job proc(s) currently held
+10/09/26 21:56:54 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.013; EventCycleTimeMax=0.124; EventCycleTimeMin=0.000; EventCycleTimeStd=0.029; EventCycleTimeSum=0.436; SleepCycleTimeAvg=4.984; SleepCycleTimeMax=5.132; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.225; SleepCycleTimeSum=169.463; SubmitCycleTimeAvg=0.011; SubmitCycleTimeMax=0.124; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.029; SubmitCycleTimeSum=0.375; EventCycleTimeCount=34.000; SleepCycleTimeCount=34.000; SubmitCycleTimeCount=35.000; LogProcessCycleTimeAvg=0.003; LogProcessCycleTimeMax=0.014; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.003; LogProcessCycleTimeSum=0.058; LogProcessCycleTimeCount=23.000; ]
+10/09/26 21:56:54 Initializing user log writer for /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003/./noble-gas-reduction-0.dag.nodes.log, (4355794.0.0)
+10/09/26 21:56:54 Initializing user log writer for /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003/./noble-gas-reduction-0.dag.nodes.log, (4355792.0.0)
+10/09/26 21:56:54 Initializing user log writer for /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003/./noble-gas-reduction-0.dag.nodes.log, (4355793.0.0)
+10/09/26 21:56:59 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:56:59 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node air_stds_tab_ID0000004 (4355794.0.0) {10/09/26 21:56:54}
+10/09/26 21:56:59 POST Script of node air_stds_tab_ID0000004 completed successfully.
+10/09/26 21:56:59 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node samples_tab_ID0000005 (4355792.0.0) {10/09/26 21:56:54}
+10/09/26 21:56:59 POST Script of node samples_tab_ID0000005 completed successfully.
+10/09/26 21:56:59 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node blanks_tab_ID0000003 (4355793.0.0) {10/09/26 21:56:54}
+10/09/26 21:56:59 POST Script of node blanks_tab_ID0000003 completed successfully.
+10/09/26 21:56:59 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:56:59 Of 25 nodes total:
+10/09/26 21:56:59  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:56:59   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:56:59    16       0        0       0       3          6        0        0
+10/09/26 21:56:59 0 job proc(s) currently held
+10/09/26 21:56:59 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.013; EventCycleTimeMax=0.124; EventCycleTimeMin=0.000; EventCycleTimeStd=0.029; EventCycleTimeSum=0.451; SleepCycleTimeAvg=4.988; SleepCycleTimeMax=5.132; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.223; SleepCycleTimeSum=174.593; SubmitCycleTimeAvg=0.010; SubmitCycleTimeMax=0.124; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.029; SubmitCycleTimeSum=0.375; EventCycleTimeCount=35.000; SleepCycleTimeCount=35.000; SubmitCycleTimeCount=36.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.014; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.003; LogProcessCycleTimeSum=0.058; LogProcessCycleTimeCount=24.000; ]
+10/09/26 21:57:04 Submitting HTCondor Node clean_up_local_level_5_0 job(s)...
+10/09/26 21:57:04 Submitting node clean_up_local_level_5_0 from file 00/00/clean_up_local_level_5_0.sub using direct job submission
+10/09/26 21:57:04 Submit warning: Submit:0:the line 'pegasus_job_runtime = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_gpus = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_cores = 1' was unused by DAGMAN. Is it a typo?
+10/09/26 21:57:04 	assigned HTCondor ID (4355803.0.0)
+10/09/26 21:57:04 Submitting HTCondor Node stage_out_local_local_2_0 job(s)...
+10/09/26 21:57:04 Submitting node stage_out_local_local_2_0 from file 00/00/stage_out_local_local_2_0.sub using direct job submission
+10/09/26 21:57:04 Submit warning: Submit:0:the line 'wf_submit_dir = /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_job_runtime = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_gpus = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_cores = 1' was unused by DAGMAN. Is it a typo?
+10/09/26 21:57:04 	assigned HTCondor ID (4355804.0.0)
+10/09/26 21:57:04 Submitting HTCondor Node assemble_workbook_ID0000006 job(s)...
+10/09/26 21:57:04 Submitting node assemble_workbook_ID0000006 from file 00/00/assemble_workbook_ID0000006.sub using direct job submission
+10/09/26 21:57:04 Submit warning: Submit:0:the line 'pegasus_job_runtime = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_gpus = 0' was unused by DAGMAN. Is it a typo?
+10/09/26 21:57:04 	assigned HTCondor ID (4355805.0.0)
+10/09/26 21:57:04 Just submitted 3 jobs this cycle...
+10/09/26 21:57:04 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:57:04 Of 25 nodes total:
+10/09/26 21:57:04  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:57:04   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:57:04    16       0        3       0       0          6        0        0
+10/09/26 21:57:04 0 job proc(s) currently held
+10/09/26 21:57:04 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.013; EventCycleTimeMax=0.124; EventCycleTimeMin=0.000; EventCycleTimeStd=0.028; EventCycleTimeSum=0.452; SleepCycleTimeAvg=4.989; SleepCycleTimeMax=5.132; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.219; SleepCycleTimeSum=179.599; SubmitCycleTimeAvg=0.013; SubmitCycleTimeMax=0.124; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.031; SubmitCycleTimeSum=0.463; EventCycleTimeCount=36.000; SleepCycleTimeCount=36.000; SubmitCycleTimeCount=37.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.014; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.003; LogProcessCycleTimeSum=0.058; LogProcessCycleTimeCount=24.000; ]
+10/09/26 21:57:09 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:57:09 Reassigning the id of job clean_up_local_level_5_0 from (4355803.0.0) to (4355803.0.0)
+10/09/26 21:57:09 Event: ULOG_SUBMIT for HTCondor Node clean_up_local_level_5_0 (4355803.0.0) {10/09/26 21:57:04}
+10/09/26 21:57:09 Number of idle job procs: 1
+10/09/26 21:57:09 Reassigning the id of job stage_out_local_local_2_0 from (4355804.0.0) to (4355804.0.0)
+10/09/26 21:57:09 Event: ULOG_SUBMIT for HTCondor Node stage_out_local_local_2_0 (4355804.0.0) {10/09/26 21:57:04}
+10/09/26 21:57:09 Number of idle job procs: 2
+10/09/26 21:57:09 Event: ULOG_EXECUTE for HTCondor Node clean_up_local_level_5_0 (4355803.0.0) {10/09/26 21:57:04}
+10/09/26 21:57:09 Number of idle job procs: 1
+10/09/26 21:57:09 Reassigning the id of job assemble_workbook_ID0000006 from (4355805.0.0) to (4355805.0.0)
+10/09/26 21:57:09 Event: ULOG_SUBMIT for HTCondor Node assemble_workbook_ID0000006 (4355805.0.0) {10/09/26 21:57:04}
+10/09/26 21:57:09 Number of idle job procs: 2
+10/09/26 21:57:14 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:57:14 Event: ULOG_EXECUTE for HTCondor Node stage_out_local_local_2_0 (4355804.0.0) {10/09/26 21:57:09}
+10/09/26 21:57:14 Number of idle job procs: 1
+10/09/26 21:57:14 Event: ULOG_EXECUTE for HTCondor Node assemble_workbook_ID0000006 (4355805.0.0) {10/09/26 21:57:09}
+10/09/26 21:57:14 Number of idle job procs: 0
+10/09/26 21:57:14 Event: ULOG_JOB_TERMINATED for HTCondor Node stage_out_local_local_2_0 (4355804.0.0) {10/09/26 21:57:13}
+10/09/26 21:57:14 Number of idle job procs: 0
+10/09/26 21:57:14 Node stage_out_local_local_2_0 job proc (4355804.0.0) completed successfully.
+10/09/26 21:57:14 Node stage_out_local_local_2_0 job(s) have exited the queue
+10/09/26 21:57:14 Running POST script of Node stage_out_local_local_2_0...
+10/09/26 21:57:14 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:57:14 Of 25 nodes total:
+10/09/26 21:57:14  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:57:14   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:57:14    16       0        2       1       0          6        0        0
+10/09/26 21:57:14 0 job proc(s) currently held
+10/09/26 21:57:14 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.014; EventCycleTimeMax=0.124; EventCycleTimeMin=0.000; EventCycleTimeStd=0.030; EventCycleTimeSum=0.541; SleepCycleTimeAvg=4.990; SleepCycleTimeMax=5.132; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.213; SleepCycleTimeSum=189.610; SubmitCycleTimeAvg=0.012; SubmitCycleTimeMax=0.124; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.030; SubmitCycleTimeSum=0.463; EventCycleTimeCount=38.000; SleepCycleTimeCount=38.000; SubmitCycleTimeCount=39.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.014; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.003; LogProcessCycleTimeSum=0.062; LogProcessCycleTimeCount=26.000; ]
+10/09/26 21:57:14 Initializing user log writer for /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003/./noble-gas-reduction-0.dag.nodes.log, (4355804.0.0)
+10/09/26 21:57:19 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:57:19 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node stage_out_local_local_2_0 (4355804.0.0) {10/09/26 21:57:14}
+10/09/26 21:57:19 POST Script of node stage_out_local_local_2_0 completed successfully.
+10/09/26 21:57:19 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:57:19 Of 25 nodes total:
+10/09/26 21:57:19  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:57:19   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:57:19    17       0        2       0       1          5        0        0
+10/09/26 21:57:19 0 job proc(s) currently held
+10/09/26 21:57:19 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.014; EventCycleTimeMax=0.124; EventCycleTimeMin=0.000; EventCycleTimeStd=0.030; EventCycleTimeSum=0.544; SleepCycleTimeAvg=4.993; SleepCycleTimeMax=5.133; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.212; SleepCycleTimeSum=194.743; SubmitCycleTimeAvg=0.012; SubmitCycleTimeMax=0.124; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.030; SubmitCycleTimeSum=0.463; EventCycleTimeCount=39.000; SleepCycleTimeCount=39.000; SubmitCycleTimeCount=40.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.014; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.003; LogProcessCycleTimeSum=0.062; LogProcessCycleTimeCount=27.000; ]
+10/09/26 21:57:24 Submitting HTCondor Node register_local_2_0 job(s)...
+10/09/26 21:57:24 Submitting node register_local_2_0 from file 00/00/register_local_2_0.sub using direct job submission
+10/09/26 21:57:24 Submit warning: Submit:0:the line 'wf_submit_dir = /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_job_runtime = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_gpus = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_cores = 1' was unused by DAGMAN. Is it a typo?
+10/09/26 21:57:24 	assigned HTCondor ID (4355806.0.0)
+10/09/26 21:57:24 Just submitted 1 job this cycle...
+10/09/26 21:57:24 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:57:24 Event: ULOG_JOB_TERMINATED for HTCondor Node clean_up_local_level_5_0 (4355803.0.0) {10/09/26 21:57:20}
+10/09/26 21:57:24 Number of idle job procs: 0
+10/09/26 21:57:24 Node clean_up_local_level_5_0 job proc (4355803.0.0) completed successfully.
+10/09/26 21:57:24 Node clean_up_local_level_5_0 job(s) have exited the queue
+10/09/26 21:57:24 Running POST script of Node clean_up_local_level_5_0...
+10/09/26 21:57:24 Reassigning the id of job register_local_2_0 from (4355806.0.0) to (4355806.0.0)
+10/09/26 21:57:24 Event: ULOG_SUBMIT for HTCondor Node register_local_2_0 (4355806.0.0) {10/09/26 21:57:24}
+10/09/26 21:57:24 Number of idle job procs: 1
+10/09/26 21:57:24 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:57:24 Of 25 nodes total:
+10/09/26 21:57:24  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:57:24   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:57:24    17       0        2       1       0          5        0        0
+10/09/26 21:57:24 0 job proc(s) currently held
+10/09/26 21:57:24 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.014; EventCycleTimeMax=0.124; EventCycleTimeMin=0.000; EventCycleTimeStd=0.029; EventCycleTimeSum=0.544; SleepCycleTimeAvg=4.994; SleepCycleTimeMax=5.133; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.209; SleepCycleTimeSum=199.748; SubmitCycleTimeAvg=0.012; SubmitCycleTimeMax=0.124; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.030; SubmitCycleTimeSum=0.497; EventCycleTimeCount=40.000; SleepCycleTimeCount=40.000; SubmitCycleTimeCount=41.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.014; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.003; LogProcessCycleTimeSum=0.067; LogProcessCycleTimeCount=28.000; ]
+10/09/26 21:57:24 Initializing user log writer for /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003/./noble-gas-reduction-0.dag.nodes.log, (4355803.0.0)
+10/09/26 21:57:29 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:57:29 Event: ULOG_EXECUTE for HTCondor Node register_local_2_0 (4355806.0.0) {10/09/26 21:57:24}
+10/09/26 21:57:29 Number of idle job procs: 0
+10/09/26 21:57:29 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node clean_up_local_level_5_0 (4355803.0.0) {10/09/26 21:57:24}
+10/09/26 21:57:29 POST Script of node clean_up_local_level_5_0 completed successfully.
+10/09/26 21:57:29 Event: ULOG_JOB_TERMINATED for HTCondor Node register_local_2_0 (4355806.0.0) {10/09/26 21:57:25}
+10/09/26 21:57:29 Number of idle job procs: 0
+10/09/26 21:57:29 Node register_local_2_0 job proc (4355806.0.0) completed successfully.
+10/09/26 21:57:29 Node register_local_2_0 job(s) have exited the queue
+10/09/26 21:57:29 Running POST script of Node register_local_2_0...
+10/09/26 21:57:29 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:57:29 Of 25 nodes total:
+10/09/26 21:57:29  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:57:29   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:57:29    18       0        1       1       0          5        0        0
+10/09/26 21:57:29 0 job proc(s) currently held
+10/09/26 21:57:29 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.014; EventCycleTimeMax=0.124; EventCycleTimeMin=0.000; EventCycleTimeStd=0.029; EventCycleTimeSum=0.584; SleepCycleTimeAvg=4.997; SleepCycleTimeMax=5.133; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.207; SleepCycleTimeSum=204.869; SubmitCycleTimeAvg=0.012; SubmitCycleTimeMax=0.124; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.030; SubmitCycleTimeSum=0.497; EventCycleTimeCount=41.000; SleepCycleTimeCount=41.000; SubmitCycleTimeCount=42.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.014; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.003; LogProcessCycleTimeSum=0.070; LogProcessCycleTimeCount=29.000; ]
+10/09/26 21:57:29 Initializing user log writer for /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003/./noble-gas-reduction-0.dag.nodes.log, (4355806.0.0)
+10/09/26 21:57:34 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:57:34 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node register_local_2_0 (4355806.0.0) {10/09/26 21:57:29}
+10/09/26 21:57:34 POST Script of node register_local_2_0 completed successfully.
+10/09/26 21:57:34 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:57:34 Of 25 nodes total:
+10/09/26 21:57:34  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:57:34   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:57:34    19       0        1       0       0          5        0        0
+10/09/26 21:57:34 0 job proc(s) currently held
+10/09/26 21:57:34 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.014; EventCycleTimeMax=0.124; EventCycleTimeMin=0.000; EventCycleTimeStd=0.029; EventCycleTimeSum=0.587; SleepCycleTimeAvg=5.000; SleepCycleTimeMax=5.133; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.206; SleepCycleTimeSum=209.994; SubmitCycleTimeAvg=0.012; SubmitCycleTimeMax=0.124; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.029; SubmitCycleTimeSum=0.497; EventCycleTimeCount=42.000; SleepCycleTimeCount=42.000; SubmitCycleTimeCount=43.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.014; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.003; LogProcessCycleTimeSum=0.070; LogProcessCycleTimeCount=30.000; ]
+10/09/26 21:58:09 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:58:09 Event: ULOG_JOB_TERMINATED for HTCondor Node assemble_workbook_ID0000006 (4355805.0.0) {10/09/26 21:58:05}
+10/09/26 21:58:09 Number of idle job procs: 0
+10/09/26 21:58:09 Node assemble_workbook_ID0000006 job proc (4355805.0.0) completed successfully.
+10/09/26 21:58:09 Node assemble_workbook_ID0000006 job(s) have exited the queue
+10/09/26 21:58:09 Running POST script of Node assemble_workbook_ID0000006...
+10/09/26 21:58:09 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:58:09 Of 25 nodes total:
+10/09/26 21:58:09  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:58:09   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:58:09    19       0        0       1       0          5        0        0
+10/09/26 21:58:09 0 job proc(s) currently held
+10/09/26 21:58:09 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.012; EventCycleTimeMax=0.124; EventCycleTimeMin=0.000; EventCycleTimeStd=0.027; EventCycleTimeSum=0.587; SleepCycleTimeAvg=5.001; SleepCycleTimeMax=5.133; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.190; SleepCycleTimeSum=245.031; SubmitCycleTimeAvg=0.010; SubmitCycleTimeMax=0.124; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.027; SubmitCycleTimeSum=0.497; EventCycleTimeCount=49.000; SleepCycleTimeCount=49.000; SubmitCycleTimeCount=50.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.014; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.003; LogProcessCycleTimeSum=0.075; LogProcessCycleTimeCount=31.000; ]
+10/09/26 21:58:09 Initializing user log writer for /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003/./noble-gas-reduction-0.dag.nodes.log, (4355805.0.0)
+10/09/26 21:58:14 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:58:14 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node assemble_workbook_ID0000006 (4355805.0.0) {10/09/26 21:58:09}
+10/09/26 21:58:14 POST Script of node assemble_workbook_ID0000006 completed successfully.
+10/09/26 21:58:14 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:58:14 Of 25 nodes total:
+10/09/26 21:58:14  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:58:14   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:58:14    20       0        0       0       2          3        0        0
+10/09/26 21:58:14 0 job proc(s) currently held
+10/09/26 21:58:14 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.012; EventCycleTimeMax=0.124; EventCycleTimeMin=0.000; EventCycleTimeStd=0.027; EventCycleTimeSum=0.592; SleepCycleTimeAvg=5.003; SleepCycleTimeMax=5.133; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.189; SleepCycleTimeSum=250.149; SubmitCycleTimeAvg=0.010; SubmitCycleTimeMax=0.124; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.027; SubmitCycleTimeSum=0.497; EventCycleTimeCount=50.000; SleepCycleTimeCount=50.000; SubmitCycleTimeCount=51.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.014; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.003; LogProcessCycleTimeSum=0.075; LogProcessCycleTimeCount=32.000; ]
+10/09/26 21:58:19 Submitting HTCondor Node clean_up_local_level_6_0 job(s)...
+10/09/26 21:58:19 Submitting node clean_up_local_level_6_0 from file 00/00/clean_up_local_level_6_0.sub using direct job submission
+10/09/26 21:58:19 Submit warning: Submit:0:the line 'pegasus_job_runtime = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_gpus = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_cores = 1' was unused by DAGMAN. Is it a typo?
+10/09/26 21:58:19 	assigned HTCondor ID (4355811.0.0)
+10/09/26 21:58:19 Submitting HTCondor Node stage_out_local_local_3_0 job(s)...
+10/09/26 21:58:19 Submitting node stage_out_local_local_3_0 from file 00/00/stage_out_local_local_3_0.sub using direct job submission
+10/09/26 21:58:19 Submit warning: Submit:0:the line 'wf_submit_dir = /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_job_runtime = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_gpus = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_cores = 1' was unused by DAGMAN. Is it a typo?
+10/09/26 21:58:19 	assigned HTCondor ID (4355812.0.0)
+10/09/26 21:58:19 Just submitted 2 jobs this cycle...
+10/09/26 21:58:19 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:58:19 Of 25 nodes total:
+10/09/26 21:58:19  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:58:19   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:58:19    20       0        2       0       0          3        0        0
+10/09/26 21:58:19 0 job proc(s) currently held
+10/09/26 21:58:19 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.012; EventCycleTimeMax=0.124; EventCycleTimeMin=0.000; EventCycleTimeStd=0.027; EventCycleTimeSum=0.593; SleepCycleTimeAvg=5.003; SleepCycleTimeMax=5.133; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.187; SleepCycleTimeSum=255.154; SubmitCycleTimeAvg=0.011; SubmitCycleTimeMax=0.124; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.028; SubmitCycleTimeSum=0.569; EventCycleTimeCount=51.000; SleepCycleTimeCount=51.000; SubmitCycleTimeCount=52.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.014; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.003; LogProcessCycleTimeSum=0.075; LogProcessCycleTimeCount=32.000; ]
+10/09/26 21:58:24 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:58:24 Reassigning the id of job clean_up_local_level_6_0 from (4355811.0.0) to (4355811.0.0)
+10/09/26 21:58:24 Event: ULOG_SUBMIT for HTCondor Node clean_up_local_level_6_0 (4355811.0.0) {10/09/26 21:58:19}
+10/09/26 21:58:24 Number of idle job procs: 1
+10/09/26 21:58:24 Reassigning the id of job stage_out_local_local_3_0 from (4355812.0.0) to (4355812.0.0)
+10/09/26 21:58:24 Event: ULOG_SUBMIT for HTCondor Node stage_out_local_local_3_0 (4355812.0.0) {10/09/26 21:58:19}
+10/09/26 21:58:24 Number of idle job procs: 2
+10/09/26 21:58:24 Event: ULOG_EXECUTE for HTCondor Node clean_up_local_level_6_0 (4355811.0.0) {10/09/26 21:58:19}
+10/09/26 21:58:24 Number of idle job procs: 1
+10/09/26 21:58:29 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:58:29 Event: ULOG_EXECUTE for HTCondor Node stage_out_local_local_3_0 (4355812.0.0) {10/09/26 21:58:25}
+10/09/26 21:58:29 Number of idle job procs: 0
+10/09/26 21:58:29 Event: ULOG_JOB_TERMINATED for HTCondor Node stage_out_local_local_3_0 (4355812.0.0) {10/09/26 21:58:27}
+10/09/26 21:58:29 Number of idle job procs: 0
+10/09/26 21:58:29 Node stage_out_local_local_3_0 job proc (4355812.0.0) completed successfully.
+10/09/26 21:58:29 Node stage_out_local_local_3_0 job(s) have exited the queue
+10/09/26 21:58:29 Running POST script of Node stage_out_local_local_3_0...
+10/09/26 21:58:29 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:58:29 Of 25 nodes total:
+10/09/26 21:58:29  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:58:29   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:58:29    20       0        1       1       0          3        0        0
+10/09/26 21:58:29 0 job proc(s) currently held
+10/09/26 21:58:29 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.013; EventCycleTimeMax=0.124; EventCycleTimeMin=0.000; EventCycleTimeStd=0.028; EventCycleTimeSum=0.665; SleepCycleTimeAvg=5.003; SleepCycleTimeMax=5.133; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.184; SleepCycleTimeSum=265.165; SubmitCycleTimeAvg=0.011; SubmitCycleTimeMax=0.124; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.028; SubmitCycleTimeSum=0.569; EventCycleTimeCount=53.000; SleepCycleTimeCount=53.000; SubmitCycleTimeCount=54.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.014; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.003; LogProcessCycleTimeSum=0.077; LogProcessCycleTimeCount=34.000; ]
+10/09/26 21:58:30 Initializing user log writer for /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003/./noble-gas-reduction-0.dag.nodes.log, (4355812.0.0)
+10/09/26 21:58:34 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:58:34 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node stage_out_local_local_3_0 (4355812.0.0) {10/09/26 21:58:30}
+10/09/26 21:58:34 POST Script of node stage_out_local_local_3_0 completed successfully.
+10/09/26 21:58:34 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:58:34 Of 25 nodes total:
+10/09/26 21:58:34  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:58:34   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:58:34    21       0        1       0       2          1        0        0
+10/09/26 21:58:34 0 job proc(s) currently held
+10/09/26 21:58:34 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.012; EventCycleTimeMax=0.124; EventCycleTimeMin=0.000; EventCycleTimeStd=0.027; EventCycleTimeSum=0.667; SleepCycleTimeAvg=4.987; SleepCycleTimeMax=5.133; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.218; SleepCycleTimeSum=269.285; SubmitCycleTimeAvg=0.010; SubmitCycleTimeMax=0.124; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.028; SubmitCycleTimeSum=0.569; EventCycleTimeCount=54.000; SleepCycleTimeCount=54.000; SubmitCycleTimeCount=55.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.014; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.003; LogProcessCycleTimeSum=0.078; LogProcessCycleTimeCount=35.000; ]
+10/09/26 21:58:39 Submitting HTCondor Node clean_up_local_level_7_0 job(s)...
+10/09/26 21:58:39 Submitting node clean_up_local_level_7_0 from file 00/00/clean_up_local_level_7_0.sub using direct job submission
+10/09/26 21:58:39 Submit warning: Submit:0:the line 'pegasus_job_runtime = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_gpus = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_cores = 1' was unused by DAGMAN. Is it a typo?
+10/09/26 21:58:39 	assigned HTCondor ID (4355815.0.0)
+10/09/26 21:58:39 Submitting HTCondor Node register_local_3_0 job(s)...
+10/09/26 21:58:39 Submitting node register_local_3_0 from file 00/00/register_local_3_0.sub using direct job submission
+10/09/26 21:58:39 Submit warning: Submit:0:the line 'wf_submit_dir = /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_job_runtime = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_gpus = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_cores = 1' was unused by DAGMAN. Is it a typo?
+10/09/26 21:58:39 	assigned HTCondor ID (4355816.0.0)
+10/09/26 21:58:39 Just submitted 2 jobs this cycle...
+10/09/26 21:58:39 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:58:39 Event: ULOG_JOB_TERMINATED for HTCondor Node clean_up_local_level_6_0 (4355811.0.0) {10/09/26 21:58:36}
+10/09/26 21:58:39 Number of idle job procs: 0
+10/09/26 21:58:39 Node clean_up_local_level_6_0 job proc (4355811.0.0) completed successfully.
+10/09/26 21:58:39 Node clean_up_local_level_6_0 job(s) have exited the queue
+10/09/26 21:58:39 Running POST script of Node clean_up_local_level_6_0...
+10/09/26 21:58:39 Reassigning the id of job clean_up_local_level_7_0 from (4355815.0.0) to (4355815.0.0)
+10/09/26 21:58:39 Event: ULOG_SUBMIT for HTCondor Node clean_up_local_level_7_0 (4355815.0.0) {10/09/26 21:58:39}
+10/09/26 21:58:39 Number of idle job procs: 1
+10/09/26 21:58:39 Reassigning the id of job register_local_3_0 from (4355816.0.0) to (4355816.0.0)
+10/09/26 21:58:39 Event: ULOG_SUBMIT for HTCondor Node register_local_3_0 (4355816.0.0) {10/09/26 21:58:39}
+10/09/26 21:58:39 Number of idle job procs: 2
+10/09/26 21:58:39 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:58:39 Of 25 nodes total:
+10/09/26 21:58:39  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:58:39   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:58:39    21       0        2       1       0          1        0        0
+10/09/26 21:58:39 0 job proc(s) currently held
+10/09/26 21:58:39 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.012; EventCycleTimeMax=0.124; EventCycleTimeMin=0.000; EventCycleTimeStd=0.027; EventCycleTimeSum=0.668; SleepCycleTimeAvg=4.987; SleepCycleTimeMax=5.133; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.216; SleepCycleTimeSum=274.290; SubmitCycleTimeAvg=0.011; SubmitCycleTimeMax=0.124; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.027; SubmitCycleTimeSum=0.596; EventCycleTimeCount=55.000; SleepCycleTimeCount=55.000; SubmitCycleTimeCount=56.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.014; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.003; LogProcessCycleTimeSum=0.080; LogProcessCycleTimeCount=36.000; ]
+10/09/26 21:58:39 Initializing user log writer for /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003/./noble-gas-reduction-0.dag.nodes.log, (4355811.0.0)
+10/09/26 21:58:44 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:58:44 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node clean_up_local_level_6_0 (4355811.0.0) {10/09/26 21:58:39}
+10/09/26 21:58:44 POST Script of node clean_up_local_level_6_0 completed successfully.
+10/09/26 21:58:44 Event: ULOG_EXECUTE for HTCondor Node clean_up_local_level_7_0 (4355815.0.0) {10/09/26 21:58:42}
+10/09/26 21:58:44 Number of idle job procs: 1
+10/09/26 21:58:44 Event: ULOG_EXECUTE for HTCondor Node register_local_3_0 (4355816.0.0) {10/09/26 21:58:42}
+10/09/26 21:58:44 Number of idle job procs: 0
+10/09/26 21:58:44 Event: ULOG_JOB_TERMINATED for HTCondor Node register_local_3_0 (4355816.0.0) {10/09/26 21:58:43}
+10/09/26 21:58:44 Number of idle job procs: 0
+10/09/26 21:58:44 Node register_local_3_0 job proc (4355816.0.0) completed successfully.
+10/09/26 21:58:44 Node register_local_3_0 job(s) have exited the queue
+10/09/26 21:58:44 Running POST script of Node register_local_3_0...
+10/09/26 21:58:44 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:58:44 Of 25 nodes total:
+10/09/26 21:58:44  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:58:44   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:58:44    22       0        1       1       0          1        0        0
+10/09/26 21:58:44 0 job proc(s) currently held
+10/09/26 21:58:44 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.012; EventCycleTimeMax=0.124; EventCycleTimeMin=0.000; EventCycleTimeStd=0.027; EventCycleTimeSum=0.698; SleepCycleTimeAvg=4.989; SleepCycleTimeMax=5.133; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.215; SleepCycleTimeSum=279.408; SubmitCycleTimeAvg=0.010; SubmitCycleTimeMax=0.124; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.027; SubmitCycleTimeSum=0.596; EventCycleTimeCount=56.000; SleepCycleTimeCount=56.000; SubmitCycleTimeCount=57.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.014; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.003; LogProcessCycleTimeSum=0.082; LogProcessCycleTimeCount=37.000; ]
+10/09/26 21:58:44 Initializing user log writer for /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003/./noble-gas-reduction-0.dag.nodes.log, (4355816.0.0)
+10/09/26 21:58:49 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:58:49 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node register_local_3_0 (4355816.0.0) {10/09/26 21:58:44}
+10/09/26 21:58:49 POST Script of node register_local_3_0 completed successfully.
+10/09/26 21:58:49 Event: ULOG_JOB_TERMINATED for HTCondor Node clean_up_local_level_7_0 (4355815.0.0) {10/09/26 21:58:44}
+10/09/26 21:58:49 Number of idle job procs: 0
+10/09/26 21:58:49 Node clean_up_local_level_7_0 job proc (4355815.0.0) completed successfully.
+10/09/26 21:58:49 Node clean_up_local_level_7_0 job(s) have exited the queue
+10/09/26 21:58:49 Running POST script of Node clean_up_local_level_7_0...
+10/09/26 21:58:49 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:58:49 Of 25 nodes total:
+10/09/26 21:58:49  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:58:49   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:58:49    23       0        0       1       0          1        0        0
+10/09/26 21:58:49 0 job proc(s) currently held
+10/09/26 21:58:49 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.012; EventCycleTimeMax=0.124; EventCycleTimeMin=0.000; EventCycleTimeStd=0.027; EventCycleTimeSum=0.700; SleepCycleTimeAvg=4.992; SleepCycleTimeMax=5.133; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.213; SleepCycleTimeSum=284.526; SubmitCycleTimeAvg=0.010; SubmitCycleTimeMax=0.124; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.027; SubmitCycleTimeSum=0.596; EventCycleTimeCount=57.000; SleepCycleTimeCount=57.000; SubmitCycleTimeCount=58.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.014; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.003; LogProcessCycleTimeSum=0.084; LogProcessCycleTimeCount=38.000; ]
+10/09/26 21:58:49 Initializing user log writer for /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003/./noble-gas-reduction-0.dag.nodes.log, (4355815.0.0)
+10/09/26 21:58:54 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:58:54 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node clean_up_local_level_7_0 (4355815.0.0) {10/09/26 21:58:49}
+10/09/26 21:58:54 POST Script of node clean_up_local_level_7_0 completed successfully.
+10/09/26 21:58:54 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:58:54 Of 25 nodes total:
+10/09/26 21:58:54  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:58:54   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:58:54    24       0        0       0       1          0        0        0
+10/09/26 21:58:54 0 job proc(s) currently held
+10/09/26 21:58:54 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.012; EventCycleTimeMax=0.124; EventCycleTimeMin=0.000; EventCycleTimeStd=0.027; EventCycleTimeSum=0.702; SleepCycleTimeAvg=4.994; SleepCycleTimeMax=5.133; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.212; SleepCycleTimeSum=289.645; SubmitCycleTimeAvg=0.010; SubmitCycleTimeMax=0.124; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.027; SubmitCycleTimeSum=0.596; EventCycleTimeCount=58.000; SleepCycleTimeCount=58.000; SubmitCycleTimeCount=59.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.014; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.003; LogProcessCycleTimeSum=0.084; LogProcessCycleTimeCount=39.000; ]
+10/09/26 21:58:59 Submitting HTCondor Node cleanup_noble-gas-reduction_0_local job(s)...
+10/09/26 21:58:59 Submitting node cleanup_noble-gas-reduction_0_local from file 00/00/cleanup_noble-gas-reduction_0_local.sub using direct job submission
+10/09/26 21:58:59 Submit warning: Submit:0:the line 'wf_submit_dir = /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_job_runtime = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_gpus = 0' was unused by DAGMAN. Is it a typo?
+|Submit:0:the line 'pegasus_cores = 1' was unused by DAGMAN. Is it a typo?
+10/09/26 21:58:59 	assigned HTCondor ID (4355819.0.0)
+10/09/26 21:58:59 Just submitted 1 job this cycle...
+10/09/26 21:58:59 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:58:59 Of 25 nodes total:
+10/09/26 21:58:59  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:58:59   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:58:59    24       0        1       0       0          0        0        0
+10/09/26 21:58:59 0 job proc(s) currently held
+10/09/26 21:58:59 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.012; EventCycleTimeMax=0.124; EventCycleTimeMin=0.000; EventCycleTimeStd=0.026; EventCycleTimeSum=0.703; SleepCycleTimeAvg=4.994; SleepCycleTimeMax=5.133; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.210; SleepCycleTimeSum=294.650; SubmitCycleTimeAvg=0.010; SubmitCycleTimeMax=0.124; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.027; SubmitCycleTimeSum=0.614; EventCycleTimeCount=59.000; SleepCycleTimeCount=59.000; SubmitCycleTimeCount=60.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.014; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.003; LogProcessCycleTimeSum=0.084; LogProcessCycleTimeCount=39.000; ]
+10/09/26 21:59:04 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:59:04 Reassigning the id of job cleanup_noble-gas-reduction_0_local from (4355819.0.0) to (4355819.0.0)
+10/09/26 21:59:04 Event: ULOG_SUBMIT for HTCondor Node cleanup_noble-gas-reduction_0_local (4355819.0.0) {10/09/26 21:58:59}
+10/09/26 21:59:04 Number of idle job procs: 1
+10/09/26 21:59:04 Event: ULOG_EXECUTE for HTCondor Node cleanup_noble-gas-reduction_0_local (4355819.0.0) {10/09/26 21:59:02}
+10/09/26 21:59:04 Number of idle job procs: 0
+10/09/26 21:59:09 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:59:09 Event: ULOG_JOB_TERMINATED for HTCondor Node cleanup_noble-gas-reduction_0_local (4355819.0.0) {10/09/26 21:59:04}
+10/09/26 21:59:09 Number of idle job procs: 0
+10/09/26 21:59:09 Node cleanup_noble-gas-reduction_0_local job proc (4355819.0.0) completed successfully.
+10/09/26 21:59:09 Node cleanup_noble-gas-reduction_0_local job(s) have exited the queue
+10/09/26 21:59:09 Running POST script of Node cleanup_noble-gas-reduction_0_local...
+10/09/26 21:59:09 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:59:09 Of 25 nodes total:
+10/09/26 21:59:09  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:59:09   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:59:09    24       0        0       1       0          0        0        0
+10/09/26 21:59:09 0 job proc(s) currently held
+10/09/26 21:59:09 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.012; EventCycleTimeMax=0.124; EventCycleTimeMin=0.000; EventCycleTimeStd=0.026; EventCycleTimeSum=0.721; SleepCycleTimeAvg=4.994; SleepCycleTimeMax=5.133; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.207; SleepCycleTimeSum=304.661; SubmitCycleTimeAvg=0.010; SubmitCycleTimeMax=0.124; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.026; SubmitCycleTimeSum=0.614; EventCycleTimeCount=61.000; SleepCycleTimeCount=61.000; SubmitCycleTimeCount=62.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.014; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.003; LogProcessCycleTimeSum=0.086; LogProcessCycleTimeCount=41.000; ]
+10/09/26 21:59:09 Initializing user log writer for /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003/./noble-gas-reduction-0.dag.nodes.log, (4355819.0.0)
+10/09/26 21:59:14 Currently monitoring 1 HTCondor log file(s)
+10/09/26 21:59:14 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node cleanup_noble-gas-reduction_0_local (4355819.0.0) {10/09/26 21:59:09}
+10/09/26 21:59:14 POST Script of node cleanup_noble-gas-reduction_0_local completed successfully.
+10/09/26 21:59:14 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:59:14 Of 25 nodes total:
+10/09/26 21:59:14  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:59:14   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:59:14    25       0        0       0       0          0        0        0
+10/09/26 21:59:14 0 job proc(s) currently held
+10/09/26 21:59:14 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.012; EventCycleTimeMax=0.124; EventCycleTimeMin=0.000; EventCycleTimeStd=0.026; EventCycleTimeSum=0.737; SleepCycleTimeAvg=4.996; SleepCycleTimeMax=5.133; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.206; SleepCycleTimeSum=309.773; SubmitCycleTimeAvg=0.010; SubmitCycleTimeMax=0.124; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.026; SubmitCycleTimeSum=0.614; EventCycleTimeCount=62.000; SleepCycleTimeCount=62.000; SubmitCycleTimeCount=63.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.014; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.003; LogProcessCycleTimeSum=0.086; LogProcessCycleTimeCount=42.000; ]
+10/09/26 21:59:14 All jobs Completed!
+10/09/26 21:59:14 Note: 0 total node deferrals because of -MaxJobs limit (0)
+10/09/26 21:59:14 Note: 0 total node deferrals because of -MaxIdle limit (1000)
+10/09/26 21:59:14 Note: 0 total node deferrals because of node category throttles
+10/09/26 21:59:14 Note: 0 total PRE script deferrals because of -MaxPre limit (20) or DEFER
+10/09/26 21:59:14 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+10/09/26 21:59:14 Note: 0 total HOLD script deferrals because of -MaxHold limit (20) or DEFER
+10/09/26 21:59:14 DAG status: 0 (DAG_STATUS_OK)
+10/09/26 21:59:14 Of 25 nodes total:
+10/09/26 21:59:14  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+10/09/26 21:59:14   ===     ===      ===     ===     ===        ===      ===      ===
+10/09/26 21:59:14    25       0        0       0       0          0        0        0
+10/09/26 21:59:14 0 job proc(s) currently held
+10/09/26 21:59:14 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.012; EventCycleTimeMax=0.124; EventCycleTimeMin=0.000; EventCycleTimeStd=0.026; EventCycleTimeSum=0.737; SleepCycleTimeAvg=4.996; SleepCycleTimeMax=5.133; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.206; SleepCycleTimeSum=309.773; SubmitCycleTimeAvg=0.010; SubmitCycleTimeMax=0.124; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.026; SubmitCycleTimeSum=0.614; EventCycleTimeCount=62.000; SleepCycleTimeCount=62.000; SubmitCycleTimeCount=63.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.014; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.003; LogProcessCycleTimeSum=0.086; LogProcessCycleTimeCount=42.000; ]
+10/09/26 21:59:14 Wrote metrics file noble-gas-reduction-0.dag.metrics.
+10/09/26 21:59:14 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.012; EventCycleTimeMax=0.124; EventCycleTimeMin=0.000; EventCycleTimeStd=0.026; EventCycleTimeSum=0.737; SleepCycleTimeAvg=4.996; SleepCycleTimeMax=5.133; SleepCycleTimeMin=4.117; SleepCycleTimeStd=0.206; SleepCycleTimeSum=309.773; SubmitCycleTimeAvg=0.010; SubmitCycleTimeMax=0.124; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.026; SubmitCycleTimeSum=0.614; EventCycleTimeCount=62.000; SleepCycleTimeCount=62.000; SubmitCycleTimeCount=63.000; LogProcessCycleTimeAvg=0.002; LogProcessCycleTimeMax=0.014; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.003; LogProcessCycleTimeSum=0.086; LogProcessCycleTimeCount=42.000; ]
+10/09/26 21:59:14 **** condor_scheduniv_exec.4355769.0 (condor_DAGMAN) pid 3718198 EXITING WITH STATUS 0

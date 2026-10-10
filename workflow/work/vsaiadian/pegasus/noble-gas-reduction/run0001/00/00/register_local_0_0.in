@@ -1,0 +1,4 @@
+semi_raw.csv file:///home/vsaiadian/Hotsprings/workflow/output/semi_raw.csv site="local"
+blanks.csv file:///home/vsaiadian/Hotsprings/workflow/output/blanks.csv site="local"
+samples.csv file:///home/vsaiadian/Hotsprings/workflow/output/samples.csv site="local"
+air_stds.csv file:///home/vsaiadian/Hotsprings/workflow/output/air_stds.csv site="local"

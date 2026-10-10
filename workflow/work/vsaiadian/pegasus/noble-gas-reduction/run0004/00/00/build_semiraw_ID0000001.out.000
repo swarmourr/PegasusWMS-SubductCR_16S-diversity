@@ -1,0 +1,363 @@
+- invocation: True
+  version: 3.0
+  start: 2026-10-09T21:55:20.556+00:00
+  duration: 23.664
+  transformation: "build_semiraw"
+  derivation: "ID0000001"
+  resource: "local"
+  wf-label: "noble-gas-reduction"
+  wf-stamp: "2026-10-09T21:54:27+00:00"
+  interface: eth0
+  hostaddr: 10.1.214.25
+  hostname: pegasus.access-ci.org
+  pid: 3720146
+  uid: 2064
+  user: vsaiadian
+  gid: 2065
+  group: vsaiadian
+  umask: 0o0022
+  mainjob:
+    start: 2026-10-09T21:55:20.585+00:00
+    duration: 23.631
+    pid: 3720147
+    usage:
+      utime: 22.556
+      stime: 0.922
+      maxrss: 992644
+      minflt: 232315
+      majflt: 115
+      nswap: 0
+      inblock: 21672
+      outblock: 5200
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 2031
+      nivcsw: 100
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /srv/build_semiraw
+      mode: 0o100755
+      size: 673
+      inode: 1178697392
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-10-09T21:55:17+00:00
+      atime: 2026-10-09T21:55:17+00:00
+      ctime: 2026-10-09T21:55:18+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+    argument_vector:
+      - "GAS_PROCESS.xlsx"
+    procs:
+  cleanup:
+    start: 2026-10-09T21:55:44.217+00:00
+    duration: 0.003
+    pid: 3721129
+    usage:
+      utime: 0.001
+      stime: 0.002
+      maxrss: 1800
+      minflt: 102
+      majflt: 1
+      nswap: 0
+      inblock: 0
+      outblock: 0
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 24
+      nivcsw: 0
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /usr/bin/rm
+      mode: 0o100755
+      size: 76232
+      inode: 556927911
+      nlink: 1
+      blksize: 131072
+      blocks: 148
+      mtime: 2025-06-04T15:14:05+00:00
+      atime: 2025-06-04T15:14:05+00:00
+      ctime: 2025-06-04T15:14:05+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+    argument_vector:
+      - "-rf"
+      - "build_semiraw_ID0000001.in.lof"
+      - "build_semiraw_ID0000001.out.lof"
+    procs:
+  jobids:
+    condor: 4355782.0
+  cwd: /srv
+  usage:
+    utime: 0.008
+    stime: 0.021
+    maxrss: 2276
+    minflt: 158
+    majflt: 6
+    nswap: 0
+    inblock: 904
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 38
+    nivcsw: 2
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: pegasus.access-ci.org
+    uname_release: 4.18.0-553.168.1.el8_10.x86_64
+    uname_machine: x86_64
+    ram_total: 30589060
+    ram_free: 5154560
+    ram_shared: 93188
+    ram_buffer: 1208
+    swap_total: 0
+    swap_free: 0
+    cpu_count: 8
+    cpu_speed: 1996
+    cpu_vendor: AuthenticAMD
+    cpu_model: AMD EPYC-Milan Processor
+    load_min1: 0.72
+    load_min5: 0.44
+    load_min15: 0.36
+    procs_total: 267
+    procs_running: 1
+    procs_sleeping: 168
+    procs_waiting: 1
+    procs_other: 97
+    procs_vmsize: 58655160
+    procs_rss: 3117612
+    task_total: 970
+    task_running: 1
+    task_sleeping: 871
+    task_waiting: 1
+    task_other: 97
+  files:
+    noble-gas.sif:
+      lfn: "noble-gas.sif"
+      file_name: /srv/noble-gas.sif
+      mode: 0o100755
+      size: 54222848
+      inode: 1178697388
+      nlink: 1
+      blksize: 4096
+      blocks: 105904
+      mtime: 2026-10-09T21:55:17+00:00
+      atime: 2026-10-09T21:55:17+00:00
+      ctime: 2026-10-09T21:55:17+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+    gaslib.py:
+      lfn: "gaslib.py"
+      file_name: /srv/gaslib.py
+      mode: 0o100755
+      size: 12591
+      inode: 1178697389
+      nlink: 1
+      blksize: 4096
+      blocks: 32
+      mtime: 2026-10-09T21:55:17+00:00
+      atime: 2026-10-09T21:55:17+00:00
+      ctime: 2026-10-09T21:55:17+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+    GAS_PROCESS.xlsx:
+      lfn: "GAS_PROCESS.xlsx"
+      file_name: /srv/GAS_PROCESS.xlsx
+      mode: 0o100644
+      size: 13506929
+      inode: 1178697391
+      nlink: 1
+      blksize: 4096
+      blocks: 26384
+      mtime: 2026-10-09T21:55:17+00:00
+      atime: 2026-10-09T21:55:17+00:00
+      ctime: 2026-10-09T21:55:17+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+    build_semiraw:
+      lfn: "build_semiraw"
+      file_name: /srv/build_semiraw
+      mode: 0o100755
+      size: 673
+      inode: 1178697392
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-10-09T21:55:17+00:00
+      atime: 2026-10-09T21:55:17+00:00
+      ctime: 2026-10-09T21:55:18+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+    semi_raw.csv:
+      lfn: "semi_raw.csv"
+      file_name: /srv/semi_raw.csv
+      mode: 0o100644
+      size: 1309614
+      inode: 1178697407
+      nlink: 1
+      blksize: 4096
+      blocks: 2560
+      mtime: 2026-10-09T21:55:41+00:00
+      atime: 2026-10-09T21:55:41+00:00
+      ctime: 2026-10-09T21:55:41+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+      output: True
+      sha256: 84a82e807408854ca7655ce6d068f660421de3c1d7c6ed0ee2ac7049ca6f5c7e
+      checksum_timing: 0.01
+    blanks.csv:
+      lfn: "blanks.csv"
+      file_name: /srv/blanks.csv
+      mode: 0o100644
+      size: 132561
+      inode: 1178652353
+      nlink: 1
+      blksize: 4096
+      blocks: 264
+      mtime: 2026-10-09T21:55:41+00:00
+      atime: 2026-10-09T21:55:41+00:00
+      ctime: 2026-10-09T21:55:41+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+      output: True
+      sha256: d085487c0b5dabe13a4f62b18ba53bf96f85a02f3451ebc0c50d56b2d7e1c3a7
+      checksum_timing: 0.00
+    samples.csv:
+      lfn: "samples.csv"
+      file_name: /srv/samples.csv
+      mode: 0o100644
+      size: 310362
+      inode: 1178652355
+      nlink: 1
+      blksize: 4096
+      blocks: 608
+      mtime: 2026-10-09T21:55:41+00:00
+      atime: 2026-10-09T21:55:41+00:00
+      ctime: 2026-10-09T21:55:41+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+      output: True
+      sha256: 37b90d9c4dac61152d3df9ae519e0dcc73f1da596c2e7cc8f08517bf1ded64a6
+      checksum_timing: 0.00
+    air_stds.csv:
+      lfn: "air_stds.csv"
+      file_name: /srv/air_stds.csv
+      mode: 0o100644
+      size: 866903
+      inode: 1178652354
+      nlink: 1
+      blksize: 4096
+      blocks: 1696
+      mtime: 2026-10-09T21:55:41+00:00
+      atime: 2026-10-09T21:55:41+00:00
+      ctime: 2026-10-09T21:55:41+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+      output: True
+      sha256: bf310199798160538b378da5d58806e6110830b29073389a3ea83a8aa44c30ac
+      checksum_timing: 0.00
+    stdin:
+      file_name: /dev/null
+      mode: 0o20666
+      size: 0
+      inode: 1027
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-09-25T17:30:57+00:00
+      atime: 2026-09-25T17:30:57+00:00
+      ctime: 2026-09-25T17:30:57+00:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    stdout:
+      temporary_name: /tmp/ks.out.8WASis
+      descriptor: 3
+      mode: 0o100600
+      size: 52
+      inode: 4663122
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-10-09T21:55:41+00:00
+      atime: 2026-10-09T21:55:20+00:00
+      ctime: 2026-10-09T21:55:41+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+      data_truncated: false
+      data: |
+        semi_raw=4480 blanks=451 air_stds=3007 samples=1022
+        
+    stderr:
+      temporary_name: /tmp/ks.err.6FQCh4
+      descriptor: 4
+      mode: 0o100600
+      size: 0
+      inode: 4663219
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-10-09T21:55:20+00:00
+      atime: 2026-10-09T21:55:20+00:00
+      ctime: 2026-10-09T21:55:20+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+    metadata:
+      temporary_name: /tmp/ks.meta.xTbIQ6
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 4577074
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-10-09T21:55:20+00:00
+      atime: 2026-10-09T21:55:20+00:00
+      ctime: 2026-10-09T21:55:20+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+
+---------------pegasus-multipart
+location:
+    geohash: 9ydq
+    ip: 149.165.153.107
+    latitude: '37.751'
+    longitude: '-97.822'
+    organization: Indiana University
+    subdomain: sta230005.projects.jetstream-cloud.org

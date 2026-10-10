@@ -1,0 +1,46 @@
+1791582093 INTERNAL *** MONITORD_STARTED ***
+1791582091 INTERNAL *** DAGMAN_STARTED 4355762.0 ***
+1791582092 create_dir_noble-gas-reduction_0_local SUBMIT 4355763.0 local - 1
+1791582097 create_dir_noble-gas-reduction_0_local EXECUTE 4355763.0 local - 1
+1791582099 create_dir_noble-gas-reduction_0_local JOB_TERMINATED 4355763.0 local - 1
+1791582103 create_dir_noble-gas-reduction_0_local JOB_SUCCESS 0 local - 1
+1791582103 create_dir_noble-gas-reduction_0_local POST_SCRIPT_STARTED 4355763.0 local - 1
+1791582103 create_dir_noble-gas-reduction_0_local POST_SCRIPT_TERMINATED 4355763.0 local - 1
+1791582108 create_dir_noble-gas-reduction_0_local POST_SCRIPT_SUCCESS 0 local - 1
+1791582113 stage_in_remote_local_2_0 SUBMIT 4355764.0 local - 2
+1791582113 stage_in_remote_local_1_0 SUBMIT 4355765.0 local - 3
+1791582113 stage_in_remote_local_2_0 EXECUTE 4355764.0 local - 2
+1791582113 stage_in_remote_local_0_0 SUBMIT 4355766.0 local - 4
+1791582113 stage_in_remote_local_3_0 SUBMIT 4355767.0 local - 5
+1791582117 stage_in_remote_local_2_0 JOB_TERMINATED 4355764.0 local - 2
+1791582118 stage_in_remote_local_2_0 JOB_SUCCESS 0 local - 2
+1791582118 stage_in_remote_local_2_0 POST_SCRIPT_STARTED 4355764.0 local - 2
+1791582118 stage_in_remote_local_2_0 POST_SCRIPT_TERMINATED 4355764.0 local - 2
+1791582123 stage_in_remote_local_2_0 POST_SCRIPT_SUCCESS 0 local - 2
+1791582118 stage_in_remote_local_1_0 EXECUTE 4355765.0 local - 3
+1791582118 stage_in_remote_local_0_0 EXECUTE 4355766.0 local - 4
+1791582118 stage_in_remote_local_3_0 EXECUTE 4355767.0 local - 5
+1791582120 stage_in_remote_local_1_0 JOB_TERMINATED 4355765.0 local - 3
+1791582123 stage_in_remote_local_1_0 JOB_SUCCESS 0 local - 3
+1791582123 stage_in_remote_local_1_0 POST_SCRIPT_STARTED 4355765.0 local - 3
+1791582120 stage_in_remote_local_3_0 JOB_TERMINATED 4355767.0 local - 5
+1791582123 stage_in_remote_local_3_0 JOB_SUCCESS 0 local - 5
+1791582123 stage_in_remote_local_3_0 POST_SCRIPT_STARTED 4355767.0 local - 5
+1791582122 stage_in_remote_local_0_0 JOB_TERMINATED 4355766.0 local - 4
+1791582123 stage_in_remote_local_0_0 JOB_SUCCESS 0 local - 4
+1791582123 stage_in_remote_local_0_0 POST_SCRIPT_STARTED 4355766.0 local - 4
+1791582123 stage_in_remote_local_3_0 POST_SCRIPT_TERMINATED 4355767.0 local - 5
+1791582128 stage_in_remote_local_3_0 POST_SCRIPT_SUCCESS 0 local - 5
+1791582123 stage_in_remote_local_1_0 POST_SCRIPT_TERMINATED 4355765.0 local - 3
+1791582128 stage_in_remote_local_1_0 POST_SCRIPT_SUCCESS 0 local - 3
+1791582123 stage_in_remote_local_0_0 POST_SCRIPT_TERMINATED 4355766.0 local - 4
+1791582128 stage_in_remote_local_0_0 POST_SCRIPT_SUCCESS 0 local - 4
+1791582133 build_semiraw_ID0000001 SUBMIT 4355768.0 local - 6
+1791582133 build_semiraw_ID0000001 EXECUTE 4355768.0 local - 6
+1791582135 build_semiraw_ID0000001 JOB_TERMINATED 4355768.0 local - 6
+1791582138 build_semiraw_ID0000001 JOB_FAILURE 71 local - 6
+1791582138 build_semiraw_ID0000001 POST_SCRIPT_STARTED 4355768.0 local - 6
+1791582138 build_semiraw_ID0000001 POST_SCRIPT_TERMINATED 4355768.0 local - 6
+1791582143 build_semiraw_ID0000001 POST_SCRIPT_FAILURE 1 local - 6
+1791582143 INTERNAL *** DAGMAN_FINISHED 1 ***
+1791582144 INTERNAL *** MONITORD_FINISHED 0 ***

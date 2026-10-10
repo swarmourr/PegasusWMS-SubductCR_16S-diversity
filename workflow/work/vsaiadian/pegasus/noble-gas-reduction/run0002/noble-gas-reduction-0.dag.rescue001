@@ -1,0 +1,15 @@
+# Rescue DAG file, created after running
+#   the noble-gas-reduction-0.dag DAG file
+# Created 10/9/2026 21:42:23 UTC
+# Rescue DAG version: 2.1.0
+#
+# Total number of Nodes: 25
+# Nodes premarked DONE: 5
+# Nodes that failed: 1
+#   build_semiraw_ID0000001,<ENDLIST>
+
+DONE create_dir_noble-gas-reduction_0_local
+DONE stage_in_remote_local_2_0
+DONE stage_in_remote_local_1_0
+DONE stage_in_remote_local_0_0
+DONE stage_in_remote_local_3_0

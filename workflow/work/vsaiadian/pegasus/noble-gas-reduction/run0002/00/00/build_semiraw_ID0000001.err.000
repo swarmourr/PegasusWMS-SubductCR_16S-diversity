@@ -1,0 +1,35 @@
+DEBUG: Adding default values to PATH - /bin:/usr/bin:/usr/local/bin:/opt/local/bin
+2026-10-09 21:42:13: Job launched in directory /var/lib/condor/spool/local_univ_execute/dir_3713605/scratch
+2026-10-09 21:42:13: PegasusLite: version 5.1.3
+2026-10-09 21:42:13: Executing on host pegasus.access-ci.org IP=149.165.153.107
+
+########################[Pegasus Lite] Setting up workdir ########################
+2026-10-09 21:42:14: Not creating a new work directory as it is already set to /var/lib/condor/spool/local_univ_execute/dir_3713605/scratch
+
+##############[Pegasus Lite] Figuring out the worker package to use ##############
+2026-10-09 21:42:14: The job contained a Pegasus worker package
+
+##################### Setting the xbit for executables staged #####################
+
+########[Pegasus Lite] Writing out script to launch user task in container ########
+2026-10-09 21:42:15: Using /usr/bin/apptainer to run the container
+2026-10-09 21:42:15: Job launched in directory /srv
+
+##############[Container] Figuring out Pegasus worker package to use ##############
+2026-10-09 21:42:15: The job contained a Pegasus worker package
+2026-10-09 21:42:15: Warning: worker package pegasus-worker-5.1.3-x86_64_rhel_8.tar.gz does not seem to match the system x86_64_deb_13
+2026-10-09 21:42:15: Checking for untar worker package in /srv
+2026-10-09 21:42:15: The job contained a Pegasus worker package that was already untarred in /srv/pegasus-5.1.3-x86_64_rhel_8
+2026-10-09 21:42:15: Warning: worker package /srv/pegasus-5.1.3-x86_64_rhel_8 does not seem to match the system x86_64_deb_13
+2026-10-09 21:42:15: Downloading Pegasus worker package from http://download.pegasus.isi.edu/pegasus/5.1.3/pegasus-worker-5.1.3-x86_64_deb_13.tar.gz
+2026-10-09 21:42:15: ERROR: Unable to find curl/wget
+2026-10-09 21:42:15: ERROR: Unable to download a worker package for this platform (x86_64_deb_13).
+2026-10-09 21:42:15: If you want to use the same package as on the submit host, try the following setting in your properties file:
+2026-10-09 21:42:15:    pegasus.transfer.worker.package.strict = false
+2026-10-09 21:42:15: Will try the default worker package (x86_64_rhel_8)
+2026-10-09 21:42:15: Downloading Pegasus worker package from http://download.pegasus.isi.edu/pegasus/5.1.3/pegasus-worker-5.1.3-x86_64_rhel_8.tar.gz
+2026-10-09 21:42:15: ERROR: Unable to find curl/wget
+2026-10-09 21:42:15: ERROR: Unable to download the default worker package.
+2026-10-09 21:42:15: Last command exited with 1
+PegasusLite: runtime 2
+PegasusLite: exitcode 71, tool originally exited with exitcode 1

@@ -1,0 +1,36 @@
+---
+pegasus: "5.0"
+sites:
+ -
+  name: "condorpool"
+  arch: "x86_64"
+  os.type: "linux"
+  profiles:
+    pegasus:
+      style: "condor"
+ -
+  name: "local"
+  arch: "x86_64"
+  os.type: "linux"
+  directories:
+   -
+    type: "sharedScratch"
+    path: "/home/vsaiadian/Hotsprings/workflow/work/scratch"
+    sharedFileSystem: false
+    fileServers:
+     -
+      operation: "all"
+      url: "file:///home/vsaiadian/Hotsprings/workflow/work/scratch"
+   -
+    type: "localStorage"
+    path: "/home/vsaiadian/Hotsprings/workflow/output"
+    sharedFileSystem: false
+    fileServers:
+     -
+      operation: "all"
+      url: "file:///home/vsaiadian/Hotsprings/workflow/output"
+  profiles:
+    env:
+      PATH: "/usr/bin:/bin"
+    pegasus:
+      clusters.num: "1"

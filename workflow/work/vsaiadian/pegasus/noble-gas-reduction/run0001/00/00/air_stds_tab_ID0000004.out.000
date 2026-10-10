@@ -1,0 +1,320 @@
+- invocation: True
+  version: 3.0
+  start: 2026-10-09T19:00:11.036+00:00
+  duration: 29.307
+  transformation: "air_stds_tab"
+  derivation: "ID0000004"
+  resource: "local"
+  wf-label: "noble-gas-reduction"
+  wf-stamp: "2026-10-09T18:53:12+00:00"
+  interface: eth0
+  hostaddr: 10.1.214.25
+  hostname: pegasus.access-ci.org
+  pid: 3664626
+  uid: 2064
+  user: vsaiadian
+  gid: 2065
+  group: vsaiadian
+  umask: 0o0022
+  mainjob:
+    start: 2026-10-09T19:00:11.071+00:00
+    duration: 29.271
+    pid: 3664638
+    usage:
+      utime: 27.621
+      stime: 2.076
+      maxrss: 961068
+      minflt: 234956
+      majflt: 0
+      nswap: 0
+      inblock: 32
+      outblock: 5560
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 18
+      nivcsw: 4019
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /var/lib/condor/spool/local_univ_execute/dir_3664194/scratch/air_stds_tab
+      mode: 0o100755
+      size: 535
+      inode: 377511720
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-10-09T19:00:09+00:00
+      atime: 2026-10-09T19:00:09+00:00
+      ctime: 2026-10-09T19:00:11+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+    argument_vector:
+      - "GAS_PROCESS.xlsx"
+    procs:
+  cleanup:
+    start: 2026-10-09T19:00:40.342+00:00
+    duration: 0.003
+    pid: 3664915
+    usage:
+      utime: 0.001
+      stime: 0.001
+      maxrss: 1864
+      minflt: 73
+      majflt: 0
+      nswap: 0
+      inblock: 0
+      outblock: 0
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 1
+      nivcsw: 0
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /usr/bin/rm
+      mode: 0o100755
+      size: 71824
+      inode: 12756686
+      nlink: 1
+      blksize: 4096
+      blocks: 144
+      mtime: 2026-09-22T17:24:12+00:00
+      atime: 2026-09-22T17:24:12+00:00
+      ctime: 2026-09-25T06:52:06+00:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    argument_vector:
+      - "-rf"
+      - "air_stds_tab_ID0000004.in.lof"
+      - "air_stds_tab_ID0000004.out.lof"
+    procs:
+  jobids:
+    condor: 4355751.0
+  cwd: /var/lib/condor/spool/local_univ_execute/dir_3664194/scratch
+  usage:
+    utime: 0.003
+    stime: 0.026
+    maxrss: 2252
+    minflt: 140
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 2
+    nivcsw: 3
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: pegasus.access-ci.org
+    uname_release: 4.18.0-553.168.1.el8_10.x86_64
+    uname_machine: x86_64
+    ram_total: 30589060
+    ram_free: 5507556
+    ram_shared: 93204
+    ram_buffer: 1208
+    swap_total: 0
+    swap_free: 0
+    cpu_count: 8
+    cpu_speed: 1996
+    cpu_vendor: AuthenticAMD
+    cpu_model: AMD EPYC-Milan Processor
+    load_min1: 0.51
+    load_min5: 0.24
+    load_min15: 0.22
+    procs_total: 277
+    procs_running: 4
+    procs_sleeping: 176
+    procs_other: 96
+    procs_vmsize: 62584468
+    procs_rss: 3296816
+    task_total: 1002
+    task_running: 12
+    task_sleeping: 894
+    task_other: 96
+  files:
+    blank_ref.json:
+      lfn: "blank_ref.json"
+      file_name: /var/lib/condor/spool/local_univ_execute/dir_3664194/scratch/blank_ref.json
+      mode: 0o100644
+      size: 388
+      inode: 377511719
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-10-09T19:00:09+00:00
+      atime: 2026-10-09T19:00:09+00:00
+      ctime: 2026-10-09T19:00:09+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+    air_stds_tab:
+      lfn: "air_stds_tab"
+      file_name: /var/lib/condor/spool/local_univ_execute/dir_3664194/scratch/air_stds_tab
+      mode: 0o100755
+      size: 535
+      inode: 377511720
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-10-09T19:00:09+00:00
+      atime: 2026-10-09T19:00:09+00:00
+      ctime: 2026-10-09T19:00:11+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+    gaslib.py:
+      lfn: "gaslib.py"
+      file_name: /var/lib/condor/spool/local_univ_execute/dir_3664194/scratch/gaslib.py
+      mode: 0o100755
+      size: 12591
+      inode: 377511721
+      nlink: 1
+      blksize: 4096
+      blocks: 32
+      mtime: 2026-10-09T19:00:09+00:00
+      atime: 2026-10-09T19:00:09+00:00
+      ctime: 2026-10-09T19:00:09+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+    air_stds.csv:
+      lfn: "air_stds.csv"
+      file_name: /var/lib/condor/spool/local_univ_execute/dir_3664194/scratch/air_stds.csv
+      mode: 0o100644
+      size: 866903
+      inode: 377511722
+      nlink: 1
+      blksize: 4096
+      blocks: 1696
+      mtime: 2026-10-09T19:00:09+00:00
+      atime: 2026-10-09T19:00:09+00:00
+      ctime: 2026-10-09T19:00:09+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+    GAS_PROCESS.xlsx:
+      lfn: "GAS_PROCESS.xlsx"
+      file_name: /var/lib/condor/spool/local_univ_execute/dir_3664194/scratch/GAS_PROCESS.xlsx
+      mode: 0o100644
+      size: 13506929
+      inode: 377511723
+      nlink: 1
+      blksize: 4096
+      blocks: 26384
+      mtime: 2026-10-09T19:00:09+00:00
+      atime: 2026-10-09T19:00:09+00:00
+      ctime: 2026-10-09T19:00:09+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+    air_stds_tab.csv:
+      lfn: "air_stds_tab.csv"
+      file_name: /var/lib/condor/spool/local_univ_execute/dir_3664194/scratch/air_stds_tab.csv
+      mode: 0o100644
+      size: 2826030
+      inode: 377516039
+      nlink: 1
+      blksize: 4096
+      blocks: 5520
+      mtime: 2026-10-09T19:00:38+00:00
+      atime: 2026-10-09T19:00:38+00:00
+      ctime: 2026-10-09T19:00:38+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+      output: True
+      sha256: 84585f764ac3c0a42a76f75fe2aa995692fed25774fefdb4de8a237f855a4a1f
+      checksum_timing: 0.01
+    stdin:
+      file_name: /dev/null
+      mode: 0o20666
+      size: 0
+      inode: 1027
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-09-25T17:30:57+00:00
+      atime: 2026-09-25T17:30:57+00:00
+      ctime: 2026-09-25T17:30:57+00:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    stdout:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_3664194/scratch/ks.out.zfJNJi
+      descriptor: 3
+      mode: 0o100600
+      size: 39
+      inode: 377511734
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-10-09T19:00:38+00:00
+      atime: 2026-10-09T19:00:11+00:00
+      ctime: 2026-10-09T19:00:38+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+      data_truncated: false
+      data: |
+        air_stds_tab.csv written (90210 cells)
+        
+    stderr:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_3664194/scratch/ks.err.pqtaY4
+      descriptor: 4
+      mode: 0o100600
+      size: 0
+      inode: 377511735
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-10-09T19:00:11+00:00
+      atime: 2026-10-09T19:00:11+00:00
+      ctime: 2026-10-09T19:00:11+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+    metadata:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_3664194/scratch/ks.meta.epbbtR
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 377511738
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-10-09T19:00:11+00:00
+      atime: 2026-10-09T19:00:11+00:00
+      ctime: 2026-10-09T19:00:11+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+
+---------------pegasus-multipart
+location:
+    geohash: 9ydq
+    ip: 149.165.153.107
+    latitude: '37.751'
+    longitude: '-97.822'
+    organization: Indiana University
+    subdomain: sta230005.projects.jetstream-cloud.org

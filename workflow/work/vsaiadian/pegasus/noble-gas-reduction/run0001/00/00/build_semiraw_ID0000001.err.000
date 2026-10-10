@@ -1,0 +1,17 @@
+DEBUG: Adding default values to PATH - /bin:/usr/bin:/usr/local/bin:/opt/local/bin
+2026-10-09 18:54:00: Job launched in directory /var/lib/condor/spool/local_univ_execute/dir_3661253/scratch
+2026-10-09 18:54:00: PegasusLite: version 5.1.3
+2026-10-09 18:54:01: Executing on host pegasus.access-ci.org IP=149.165.153.107
+
+########################[Pegasus Lite] Setting up workdir ########################
+2026-10-09 18:54:01: Not creating a new work directory as it is already set to /var/lib/condor/spool/local_univ_execute/dir_3661253/scratch
+
+##############[Pegasus Lite] Figuring out the worker package to use ##############
+2026-10-09 18:54:01: The job contained a Pegasus worker package
+
+##################### Setting the xbit for executables staged #####################
+
+######################[Pegasus Lite] Executing the user task ######################
+2026-10-09 18:54:02: User task failed with exitcode 1
+PegasusLite: runtime 2
+PegasusLite: exitcode 1

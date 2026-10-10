@@ -1,0 +1,45 @@
+[
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "noble-gas.sif",
+   "id": 1,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///home/vsaiadian/Hotsprings/docker/noble-gas.sif", "priority": 100 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///home/vsaiadian/Hotsprings/workflow/work/scratch/vsaiadian/pegasus/noble-gas-reduction/run0002/./noble-gas.sif", "type": "singularity" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "gaslib.py",
+   "id": 2,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///home/vsaiadian/Hotsprings/workflow/bin/gaslib.py", "priority": 100 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///home/vsaiadian/Hotsprings/workflow/work/scratch/vsaiadian/pegasus/noble-gas-reduction/run0002/./gaslib.py" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "GAS_PROCESS.xlsx",
+   "id": 3,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///home/vsaiadian/Hotsprings/workflow/input/GAS_PROCESS.xlsx", "priority": 100 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///home/vsaiadian/Hotsprings/workflow/work/scratch/vsaiadian/pegasus/noble-gas-reduction/run0002/./GAS_PROCESS.xlsx" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "build_semiraw",
+   "id": 4,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///home/vsaiadian/Hotsprings/workflow/bin/build_semiraw.py", "priority": 100 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///home/vsaiadian/Hotsprings/workflow/work/scratch/vsaiadian/pegasus/noble-gas-reduction/run0002/./build_semiraw" }
+   ] }
+]

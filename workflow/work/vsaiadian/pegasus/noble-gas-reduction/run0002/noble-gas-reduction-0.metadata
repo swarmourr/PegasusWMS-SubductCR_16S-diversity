@@ -1,0 +1,36 @@
+{
+  "root_workflow_uuid": "d3326321-b47e-49e9-8e88-50e0138644d1",
+  "workflow_uuid": "d3326321-b47e-49e9-8e88-50e0138644d1",
+  "wf_metadata": {
+    "wf.api": "python"
+  },
+  "graph": {
+    "jobs": {
+      "samples_tab_ID0000005": {},
+      "stage_in_remote_local_2_0": {},
+      "stage_in_remote_local_1_0": {},
+      "stage_in_remote_local_0_0": {},
+      "clean_up_local_level_3_0": {},
+      "clean_up_local_level_4_0": {},
+      "build_semiraw_ID0000001": {},
+      "clean_up_local_level_5_0": {},
+      "create_dir_noble-gas-reduction_0_local": {},
+      "clean_up_local_level_6_0": {},
+      "clean_up_local_level_7_0": {},
+      "cleanup_noble-gas-reduction_0_local": {},
+      "stage_in_remote_local_3_0": {},
+      "blanks_tab_ID0000003": {},
+      "stage_out_local_local_3_0": {},
+      "stage_out_local_local_2_0": {},
+      "stage_out_local_local_1_0": {},
+      "assemble_workbook_ID0000006": {},
+      "stage_out_local_local_0_0": {},
+      "register_local_3_0": {},
+      "register_local_2_0": {},
+      "register_local_1_0": {},
+      "compute_references_ID0000002": {},
+      "register_local_0_0": {},
+      "air_stds_tab_ID0000004": {}
+    }
+  }
+}

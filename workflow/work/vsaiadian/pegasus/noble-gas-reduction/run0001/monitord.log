@@ -1,0 +1,95 @@
+2026-10-09 18:58:33,995:INFO:pegasus-monitord(65): pegasus-monitord starting - pid 3662760 
+2026-10-09 18:58:34,000:INFO:pegasus-monitord(463): Final Command line options are: ['-N', 'noble-gas-reduction-0.dag.dagman.out']
+2026-10-09 18:58:34,001:INFO:Pegasus.monitoring.event_output.MultiplexEventSink(507): Multiplexed Event Sink Connection Properties  {'amqp.url': 'amqp://friend:donatedata@msgs.pegasus.isi.edu:5672/prod/workflows', 'default.url': 'sqlite:////home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0001/noble-gas-reduction-0.stampede.db'}
+2026-10-09 18:58:34,001:INFO:Pegasus.monitoring.event_output(628): Connecting workflow event sink to amqp://friend:donatedata@msgs.pegasus.isi.edu:5672/prod/workflows
+2026-10-09 18:58:34,001:INFO:Pegasus.monitoring.event_output.AMQPEventSink(323): Encoder used <function json_encode at 0x7fc4a97050d0> Properties received {'url': 'amqp://friend:donatedata@msgs.pegasus.isi.edu:5672/prod/workflows'}
+2026-10-09 18:58:34,002:INFO:Pegasus.monitoring.event_output.AMQPEventSink(375): Connecting to host: msgs.pegasus.isi.edu:5672 virtual host: prod exchange: workflows with user: friend ssl: False
+2026-10-09 18:58:34,003:INFO:Pegasus.monitoring.event_output(702): output type=AMQP namespace=stampede. name=msgs.pegasus.isi.edu:5672//prod/workflows
+2026-10-09 18:58:34,003:INFO:Pegasus.monitoring.event_output(628): Connecting workflow event sink to sqlite:////home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0001/noble-gas-reduction-0.stampede.db
+2026-10-09 18:58:34,066:INFO:pika.adapters.utils.connection_workflow(179): Pika version 1.3.1 connecting to ('128.9.46.112', 5672)
+2026-10-09 18:58:34,126:INFO:pika.adapters.utils.io_services_utils(345): Socket connected: <socket.socket fd=6, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.1.214.25', 49856), raddr=('128.9.46.112', 5672)>
+2026-10-09 18:58:34,127:INFO:pika.adapters.utils.connection_workflow(428): Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc4a9679b70>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc4a9679b70> params=<ConnectionParameters host=msgs.pegasus.isi.edu port=5672 virtual_host=prod ssl=False>>).
+Database version: '5.1.3' (sqlite:////home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0001/noble-gas-reduction-0.stampede.db)
+2026-10-09 18:58:34,197:INFO:Pegasus.monitoring.event_output(702): output type=DB namespace=stampede. name=sqlite:////home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0001/noble-gas-reduction-0.stampede.db
+2026-10-09 18:58:34,197:INFO:Pegasus.monitoring.event_output(628): Connecting workflow event sink to sqlite:////home/vsaiadian/.pegasus/workflow.db
+2026-10-09 18:58:34,309:INFO:pika.adapters.utils.connection_workflow(293): AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc4a9679b70> params=<ConnectionParameters host=msgs.pegasus.isi.edu port=5672 virtual_host=prod ssl=False>>
+2026-10-09 18:58:34,310:INFO:pika.adapters.utils.connection_workflow(725): AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc4a9679b70> params=<ConnectionParameters host=msgs.pegasus.isi.edu port=5672 virtual_host=prod ssl=False>>
+2026-10-09 18:58:34,310:INFO:pika.adapters.blocking_connection(454): Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc4a9679b70> params=<ConnectionParameters host=msgs.pegasus.isi.edu port=5672 virtual_host=prod ssl=False>>
+2026-10-09 18:58:34,310:INFO:pika.adapters.blocking_connection(1264): Created channel=1
+Database version: '5.1.3' (sqlite:////home/vsaiadian/.pegasus/workflow.db)
+2026-10-09 18:58:34,378:INFO:Pegasus.monitoring.event_output(702): output type=DB namespace=dashboard. name=sqlite:////home/vsaiadian/.pegasus/workflow.db
+2026-10-09 18:58:34,378:INFO:pegasus-monitord(1258): monitord started in fast start mode
+2026-10-09 18:58:34,383:INFO:Pegasus.monitoring.workflow(1161): Appending to existing jobstate.log replay_mode 0 previous_processed_line 0
+2026-10-09 18:58:34,383:INFO:Pegasus.monitoring.notifications(472): loading notifications from /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0001/noble-gas-reduction-0.notify
+2026-10-09 18:58:34,383:INFO:Pegasus.monitoring.workflow(204): Parsing DAG file /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0001/noble-gas-reduction-0.dag
+2026-10-09 18:58:34,385:INFO:pegasus-monitord(987): Using DAGMan version 25.14.1 251401
+2026-10-09 18:58:34,387:INFO:pegasus-monitord(968): using dag noble-gas-reduction-0.dag
+2026-10-09 18:58:34,387:INFO:Pegasus.monitoring.workflow(810): DAGMan starting with condor id 4355741.0
+2026-10-09 18:58:35,471:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 18:59:19,936:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 18:59:19,937:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 18:59:19,937:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 18:59:19,937:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 18:59:19,937:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 18:59:19,938:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 18:59:45,113:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 18:59:45,113:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 18:59:45,114:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 18:59:55,166:INFO:Pegasus.monitoring.workflow(2483): Populating locations corresponding to succeeded registration job  /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0001/00/00/register_local_0_0.in 
+2026-10-09 19:00:05,383:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:00:05,383:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:00:05,383:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:00:05,383:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:00:05,383:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:00:05,384:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:00:05,384:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:00:05,385:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:00:25,567:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:00:25,568:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:00:25,568:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:00:35,618:INFO:Pegasus.monitoring.workflow(2483): Populating locations corresponding to succeeded registration job  /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0001/00/00/register_local_1_0.in 
+2026-10-09 19:00:55,052:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:00:55,052:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:00:55,052:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:00:55,052:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:00:55,052:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:00:55,053:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:01:15,159:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:01:15,159:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:01:15,159:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:01:25,278:INFO:Pegasus.monitoring.workflow(2483): Populating locations corresponding to succeeded registration job  /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0001/00/00/register_local_2_0.in 
+2026-10-09 19:02:15,457:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:02:15,457:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:02:15,457:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:02:15,457:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:02:15,458:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:02:34,532:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:02:34,532:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:02:34,533:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:02:34,533:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:02:34,533:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:02:49,640:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:02:49,640:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:02:49,640:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-10-09 19:02:49,659:INFO:Pegasus.monitoring.workflow(2483): Populating locations corresponding to succeeded registration job  /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0001/00/00/register_local_3_0.in 
+2026-10-09 19:03:00,713:INFO:pegasus-monitord(940): DAGMan noble-gas-reduction-0.dag finished with exit code 0
+2026-10-09 19:03:01,737:INFO:pegasus-monitord(1438): workflow /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0001/noble-gas-reduction-0.dag.dagman.out ended
+2026-10-09 19:03:01,737:INFO:Pegasus.monitoring.workflow(1381): recovery file deleted: /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0001/monitord.recover
+2026-10-09 19:03:01,737:INFO:pegasus-monitord(1676): finishing workflow: /home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0001/noble-gas-reduction-0.dag.dagman.out
+2026-10-09 19:03:01,737:INFO:pegasus-monitord(1730): finishing notifications...
+2026-10-09 19:03:01,738:INFO:pegasus-monitord(1738): monitord process 3662760 exiting with 0
+2026-10-09 19:03:01,740:INFO:pegasus-monitord(205): DB flushing beginning
+2026-10-09 19:03:05,734:INFO:pika.adapters.blocking_connection(802): Closing connection (200): Normal shutdown
+2026-10-09 19:03:05,734:INFO:pika.channel(537): Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc4a9679b70> params=<ConnectionParameters host=msgs.pegasus.isi.edu port=5672 virtual_host=prod ssl=False>>>
+2026-10-09 19:03:05,794:INFO:pika.channel(1133): Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fc4a9679b70> params=<ConnectionParameters host=msgs.pegasus.isi.edu port=5672 virtual_host=prod ssl=False>>>
+2026-10-09 19:03:05,794:INFO:pika.connection(1318): Closing connection (200): 'Normal shutdown'
+2026-10-09 19:03:05,854:INFO:pika.adapters.utils.io_services_utils(732): Aborting transport connection: state=1; <socket.socket fd=6, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.1.214.25', 49856), raddr=('128.9.46.112', 5672)>
+2026-10-09 19:03:05,854:INFO:pika.adapters.utils.io_services_utils(907): _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=6, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.1.214.25', 49856), raddr=('128.9.46.112', 5672)>
+2026-10-09 19:03:05,854:INFO:pika.adapters.utils.io_services_utils(870): Deactivating transport: state=1; <socket.socket fd=6, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.1.214.25', 49856), raddr=('128.9.46.112', 5672)>
+2026-10-09 19:03:05,854:INFO:pika.connection(2022): AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2026-10-09 19:03:05,855:INFO:pika.connection(2088): Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2026-10-09 19:03:05,855:INFO:pika.adapters.utils.io_services_utils(883): Closing transport socket and unlinking: state=3; <socket.socket fd=6, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.1.214.25', 49856), raddr=('128.9.46.112', 5672)>
+2026-10-09 19:03:05,855:INFO:pika.adapters.blocking_connection(526): User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=msgs.pegasus.isi.edu port=5672 virtual_host=prod ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2026-10-09 19:03:05,856:INFO:Pegasus.db.workflow_loader.WorkflowLoader(1244): Executing final flush
+2026-10-09 19:03:05,898:INFO:Pegasus.db.dashboard_loader.DashboardLoader(397): Executing final flush
+2026-10-09 19:03:05,898:INFO:pegasus-monitord(221): DB flushing ended

@@ -1,0 +1,45 @@
+[
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "semi_raw.csv",
+   "id": 1,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///home/vsaiadian/Hotsprings/workflow/work/scratch/vsaiadian/pegasus/noble-gas-reduction/run0001/./semi_raw.csv" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///home/vsaiadian/Hotsprings/workflow/output/semi_raw.csv" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "blanks.csv",
+   "id": 2,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///home/vsaiadian/Hotsprings/workflow/work/scratch/vsaiadian/pegasus/noble-gas-reduction/run0001/./blanks.csv" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///home/vsaiadian/Hotsprings/workflow/output/blanks.csv" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "samples.csv",
+   "id": 3,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///home/vsaiadian/Hotsprings/workflow/work/scratch/vsaiadian/pegasus/noble-gas-reduction/run0001/./samples.csv" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///home/vsaiadian/Hotsprings/workflow/output/samples.csv" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "air_stds.csv",
+   "id": 4,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///home/vsaiadian/Hotsprings/workflow/work/scratch/vsaiadian/pegasus/noble-gas-reduction/run0001/./air_stds.csv" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///home/vsaiadian/Hotsprings/workflow/output/air_stds.csv" }
+   ] }
+]

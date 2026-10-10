@@ -1,0 +1,223 @@
+- invocation: True
+  version: 3.0
+  start: 2026-10-09T21:58:42.231+00:00
+  duration: 2.164
+  transformation: "pegasus::cleanup"
+  derivation: "null"
+  resource: "local"
+  wf-label: "noble-gas-reduction"
+  wf-stamp: "2026-10-09T21:53:57+00:00"
+  interface: eth0
+  hostaddr: 10.1.214.25
+  hostname: pegasus.access-ci.org
+  pid: 3726663
+  uid: 2064
+  user: vsaiadian
+  gid: 2065
+  group: vsaiadian
+  umask: 0o0022
+  mainjob:
+    start: 2026-10-09T21:58:42.265+00:00
+    duration: 2.128
+    pid: 3726668
+    usage:
+      utime: 0.084
+      stime: 0.046
+      maxrss: 17012
+      minflt: 9028
+      majflt: 0
+      nswap: 0
+      inblock: 0
+      outblock: 16
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 58
+      nivcsw: 5
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /usr/bin/pegasus-transfer
+      mode: 0o100755
+      size: 2909
+      inode: 12671144
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-09-13T22:24:35+00:00
+      atime: 2026-09-13T22:24:35+00:00
+      ctime: 2026-09-21T19:37:39+00:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    argument_vector:
+    procs:
+  cleanup:
+    start: 2026-10-09T21:58:44.393+00:00
+    duration: 0.003
+    pid: 3726777
+    usage:
+      utime: 0.001
+      stime: 0.002
+      maxrss: 1864
+      minflt: 71
+      majflt: 0
+      nswap: 0
+      inblock: 0
+      outblock: 0
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 1
+      nivcsw: 0
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /usr/bin/rm
+      mode: 0o100755
+      size: 71824
+      inode: 12756686
+      nlink: 1
+      blksize: 4096
+      blocks: 144
+      mtime: 2026-09-22T17:24:12+00:00
+      atime: 2026-09-22T17:24:12+00:00
+      ctime: 2026-09-25T06:52:06+00:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    argument_vector:
+      - "-rf"
+      - "clean_up_local_level_7_0.in.lof"
+    procs:
+  jobids:
+    condor: 4355815.0
+  cwd: /var/lib/condor/spool/local_univ_execute/dir_3726656/scratch
+  usage:
+    utime: 0.005
+    stime: 0.031
+    maxrss: 2264
+    minflt: 152
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 2
+    nivcsw: 2
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: pegasus.access-ci.org
+    uname_release: 4.18.0-553.168.1.el8_10.x86_64
+    uname_machine: x86_64
+    ram_total: 30589060
+    ram_free: 5497156
+    ram_shared: 93176
+    ram_buffer: 1208
+    swap_total: 0
+    swap_free: 0
+    cpu_count: 8
+    cpu_speed: 1996
+    cpu_vendor: AuthenticAMD
+    cpu_model: AMD EPYC-Milan Processor
+    load_min1: 1.59
+    load_min5: 1.33
+    load_min15: 0.75
+    procs_total: 433
+    procs_running: 2
+    procs_sleeping: 167
+    procs_other: 263
+    procs_vmsize: 56558988
+    procs_rss: 3121024
+    task_total: 1123
+    task_running: 2
+    task_sleeping: 858
+    task_other: 263
+  files:
+    GAS_PROCESS_reproduced.xlsx:
+      error: 2
+      lfn: "GAS_PROCESS_reproduced.xlsx"
+      file_name: GAS_PROCESS_reproduced.xlsx
+    stdin:
+      descriptor_number: 0
+      mode: 0o10600
+      size: 0
+      inode: 74641194
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-10-09T21:58:42+00:00
+      atime: 2026-10-09T21:58:42+00:00
+      ctime: 2026-10-09T21:58:42+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+    stdout:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_3726656/scratch/ks.out.YDOc5a
+      descriptor: 3
+      mode: 0o100600
+      size: 0
+      inode: 872434932
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-10-09T21:58:42+00:00
+      atime: 2026-10-09T21:58:42+00:00
+      ctime: 2026-10-09T21:58:42+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+    stderr:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_3726656/scratch/ks.err.BKZX22
+      descriptor: 4
+      mode: 0o100600
+      size: 890
+      inode: 872434933
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-10-09T21:58:44+00:00
+      atime: 2026-10-09T21:58:42+00:00
+      ctime: 2026-10-09T21:58:44+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+      data_truncated: false
+      data: |
+        2026-10-09 21:58:42,334    INFO:  Reading URL pairs from stdin
+        2026-10-09 21:58:42,335    INFO:  1 transfers loaded
+        2026-10-09 21:58:42,335    INFO:  PATH=/usr/bin:/bin:/bin:/usr/bin:/usr/local/bin:/opt/local/bin:/usr/sbin
+        2026-10-09 21:58:42,335    INFO:  LD_LIBRARY_PATH=
+        2026-10-09 21:58:42,370    INFO:  --------------------------------------------------------------------------------
+        2026-10-09 21:58:42,370    INFO:  Starting transfers - attempt 1
+        2026-10-09 21:58:44,373    INFO:  /bin/rm -f '/home/vsaiadian/Hotsprings/workflow/work/scratch/vsaiadian/pegasus/noble-gas-reduction/run0003/./GAS_PROCESS_reproduced.xlsx' 
+        2026-10-09 21:58:44,382    INFO:  --------------------------------------------------------------------------------
+        2026-10-09 21:58:44,383    INFO:  Stats: no local files in the transfer set
+        2026-10-09 21:58:44,383    INFO:  All transfers completed successfully.
+        
+    metadata:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_3726656/scratch/ks.meta.KAYuAT
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 872434934
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-10-09T21:58:42+00:00
+      atime: 2026-10-09T21:58:42+00:00
+      ctime: 2026-10-09T21:58:42+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian

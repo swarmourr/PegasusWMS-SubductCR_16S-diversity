@@ -1,0 +1,178 @@
+- invocation: True
+  version: 3.0
+  start: 2026-10-09T21:55:54.282+00:00
+  duration: 1.308
+  transformation: "pegasus::rc-client"
+  derivation: "null"
+  resource: "local"
+  wf-label: "noble-gas-reduction"
+  wf-stamp: "2026-10-09T21:53:57+00:00"
+  interface: eth0
+  hostaddr: 10.1.214.25
+  hostname: pegasus.access-ci.org
+  pid: 3721239
+  uid: 2064
+  user: vsaiadian
+  gid: 2065
+  group: vsaiadian
+  umask: 0o0022
+  mainjob:
+    start: 2026-10-09T21:55:54.309+00:00
+    duration: 1.280
+    pid: 3721240
+    usage:
+      utime: 1.455
+      stime: 0.275
+      maxrss: 123820
+      minflt: 41866
+      majflt: 0
+      nswap: 0
+      inblock: 0
+      outblock: 2120
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 1159
+      nivcsw: 22
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /usr/bin/pegasus-rc-client
+      mode: 0o100755
+      size: 614
+      inode: 12640214
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-09-13T22:23:27+00:00
+      atime: 2026-09-13T22:23:27+00:00
+      ctime: 2026-09-21T19:37:39+00:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    argument_vector:
+      - "--prefix"
+      - "pegasus.catalog.replica.output"
+      - "--conf"
+      - "/home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003/pegasus.3513134622940236757.properties"
+      - "-v"
+      - "--insert"
+      - "/home/vsaiadian/Hotsprings/workflow/work/vsaiadian/pegasus/noble-gas-reduction/run0003/00/00/register_local_0_0.in"
+    procs:
+  jobids:
+    condor: 4355786.0
+  cwd: /var/lib/condor/spool/local_univ_execute/dir_3721237/scratch
+  usage:
+    utime: 0.006
+    stime: 0.023
+    maxrss: 2696
+    minflt: 121
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 1
+    nivcsw: 2
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: pegasus.access-ci.org
+    uname_release: 4.18.0-553.168.1.el8_10.x86_64
+    uname_machine: x86_64
+    ram_total: 30589060
+    ram_free: 4369616
+    ram_shared: 93188
+    ram_buffer: 1208
+    swap_total: 0
+    swap_free: 0
+    cpu_count: 8
+    cpu_speed: 1996
+    cpu_vendor: AuthenticAMD
+    cpu_model: AMD EPYC-Milan Processor
+    load_min1: 1.26
+    load_min5: 0.61
+    load_min15: 0.42
+    procs_total: 266
+    procs_running: 2
+    procs_sleeping: 167
+    procs_other: 97
+    procs_vmsize: 58674432
+    procs_rss: 3895784
+    task_total: 967
+    task_running: 2
+    task_sleeping: 868
+    task_other: 97
+  files:
+    stdin:
+      file_name: /dev/null
+      mode: 0o20666
+      size: 0
+      inode: 1027
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-09-25T17:30:57+00:00
+      atime: 2026-09-25T17:30:57+00:00
+      ctime: 2026-09-25T17:30:57+00:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    stdout:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_3721237/scratch/ks.out.wpFw4l
+      descriptor: 3
+      mode: 0o100600
+      size: 0
+      inode: 471642
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-10-09T21:55:54+00:00
+      atime: 2026-10-09T21:55:54+00:00
+      ctime: 2026-10-09T21:55:54+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+    stderr:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_3721237/scratch/ks.err.96dHvC
+      descriptor: 4
+      mode: 0o100600
+      size: 76
+      inode: 449281
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-10-09T21:55:55+00:00
+      atime: 2026-10-09T21:55:54+00:00
+      ctime: 2026-10-09T21:55:55+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+      data_truncated: false
+      data: |
+        #Successfully worked on    : 4 lines.
+        #Worked on total number of : 4 lines.
+        
+    metadata:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_3721237/scratch/ks.meta.QmXQfl
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 449282
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-10-09T21:55:54+00:00
+      atime: 2026-10-09T21:55:54+00:00
+      ctime: 2026-10-09T21:55:54+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian

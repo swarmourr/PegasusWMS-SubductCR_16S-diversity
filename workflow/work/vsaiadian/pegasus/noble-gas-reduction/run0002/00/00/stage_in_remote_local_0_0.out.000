@@ -1,0 +1,241 @@
+- invocation: True
+  version: 3.0
+  start: 2026-10-09T21:41:58.521+00:00
+  duration: 4.159
+  transformation: "pegasus::transfer"
+  derivation: "null"
+  resource: "local"
+  wf-label: "noble-gas-reduction"
+  wf-stamp: "2026-10-09T21:41:26+00:00"
+  interface: eth0
+  hostaddr: 10.1.214.25
+  hostname: pegasus.access-ci.org
+  pid: 3713491
+  uid: 2064
+  user: vsaiadian
+  gid: 2065
+  group: vsaiadian
+  umask: 0o0022
+  mainjob:
+    start: 2026-10-09T21:41:58.552+00:00
+    duration: 4.126
+    pid: 3713501
+    usage:
+      utime: 0.092
+      stime: 0.181
+      maxrss: 17440
+      minflt: 11972
+      majflt: 0
+      nswap: 0
+      inblock: 32
+      outblock: 122992
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 87
+      nivcsw: 10
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /usr/bin/pegasus-transfer
+      mode: 0o100755
+      size: 2909
+      inode: 12671144
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-09-13T22:24:35+00:00
+      atime: 2026-09-13T22:24:35+00:00
+      ctime: 2026-09-21T19:37:39+00:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    argument_vector:
+      - "--threads"
+      - "2"
+    procs:
+  cleanup:
+    start: 2026-10-09T21:42:02.678+00:00
+    duration: 0.003
+    pid: 3713572
+    usage:
+      utime: 0.001
+      stime: 0.001
+      maxrss: 1816
+      minflt: 71
+      majflt: 0
+      nswap: 0
+      inblock: 0
+      outblock: 0
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 1
+      nivcsw: 0
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /usr/bin/rm
+      mode: 0o100755
+      size: 71824
+      inode: 12756686
+      nlink: 1
+      blksize: 4096
+      blocks: 144
+      mtime: 2026-09-22T17:24:12+00:00
+      atime: 2026-09-22T17:24:12+00:00
+      ctime: 2026-09-25T06:52:06+00:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    argument_vector:
+      - "-rf"
+      - "stage_in_remote_local_0_0.out.lof"
+    procs:
+  jobids:
+    condor: 4355766.0
+  cwd: /var/lib/condor/spool/local_univ_execute/dir_3713482/scratch
+  usage:
+    utime: 0.004
+    stime: 0.028
+    maxrss: 2112
+    minflt: 152
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 2
+    nivcsw: 3
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: pegasus.access-ci.org
+    uname_release: 4.18.0-553.168.1.el8_10.x86_64
+    uname_machine: x86_64
+    ram_total: 30589060
+    ram_free: 5685460
+    ram_shared: 93176
+    ram_buffer: 1208
+    swap_total: 0
+    swap_free: 0
+    cpu_count: 8
+    cpu_speed: 1996
+    cpu_vendor: AuthenticAMD
+    cpu_model: AMD EPYC-Milan Processor
+    load_min1: 0.41
+    load_min5: 0.38
+    load_min15: 0.38
+    procs_total: 247
+    procs_running: 4
+    procs_sleeping: 161
+    procs_other: 82
+    procs_vmsize: 54714660
+    procs_rss: 2996432
+    task_total: 931
+    task_running: 4
+    task_sleeping: 845
+    task_other: 82
+  files:
+    gaslib.py:
+      error: 2
+      lfn: "gaslib.py"
+      file_name: gaslib.py
+    build_semiraw:
+      error: 2
+      lfn: "build_semiraw"
+      file_name: build_semiraw
+    noble-gas.sif:
+      error: 2
+      lfn: "noble-gas.sif"
+      file_name: noble-gas.sif
+    GAS_PROCESS.xlsx:
+      error: 2
+      lfn: "GAS_PROCESS.xlsx"
+      file_name: GAS_PROCESS.xlsx
+    stdin:
+      descriptor_number: 0
+      mode: 0o10600
+      size: 0
+      inode: 74564764
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-10-09T21:41:58+00:00
+      atime: 2026-10-09T21:41:58+00:00
+      ctime: 2026-10-09T21:41:58+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+    stdout:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_3713482/scratch/ks.out.5oZZIK
+      descriptor: 3
+      mode: 0o100600
+      size: 0
+      inode: 981501897
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-10-09T21:41:58+00:00
+      atime: 2026-10-09T21:41:58+00:00
+      ctime: 2026-10-09T21:41:58+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+    stderr:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_3713482/scratch/ks.err.NF7H8P
+      descriptor: 4
+      mode: 0o100600
+      size: 1787
+      inode: 981501898
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-10-09T21:42:02+00:00
+      atime: 2026-10-09T21:41:58+00:00
+      ctime: 2026-10-09T21:42:02+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian
+      data_truncated: false
+      data: |
+        2026-10-09 21:41:58,622    INFO:  Reading URL pairs from stdin
+        2026-10-09 21:41:58,623    INFO:  4 transfers loaded
+        2026-10-09 21:41:58,623    INFO:  PATH=/usr/bin:/bin:/bin:/usr/bin:/usr/local/bin:/opt/local/bin:/usr/sbin
+        2026-10-09 21:41:58,623    INFO:  LD_LIBRARY_PATH=
+        2026-10-09 21:41:58,661    INFO:  --------------------------------------------------------------------------------
+        2026-10-09 21:41:58,661    INFO:  Starting transfers - attempt 1
+        2026-10-09 21:42:00,664    INFO:  /bin/cp -f -R -L '/home/vsaiadian/Hotsprings/workflow/bin/build_semiraw.py' '/home/vsaiadian/Hotsprings/workflow/work/scratch/vsaiadian/pegasus/noble-gas-reduction/run0002/./build_semiraw'
+        2026-10-09 21:42:00,674    INFO:  /bin/cp -f -R -L '/home/vsaiadian/Hotsprings/workflow/input/GAS_PROCESS.xlsx' '/home/vsaiadian/Hotsprings/workflow/work/scratch/vsaiadian/pegasus/noble-gas-reduction/run0002/./GAS_PROCESS.xlsx'
+        2026-10-09 21:42:00,707    INFO:  /bin/cp -f -R -L '/home/vsaiadian/Hotsprings/docker/noble-gas.sif' '/home/vsaiadian/Hotsprings/workflow/work/scratch/vsaiadian/pegasus/noble-gas-reduction/run0002/./noble-gas.sif'
+        2026-10-09 21:42:00,803    INFO:  /bin/cp -f -R -L '/home/vsaiadian/Hotsprings/workflow/bin/gaslib.py' '/home/vsaiadian/Hotsprings/workflow/work/scratch/vsaiadian/pegasus/noble-gas-reduction/run0002/./gaslib.py'
+        2026-10-09 21:42:02,667    INFO:  --------------------------------------------------------------------------------
+        2026-10-09 21:42:02,667    INFO:  Stats: Total 4 transfers, 60.0 MB transferred in 4 seconds. Rate: 14.8 MB/s (118.7 Mb/s)
+        2026-10-09 21:42:02,667    INFO:         Between sites local->local : 4 transfers, 60.0 MB transferred in 4 seconds. Rate: 14.8 MB/s (118.7 Mb/s)
+        2026-10-09 21:42:02,667    INFO:  All transfers completed successfully.
+        
+    metadata:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_3713482/scratch/ks.meta.AQXsrE
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 981501899
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-10-09T21:41:58+00:00
+      atime: 2026-10-09T21:41:58+00:00
+      ctime: 2026-10-09T21:41:58+00:00
+      uid: 2064
+      user: vsaiadian
+      gid: 2065
+      group: vsaiadian

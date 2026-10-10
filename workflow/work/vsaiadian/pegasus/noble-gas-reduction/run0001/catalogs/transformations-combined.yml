@@ -1,0 +1,63 @@
+---
+pegasus: "5.0"
+transformations:
+ -
+  name: "air_stds_tab"
+  sites:
+   -
+    name: "local"
+    type: "stageable"
+    pfn: "file:///home/vsaiadian/Hotsprings/workflow/bin/air_stds_tab.py"
+    bypass: false
+    arch: "x86_64"
+    os.type: "linux"
+ -
+  name: "assemble_workbook"
+  sites:
+   -
+    name: "local"
+    type: "stageable"
+    pfn: "file:///home/vsaiadian/Hotsprings/workflow/bin/assemble_workbook.py"
+    bypass: false
+    arch: "x86_64"
+    os.type: "linux"
+ -
+  name: "blanks_tab"
+  sites:
+   -
+    name: "local"
+    type: "stageable"
+    pfn: "file:///home/vsaiadian/Hotsprings/workflow/bin/blanks_tab.py"
+    bypass: false
+    arch: "x86_64"
+    os.type: "linux"
+ -
+  name: "build_semiraw"
+  sites:
+   -
+    name: "local"
+    type: "stageable"
+    pfn: "file:///home/vsaiadian/Hotsprings/workflow/bin/build_semiraw.py"
+    bypass: false
+    arch: "x86_64"
+    os.type: "linux"
+ -
+  name: "compute_references"
+  sites:
+   -
+    name: "local"
+    type: "stageable"
+    pfn: "file:///home/vsaiadian/Hotsprings/workflow/bin/compute_references.py"
+    bypass: false
+    arch: "x86_64"
+    os.type: "linux"
+ -
+  name: "samples_tab"
+  sites:
+   -
+    name: "local"
+    type: "stageable"
+    pfn: "file:///home/vsaiadian/Hotsprings/workflow/bin/samples_tab.py"
+    bypass: false
+    arch: "x86_64"
+    os.type: "linux"

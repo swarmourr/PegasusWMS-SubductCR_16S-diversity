@@ -1,0 +1,117 @@
+x-pegasus: {apiLang: python, createdBy: vsaiadian, createdOn: '10-09-26T21:41:26Z'}
+pegasus: 5.0.4
+name: noble-gas-reduction
+replicaCatalog:
+  replicas:
+  - lfn: GAS_PROCESS.xlsx
+    pfns:
+    - {site: local, pfn: 'file:///home/vsaiadian/Hotsprings/workflow/input/GAS_PROCESS.xlsx'}
+  - lfn: gaslib.py
+    pfns:
+    - {site: local, pfn: 'file:///home/vsaiadian/Hotsprings/workflow/bin/gaslib.py'}
+transformationCatalog:
+  transformations:
+  - name: build_semiraw
+    sites:
+    - {name: local, pfn: 'file:///home/vsaiadian/Hotsprings/workflow/bin/build_semiraw.py',
+      type: stageable, container: noble-gas}
+  - name: compute_references
+    sites:
+    - {name: local, pfn: 'file:///home/vsaiadian/Hotsprings/workflow/bin/compute_references.py',
+      type: stageable, container: noble-gas}
+  - name: blanks_tab
+    sites:
+    - {name: local, pfn: 'file:///home/vsaiadian/Hotsprings/workflow/bin/blanks_tab.py',
+      type: stageable, container: noble-gas}
+  - name: air_stds_tab
+    sites:
+    - {name: local, pfn: 'file:///home/vsaiadian/Hotsprings/workflow/bin/air_stds_tab.py',
+      type: stageable, container: noble-gas}
+  - name: samples_tab
+    sites:
+    - {name: local, pfn: 'file:///home/vsaiadian/Hotsprings/workflow/bin/samples_tab.py',
+      type: stageable, container: noble-gas}
+  - name: assemble_workbook
+    sites:
+    - {name: local, pfn: 'file:///home/vsaiadian/Hotsprings/workflow/bin/assemble_workbook.py',
+      type: stageable, container: noble-gas}
+  containers:
+  - {name: noble-gas, type: singularity, image: 'file:///home/vsaiadian/Hotsprings/docker/noble-gas.sif',
+    image.site: local}
+jobs:
+- type: job
+  name: build_semiraw
+  id: ID0000001
+  arguments: [GAS_PROCESS.xlsx]
+  uses:
+  - {lfn: GAS_PROCESS.xlsx, type: input}
+  - {lfn: air_stds.csv, type: output, stageOut: true, registerReplica: true}
+  - {lfn: semi_raw.csv, type: output, stageOut: true, registerReplica: true}
+  - {lfn: blanks.csv, type: output, stageOut: true, registerReplica: true}
+  - {lfn: samples.csv, type: output, stageOut: true, registerReplica: true}
+  - {lfn: gaslib.py, type: input}
+- type: job
+  name: compute_references
+  id: ID0000002
+  arguments: [GAS_PROCESS.xlsx]
+  uses:
+  - {lfn: GAS_PROCESS.xlsx, type: input}
+  - {lfn: air_stds.csv, type: input}
+  - {lfn: blanks.csv, type: input}
+  - {lfn: gaslib.py, type: input}
+  - {lfn: blank_ref.json, type: output, stageOut: true, registerReplica: true}
+  - {lfn: airstd_ref.json, type: output, stageOut: true, registerReplica: true}
+- type: job
+  name: blanks_tab
+  id: ID0000003
+  arguments: [GAS_PROCESS.xlsx]
+  uses:
+  - {lfn: blanks_tab.csv, type: output, stageOut: true, registerReplica: true}
+  - {lfn: GAS_PROCESS.xlsx, type: input}
+  - {lfn: blanks.csv, type: input}
+  - {lfn: gaslib.py, type: input}
+  - {lfn: blank_ref.json, type: input}
+- type: job
+  name: air_stds_tab
+  id: ID0000004
+  arguments: [GAS_PROCESS.xlsx]
+  uses:
+  - {lfn: GAS_PROCESS.xlsx, type: input}
+  - {lfn: air_stds_tab.csv, type: output, stageOut: true, registerReplica: true}
+  - {lfn: air_stds.csv, type: input}
+  - {lfn: gaslib.py, type: input}
+  - {lfn: blank_ref.json, type: input}
+- type: job
+  name: samples_tab
+  id: ID0000005
+  arguments: [GAS_PROCESS.xlsx]
+  uses:
+  - {lfn: GAS_PROCESS.xlsx, type: input}
+  - {lfn: samples.csv, type: input}
+  - {lfn: samples_tab.csv, type: output, stageOut: true, registerReplica: true}
+  - {lfn: gaslib.py, type: input}
+  - {lfn: blank_ref.json, type: input}
+  - {lfn: airstd_ref.json, type: input}
+- type: job
+  name: assemble_workbook
+  id: ID0000006
+  arguments: [GAS_PROCESS.xlsx]
+  uses:
+  - {lfn: blanks_tab.csv, type: input}
+  - {lfn: GAS_PROCESS.xlsx, type: input}
+  - {lfn: air_stds_tab.csv, type: input}
+  - {lfn: semi_raw.csv, type: input}
+  - {lfn: GAS_PROCESS_reproduced.xlsx, type: output, stageOut: true, registerReplica: true}
+  - {lfn: samples_tab.csv, type: input}
+  - {lfn: gaslib.py, type: input}
+jobDependencies:
+- id: ID0000001
+  children: [ID0000006, ID0000004, ID0000005, ID0000002, ID0000003]
+- id: ID0000002
+  children: [ID0000005, ID0000004, ID0000003]
+- id: ID0000003
+  children: [ID0000006]
+- id: ID0000004
+  children: [ID0000006]
+- id: ID0000005
+  children: [ID0000006]
